@@ -3,59 +3,69 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'John Gage'
-SITENAME = 'CalWaterDay new'
-SITESUBTITLE = 'California Water 641'
+SITENAME = 'CalWaterDay 6'
+SITESUBTITLE = 'California Water Data Initiative'
 
-SITEURL = 'http://johngage.github.io'
+SITEURL = '' #'http://johngage.github.io'
 
 # Time and Date settings
 TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = 'en'
 
-THEME = 'themes/pelican-bootstrap3'
+#THEME settings
 
-#Paths
-PATH = 'content'
+THEME = 'themes/pelican-bootstrap3'
+BOOTSTRAP_THEME = 'flatly'
+PLUGIN_PATHS = ['/pelican-plugins', '/plugins']
+
+PLUGINS = ['render_math', 'ipynb.markup', 'better_codeblock_line_numbering']
+
 # PATH settings
+PATH = 'content'
 ARTICLE_PATHS = ['articles']
 PAGE_PATHS = ['pages']
 
-STATIC_PATHS = ['images', 'data', 'publications']
+STATIC_PATHS = ['images',
+                'data',
+                'publications'
+                ]
 
-OUTPUT_PATH = 'output/'
+#OUTPUT_PATH = 'output/'
 
-#PLUGIN_PATHS = ['./pelican-plugins', './plugins']
-
-#PLUGINS = ['render_math', 'ipynb.markup', 'better_codeblock_line_numbering']
-
+# for Tique Search Plugin
+DIRECT_TEMPLATES = ('index','tags', 'categories', 'authors', 'archives', 'search')
 
 SIDEBAR_NAME = AUTHOR
 SIDEBAR_EMAIL = "john.gage@gmail.com"
 SIDEBAR_TAGS = ['CalWaterDay',
                 'Califoria Schools',
                 'Jupyter Notebooks for Schools',
-                'JupyterForNews',
-                'Water Data',
+                'Pelican',
+                'Data Science',
+                'water',
                 ]
-#DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
-#RECENT_POST_COUNT = 3
+DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
+RECENT_POST_COUNT = 3
 
-
-MENUITEMS = [('Home', '/'),
-             ('Books', '/pages/books/'),
-             ('About', '/pages/about/'),
-             ('Links', '/pages/links/'),
+MENUITEMS = [('Pages1', '/pages/Great Books'),
+             ('Posts2', '/posts/2018'),
+             ('Tags', '/tags'),
+             ('Author', 'authors.html')
              ]
 
-
+DISPLAY_SERIES_ON_SIDEBAR = True
 
 #Basic settings
+USE_FOLDER_AS_CATEGORY = False
+
 DEFAULT_CATEGORY = 'misc'
-DISPLAY_CATEGORIES_ON_MENU = True
-DISPLAY_PAGES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = False
 IGNORE_FILES = ['.#*', '.ipynb_checkpoints']
-MARKDOWN = {}
+#MARKDOWN = {}
+DISPLAY_BREADCRUMBS = True
+DISPLAY_CATEGORY_IN_BREADCRUMBS = True
 
 
 # Extention
@@ -80,7 +90,10 @@ ARTICLE_URL = 'articles/{date:%Y}/{date:%b}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
 PAGE_URL = 'pages/{slug}/'
 PAGE_SAVE_AS = 'pages/{slug}/index.html'
-
+ARCHIVES_SAVE_AS = 'archives.html'
+DISPLAY_ARCHIVE_ON_MENU = True
+YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'
 
 
 DEFAULT_DATE_FORMATS = '%a, %m/%d/%Y'
@@ -94,14 +107,16 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (
+        ('Pelican', 'http://getpelican.com/'),
+        ('Python.org', 'http://python.org/'),
+        ('Jinja2', 'http://jinja.pocoo.org/'),
+        ('Enough to be dangerous', 'https://www.learnenough.com/dev-environment-tutorial#sec-native_os_setup'),
+        )
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('Berkeley', 'http://berkeley.edu'),
+          ('Berkeley Institute of Data Sciences', 'http://berkeley.edu'),)
 
 DEFAULT_PAGINATION = 10
 

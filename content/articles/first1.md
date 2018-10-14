@@ -1,7 +1,7 @@
 Title: California Water Board Hackathon
-Slug: first-post
+Slug: third-post
 Date: 2018-09-15 12:00
-Category: Blogs
+Category: Article
 Tags: Pelican, Data Science
 Author: John Gage
 Summary: My first post.
