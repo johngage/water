@@ -1,4 +1,4 @@
-Title: California Water Board Hackathon Data Sets 
+Title: California Water Board Hackathon Data Sets
 Slug: third-post
 Date: 2018-09-15 12:00
 Category: Article
@@ -9,7 +9,7 @@ Status: published
 
 
 
-## California Water Data Challenge ##
+## California Water Data Challenge Data Sets ##
 
 Data sets for water data cross-linking
 
