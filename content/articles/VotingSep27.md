@@ -1,6 +1,6 @@
 Title: Voting Architecture for the 21st century
 Slug: voting
-Date: 2018-0927 1900:00
+Date: 2018-09-27 19:00
 Category: voting
 Tags: Stanford, Data Science
 Author: John Gage
