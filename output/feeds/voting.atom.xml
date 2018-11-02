@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CalWaterDay 6 - voting</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/voting.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2018-09-27T19:00:00-07:00</updated><entry><title>Voting Architecture for the 21st century</title><link href="https://johngage.github.io/water/articles/2018/Sep/27/voting/" rel="alternate"></link><published>2018-09-27T19:00:00-07:00</published><updated>2018-09-27T19:00:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-27:/water/articles/2018/Sep/27/voting/</id><summary type="html">&lt;p&gt;My first post.&lt;/p&gt;</summary><content type="html">&lt;h4&gt;Voting architecture: devices, software, the cloud, and integrity&lt;/h4&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CalWaterDay 6 - Voting</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/voting.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2018-09-27T19:00:00-07:00</updated><entry><title>Voting Architecture for the 21st century</title><link href="https://johngage.github.io/water/articles/2018/Sep/27/voting/" rel="alternate"></link><published>2018-09-27T19:00:00-07:00</published><updated>2018-09-27T19:00:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-27:/water/articles/2018/Sep/27/voting/</id><summary type="html">&lt;p&gt;Academic Research in Voting and Voting systems&lt;/p&gt;</summary><content type="html">&lt;h4&gt;Voting architecture: devices, software, the cloud, and integrity&lt;/h4&gt;
 &lt;p&gt;Stanford's new center for cybersecurity is in formation.&lt;/p&gt;
 &lt;p&gt;It rests on three pillars: people, system, accountability.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;for technology, the Computer Science department&lt;/li&gt;
 &lt;li&gt;for management and policy: the Political Science department&lt;/li&gt;
 &lt;li&gt;for educational content:&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Stanford"></category><category term="Data Science"></category></entry></feed>
+&lt;/ul&gt;
+&lt;p&gt;Henry Brady&lt;/p&gt;
+&lt;p&gt;List of technologies by date of introduction&lt;/p&gt;
+&lt;p&gt;point-to-point
+mass&lt;/p&gt;
+&lt;p&gt;devices.&lt;/p&gt;
+&lt;p&gt;volume/velocity/variety/veracity&lt;/p&gt;
+&lt;p&gt;what frequencies can we see?
+datification/ connectedness/ networking / authorizing&lt;/p&gt;
+&lt;p&gt;Jstore:
+Examples of kinds of data:
+Administrative/ we internet / text/ sensor/audio/video&lt;/p&gt;
+&lt;p&gt;searching
+distance to polling places in la County
+uses of N-word in GOOGLE&lt;/p&gt;
+&lt;p&gt;Ken Goldberg
+pics.....who has opinions about subject: show face
+animation of branching&lt;/p&gt;
+&lt;p&gt;complexity of voting system; ballot, registration
+slide of timeline: key applications
+devices/&lt;/p&gt;
+&lt;p&gt;show what is inside voting machine; circuit Board
+Can we use the internet.....show book covers?&lt;/p&gt;</content><category term="Stanford"></category><category term="Data Science"></category></entry></feed>
