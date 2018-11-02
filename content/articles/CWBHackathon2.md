@@ -11,4 +11,7 @@ Status: published
 
 ## California Water Data Challenge ##
 
-for water data crunch
+Evaluating all team entries
+  - beyond first Jupyter Notebooks
+  - data cleaning cost: time, complexity, data dictionary
+  - long-term integration with existing state and local data collection
