@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CalWaterDay 6</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/all.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2018-09-27T19:00:00-07:00</updated><entry><title>Voting Architecture for the 21st century</title><link href="https://johngage.github.io/water/articles/2018/Sep/27/voting/" rel="alternate"></link><published>2018-09-27T19:00:00-07:00</published><updated>2018-09-27T19:00:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-27:/water/articles/2018/Sep/27/voting/</id><summary type="html">&lt;p&gt;My first post.&lt;/p&gt;</summary><content type="html">&lt;h4&gt;Voting architecture: devices, software, the cloud, and integrity&lt;/h4&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CalWaterDay 6</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/all.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2018-11-02T09:00:00-07:00</updated><entry><title>North Korea Nuclear Test: Mount Mantap</title><link href="https://johngage.github.io/water/articles/2018/Nov/02/Nuclear/" rel="alternate"></link><published>2018-11-02T09:00:00-07:00</published><updated>2018-11-02T09:00:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-02:/water/articles/2018/Nov/02/Nuclear/</id><summary type="html">&lt;p&gt;UC Berkeley Analysis&lt;/p&gt;</summary><content type="html">&lt;p&gt;According to Dreger, the new information suggests the following scenario: The explosion occurred more than a quarter mile (450 meters) below the summit of Mt. Mantap, vaporizing granite rock within a cavity about 160 feet (50 meters) across – the size of a football stadium – and damaging a volume of rock about 1,000 feet (300 meters) across. The blast likely raised the mountain six feet (2 meters) and pushed it outward up to 11 feet (3-4 meters), though within minutes, hours or days the rock above the cavity collapsed to form a depression.&lt;/p&gt;
+&lt;p&gt;Eight and a half minutes after the bomb blast, a nearby underground cavity collapsed, producing the 4.5-magnitude aftershock with the characteristics of an implosion.&lt;/p&gt;
+&lt;p&gt;Subsequently, a much larger volume of fractured rock, perhaps 1 mile (1-2 kilometers) across, compacted, causing the mountain to subside to about 1.5 feet (0.5 meters) lower than before the blast.&lt;/p&gt;
+&lt;p&gt;“There may be continuing post-explosion compaction at the mountain. It takes time for these aseismic processes to occur,” Dreger said.&lt;/p&gt;</content><category term="Nuclear"></category><category term="Remote Sensing"></category></entry><entry><title>Voting Architecture for the 21st century</title><link href="https://johngage.github.io/water/articles/2018/Sep/27/voting/" rel="alternate"></link><published>2018-09-27T19:00:00-07:00</published><updated>2018-09-27T19:00:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-27:/water/articles/2018/Sep/27/voting/</id><summary type="html">&lt;p&gt;Academic Research in Voting and Voting systems&lt;/p&gt;</summary><content type="html">&lt;h4&gt;Voting architecture: devices, software, the cloud, and integrity&lt;/h4&gt;
 &lt;p&gt;Stanford's new center for cybersecurity is in formation.&lt;/p&gt;
 &lt;p&gt;It rests on three pillars: people, system, accountability.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;for technology, the Computer Science department&lt;/li&gt;
 &lt;li&gt;for management and policy: the Political Science department&lt;/li&gt;
 &lt;li&gt;for educational content:&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Stanford"></category><category term="Data Science"></category></entry><entry><title>Dan Kammen at College of Marin</title><link href="https://johngage.github.io/water/articles/2018/Sep/15/COM%20post/" rel="alternate"></link><published>2018-09-15T12:00:00-07:00</published><updated>2018-09-15T12:00:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-15:/water/articles/2018/Sep/15/COM post/</id><summary type="html">&lt;p&gt;Next steps&lt;/p&gt;</summary><content type="html">&lt;h2&gt;California Environment Data Challenge&lt;/h2&gt;
+&lt;/ul&gt;
+&lt;p&gt;Henry Brady&lt;/p&gt;
+&lt;p&gt;List of technologies by date of introduction&lt;/p&gt;
+&lt;p&gt;point-to-point
+mass&lt;/p&gt;
+&lt;p&gt;devices.&lt;/p&gt;
+&lt;p&gt;volume/velocity/variety/veracity&lt;/p&gt;
+&lt;p&gt;what frequencies can we see?
+datification/ connectedness/ networking / authorizing&lt;/p&gt;
+&lt;p&gt;Jstore:
+Examples of kinds of data:
+Administrative/ we internet / text/ sensor/audio/video&lt;/p&gt;
+&lt;p&gt;searching
+distance to polling places in la County
+uses of N-word in GOOGLE&lt;/p&gt;
+&lt;p&gt;Ken Goldberg
+pics.....who has opinions about subject: show face
+animation of branching&lt;/p&gt;
+&lt;p&gt;complexity of voting system; ballot, registration
+slide of timeline: key applications
+devices/&lt;/p&gt;
+&lt;p&gt;show what is inside voting machine; circuit Board
+Can we use the internet.....show book covers?&lt;/p&gt;</content><category term="Stanford"></category><category term="Data Science"></category></entry><entry><title>Dan Kammen at College of Marin</title><link href="https://johngage.github.io/water/articles/2018/Sep/15/COM%20post/" rel="alternate"></link><published>2018-09-15T12:00:00-07:00</published><updated>2018-09-15T12:00:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-15:/water/articles/2018/Sep/15/COM post/</id><summary type="html">&lt;p&gt;Next steps&lt;/p&gt;</summary><content type="html">&lt;h2&gt;California Environment Data Challenge&lt;/h2&gt;
 &lt;p&gt;Saw Felicia Marcus, Matt Rodriguez&lt;/p&gt;</content><category term="Cal EPA"></category><category term="Paris COP"></category></entry><entry><title>California Water Board Hackathon 1</title><link href="https://johngage.github.io/water/articles/2018/Sep/15/first-post/" rel="alternate"></link><published>2018-09-15T12:00:00-07:00</published><updated>2018-09-15T12:00:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-15:/water/articles/2018/Sep/15/first-post/</id><summary type="html">&lt;p&gt;My first post.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;California Water Data Challenge&lt;/h2&gt;
 &lt;h3&gt;U C Berkeley Hackathon: September; California-wide award ceremony:October&lt;/h3&gt;
 &lt;p&gt;Teams gathered at the Berkeley Institute of Data Science to spend two days creating new windows into California's publicly available water data.&lt;/p&gt;
@@ -20,9 +45,10 @@
   - beyond first Jupyter Notebooks
   - data cleaning cost: time, complexity, data dictionary
   - long-term integration with existing state and local data collection&lt;/p&gt;</content><category term="Pelican"></category><category term="Data Science"></category></entry><entry><title>California Water Board Hackathon 3 Data Sets</title><link href="https://johngage.github.io/water/articles/2018/Sep/15/third-post/" rel="alternate"></link><published>2018-09-15T12:00:00-07:00</published><updated>2018-09-15T12:00:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-15:/water/articles/2018/Sep/15/third-post/</id><summary type="html">&lt;p&gt;My first post.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;California Water Data Challenge Data Sets&lt;/h2&gt;
-&lt;p&gt;Data sets for water data cross-linking&lt;/p&gt;
+&lt;p&gt;Data sets for water data cross-linking project: how to correspond data elements from separate State agencies?&lt;/p&gt;
 &lt;h4&gt;List CA professional staff&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;existing Tableau&lt;/li&gt;
 &lt;li&gt;existing publications&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Pelican"></category><category term="Data Science"></category></entry></feed>
+&lt;/ul&gt;
+&lt;p&gt;Add something more&lt;/p&gt;</content><category term="Pelican"></category><category term="Data Science"></category></entry></feed>
