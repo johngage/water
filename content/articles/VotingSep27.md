@@ -1,10 +1,10 @@
 Title: Voting Architecture for the 21st century
 Slug: voting
 Date: 2018-09-27 19:00
-Category: voting
+Category: Voting
 Tags: Stanford, Data Science
 Author: John Gage
-Summary: My first post.
+Summary: Academic Research in Voting and Voting systems
 Status: published
 
 #### Voting architecture: devices, software, the cloud, and integrity ####
