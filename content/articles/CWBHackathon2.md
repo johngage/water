@@ -6,6 +6,8 @@ Tags: Pelican, Data Science
 Author: John Gage
 Summary: My first post.
 Status: published
+Series: water-post-series
+Series_index: 2
 
 
 

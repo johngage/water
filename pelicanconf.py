@@ -19,7 +19,7 @@ THEME = 'themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'flatly'
 PLUGIN_PATHS = ['/pelican-plugins', '/plugins']
 
-PLUGINS = ['render_math', 'ipynb.markup', 'better_codeblock_line_numbering']
+
 
 # PATH settings
 PATH = 'content'
@@ -124,15 +124,17 @@ PLUGIN_PATHS = ['pelican-plugins','plugins' ]
 #PLUGINS = ['i18n_subsites', ]
 PLUGINS = [
     'i18n_subsites','series','tag_cloud',
-    'liquid_tags.img', 'liquid_tags.video', 'liquid_tags.youtube', #'liquid_tags.notebook',
+    'liquid_tags.img', 'liquid_tags.video', 'liquid_tags.youtube', 'liquid_tags.notebook',
     'liquid_tags.vimeo',
     'liquid_tags.include_code',
     #'pelican_javascript',
     'related_posts',
     'render_math','tipue_search',
-    #'pelican-ipynb.markup',
+    'pelican-ipynb.markup',
     'neighbors',
     #'bootswatch_markdown_css',
+    'ipynb.markup',
+    'better_codeblock_line_numbering'
     ]
 JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.i18n'],
