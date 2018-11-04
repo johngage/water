@@ -1,8 +1,8 @@
-:Title: California Water Board Review
+:Title: Tables:rst
 :Slug: Trying reStructuredText
 :Date: 2018-09-15 12:00
 :Category: Blogs
-:Tags: Pelican, Data Science
+:Tags: Data Science
 :Author: John Gage
 :Summary: My reStructuredText post.
 :Status: published

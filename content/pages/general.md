@@ -1,4 +1,4 @@
-Title: Recommended
+Title: Books
 Slug: Great books
 Date: 2018-09-15 12:00
 Category: Lists

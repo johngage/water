@@ -2,7 +2,7 @@ Title: California Water Board Hackathon 1
 Slug: first-post
 Date: 2018-09-15 12:00
 Category: Deep Insight
-Tags: Pelican, Data Science
+Tags:  Data Science
 Author: John Gage
 Summary: My first post.
 Status: published

@@ -3,22 +3,28 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'John Gage'
-SITENAME = 'CalWaterDay 6'
-SITESUBTITLE = 'California Water Data Initiative'
+SITENAME = 'Water, Power, Network'
+SITESUBTITLE = 'City Critical Infrastructure'
 
-SITEURL = '' #'http://johngage.github.io'
+#SITEURL = 'http://johngage.github.io/water'
+# Uncomment following line if you want document-relative URLs when developing
+#RELATIVE_URLS = True
+
 
 # Time and Date settings
 TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = 'en'
+DEFAULT_DATE = 'fs'
 
 #THEME settings
 
-THEME = 'themes/pelican-bootstrap3'
+#THEME = 'themes/pelican-bootstrap3'
+THEME = 'pelican-themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'flatly'
-PLUGIN_PATHS = ['/pelican-plugins', '/plugins']
 
+SIDEBAR_IMAGES_HEADER = 'My Images'
+SIDEBAR_IMAGES = ["/images/sunlight.png" ]
 
 
 # PATH settings
@@ -28,31 +34,30 @@ PAGE_PATHS = ['pages']
 
 STATIC_PATHS = ['images',
                 'data',
-                'publications'
+                'publications',
+                'extra'
                 ]
+EXTRA_HEADER = open('_nb_header.html').read()#.decode('utf-8')
+
+CUSTOM_CSS = 'static/css/custom.css'
+CUSTOM_JS = 'static/js/custom.js'
+EXTRA_PATH_METADATA = {
+    'extra/custom.css': {'path': 'static/css/custom.css'},
+    'extra/custom.js': {'path': 'static/js/custom.js'}
+}
 
 #OUTPUT_PATH = 'output/'
 
 # for Tique Search Plugin
 DIRECT_TEMPLATES = ('index','tags', 'categories', 'authors', 'archives', 'search')
 
-SIDEBAR_NAME = AUTHOR
+SIDEBAR_NAME = 'AUTHOR'
 SIDEBAR_EMAIL = "john.gage@gmail.com"
-SIDEBAR_TAGS = ['CalWaterDay',
+SIDEBAR_TAGS = [
                 'Califoria Schools',
-                'Jupyter Notebooks for Schools',
-                'Pelican',
-                'Data Science',
-                'water',
                 ]
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
-RECENT_POST_COUNT = 3
-
-MENUITEMS = [('Pages1', '/pages/Great Books'),
-             ('Posts2', '/posts/2018'),
-             ('Tags', '/tags'),
-             ('Author', 'authors.html')
-             ]
+RECENT_POST_COUNT = 4
 
 DISPLAY_SERIES_ON_SIDEBAR = True
 
@@ -60,13 +65,22 @@ DISPLAY_SERIES_ON_SIDEBAR = True
 USE_FOLDER_AS_CATEGORY = False
 
 DEFAULT_CATEGORY = 'misc'
+#Top menus
 DISPLAY_CATEGORIES_ON_MENU = False
-DISPLAY_PAGES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = True
+
+MENUITEMS = [
+             ('PageBiblio', '/pages/books/index.html'),
+             ('Posts', '/posts/2018'),
+             ('Tags', '/tags'),
+             ('Overall', '/index.html')
+             ]
+
 IGNORE_FILES = ['.#*', '.ipynb_checkpoints']
 #MARKDOWN = {}
 DISPLAY_BREADCRUMBS = True
 DISPLAY_CATEGORY_IN_BREADCRUMBS = True
-
+#EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
 
 # Extention
 MARKUP = ('md', 'ipynb')
@@ -111,16 +125,20 @@ LINKS = (
         ('Pelican', 'http://getpelican.com/'),
         ('Python.org', 'http://python.org/'),
         ('Jinja2', 'http://jinja.pocoo.org/'),
-        ('Enough to be dangerous', 'https://www.learnenough.com/dev-environment-tutorial#sec-native_os_setup'),
+        ('Learn Enough to be dangerous', 'https://www.learnenough.com/dev-environment-tutorial#sec-native_os_setup'),
+        ('Full Stack Python', 'https://www.fullstackpython.com/'),
+        ('How I Built This Site','https://pythonforundergradengineers.com/how-i-built-this-site-1.html')
         )
 
 # Social widget
-SOCIAL = (('Berkeley', 'http://berkeley.edu'),
-          ('Berkeley Institute of Data Sciences', 'http://berkeley.edu'),)
+SOCIAL = (
+         ('Berkeley', 'http://berkeley.edu'),
+         ('Berkeley Institute of Data Sciences', 'http://berkeley.edu'),
+          ('Time', 'http://timeanddate.com'))
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 20
 
-PLUGIN_PATHS = ['pelican-plugins','plugins' ]
+PLUGIN_PATHS = ['pelican-plugins' ]
 #PLUGINS = ['i18n_subsites', ]
 PLUGINS = [
     'i18n_subsites','series','tag_cloud',
@@ -133,12 +151,10 @@ PLUGINS = [
     'pelican-ipynb.markup',
     'neighbors',
     #'bootswatch_markdown_css',
-    'ipynb.markup',
+    #'ipynb.markup',
     'better_codeblock_line_numbering'
     ]
 JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.i18n'],
 }
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+I18N_TEMPLATES_LANG = 'en'

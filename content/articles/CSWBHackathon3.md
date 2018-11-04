@@ -2,9 +2,9 @@ Title: California Water Board Hackathon 3 Data Sets
 Slug: third-post
 Date: 2018-09-15 12:00
 Category: Article
-Tags: Pelican, Data Science
+Tags: Data Science
 Author: John Gage
-Summary: My first post.
+Summary: First of Water Series.
 Status: published
 Series: water-post-series
 Series_index: 3
@@ -14,8 +14,12 @@ Series_index: 3
 
 Data sets for water data cross-linking project: how to correspond data elements from separate State agencies?
 
+A list of state agencies should have footnotes.
+- California State Water Resources Board
+- California Water Project 
+
 #### List CA professional staff
-- existing Tableau
+- existing *Tableau* visualizations by professional water board staff
 - existing publications
 
 Add something more
