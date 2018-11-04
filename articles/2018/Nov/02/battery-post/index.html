@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Tags - Water, Power, Network</title>
+    <title>Battery Technology: Solid State Electrolyte - Water, Power, Network</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11971,32 +11971,41 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
+<link rel="canonical" href="../../../../../articles/2018/Nov/02/battery-post/">
 
         <meta name="author" content="John Gage" />
+        <meta name="keywords" content="battery,jupyter" />
+        <meta name="description" content="This is the first post of a series of posts on energy. It will show a jupyter notebook encapsulating fifty battery chemistries." />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="Water, Power, Network" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Water, Power, Network"/>
-        <meta property="og:url" content="."/>
-        <meta property="og:description" content="Water, Power, Network"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Battery Technology: Solid State Electrolyte"/>
+        <meta property="og:url" content="../../../../../articles/2018/Nov/02/battery-post/"/>
+        <meta property="og:description" content="This is the first post of a series of posts on energy. It will show a jupyter notebook encapsulating fifty battery chemistries."/>
+        <meta property="article:published_time" content="2018-11-02" />
+            <meta property="article:section" content="Power posts" />
+            <meta property="article:tag" content="battery" />
+            <meta property="article:tag" content="jupyter" />
+            <meta property="article:author" content="John Gage" />
 
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="./theme/css/bootstrap.flatly.min.css" type="text/css"/>
-    <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../../../theme/css/bootstrap.flatly.min.css" type="text/css"/>
+    <link href="../../../../../theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="./theme/css/pygments/native.css" rel="stylesheet">
-    <link href="./theme/tipuesearch/tipuesearch.css" rel="stylesheet">
-    <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
-        <link href="./static/css/custom.css" rel="stylesheet">
+    <link href="../../../../../theme/css/pygments/native.css" rel="stylesheet">
+    <link href="../../../../../theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../theme/css/style.css" type="text/css"/>
+        <link href="../../../../../static/css/custom.css" rel="stylesheet">
 
-        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+        <link href="../../../../../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
               title="Water, Power, Network ATOM Feed"/>
 
 
 
+        <link href="../../../../../feeds/power-posts.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Water, Power, Network Power posts ATOM Feed"/>
 
 </head>
 <body>
@@ -12010,7 +12019,7 @@ init_mathjax();
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="./" class="navbar-brand">
+            <a href="../../../../../" class="navbar-brand">
 Water, Power, Network            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -12019,13 +12028,13 @@ Water, Power, Network            </a>
                     <li><a href="/posts/2018">Posts</a></li>
                     <li><a href="/tags">Tags</a></li>
                     <li><a href="/index.html">Overall</a></li>
-                         <li><a href="./pages/Great books/">
+                         <li><a href="../../../../../pages/Great books/">
                              Books
                           </a></li>
-                         <li><a href="./pages/Trying reStructuredText/">
+                         <li><a href="../../../../../pages/Trying reStructuredText/">
                              Tables:rst
                           </a></li>
-                         <li><a href="./pages/books/">
+                         <li><a href="../../../../../pages/books/">
                              Water Biblio
                           </a></li>
             </ul>
@@ -12035,7 +12044,7 @@ Water, Power, Network            </a>
                   <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
                 </form></span>
               </li>
-              <li><a href="./archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+              <li><a href="../../../../../archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -12049,127 +12058,1650 @@ Water, Power, Network            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-    <ol class="breadcrumb">
-        <li><a href="." title="Water, Power, Network"><i class="fa fa-home fa-lg"></i></a></li>
-        <li class="active">Tags</li>
-    </ol>
-    <section id="tags">
-        <h1>Tags for Water, Power, Network</h1>
-        <div class="panel-group" id="accordion">            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-battery">battery <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-battery" class="panel-collapse collapse">
+            <ol class="breadcrumb">
+                <li><a href="../../../../.." title="Water, Power, Network"><i class="fa fa-home fa-lg"></i></a></li>
+                <li><a href="../../../../../category/power-posts.html" title="Power posts">Power posts</a></li>
+                <li class="active">Battery Technology: Solid State Electrolyte</li>
+            </ol>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="../../../../../articles/2018/Nov/02/battery-post/"
+                       rel="bookmark"
+                       title="Permalink to Battery Technology: Solid State Electrolyte">
+                        Battery Technology: Solid State Electrolyte
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
                     <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2018-11-02T14:40:00-07:00">Fri 02 November 2018</time></span> <a href="./articles/2018/Nov/02/battery-post/">Battery Technology: Solid State Electrolyte</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-cal-epa">Cal EPA <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-cal-epa" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2018-09-15T12:00:00-07:00">Sat 15 September 2018</time></span> <a href="./articles/2018/Sep/15/COM post/">Dan Kammen at College of Marin</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-data-science">Data Science <span class="badge pull-right">5</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-data-science" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2018-09-27T19:00:00-07:00">Thu 27 September 2018</time></span> <a href="./articles/2018/Sep/27/voting/">Voting Architecture for the 21st century</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2018-09-15T12:00:00-07:00">Sat 15 September 2018</time></span> <a href="./articles/2018/Sep/15/first-post/">California Water Board Hackathon 1</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2018-09-15T12:00:00-07:00">Sat 15 September 2018</time></span> <a href="./articles/2018/Sep/15/hackathon/">Hackathon Teams on Slack</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2018-09-15T12:00:00-07:00">Sat 15 September 2018</time></span> <a href="./articles/2018/Sep/15/second-post/">California Water Board Hackathon 2</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2018-09-15T12:00:00-07:00">Sat 15 September 2018</time></span> <a href="./articles/2018/Sep/15/third-post/">California Water Board Hackathon 3 Data Sets</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-jupyter">jupyter <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-jupyter" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2018-11-02T14:40:00-07:00">Fri 02 November 2018</time></span> <a href="./articles/2018/Nov/02/battery-post/">Battery Technology: Solid State Electrolyte</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-nuclear">Nuclear <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-nuclear" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2018-11-02T09:00:00-07:00">Fri 02 November 2018</time></span> <a href="./articles/2018/Nov/02/Nuclear/">North Korea Nuclear Test: Mount Mantap</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-paris-cop">Paris COP <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-paris-cop" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2018-09-15T12:00:00-07:00">Sat 15 September 2018</time></span> <a href="./articles/2018/Sep/15/COM post/">Dan Kammen at College of Marin</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-remote-sensing">Remote Sensing <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-remote-sensing" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2018-11-02T09:00:00-07:00">Fri 02 November 2018</time></span> <a href="./articles/2018/Nov/02/Nuclear/">North Korea Nuclear Test: Mount Mantap</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-stanford">Stanford <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-stanford" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2018-09-27T19:00:00-07:00">Thu 27 September 2018</time></span> <a href="./articles/2018/Sep/27/voting/">Voting Architecture for the 21st century</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-water">Water <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-water" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2018-09-15T12:00:00-07:00">Sat 15 September 2018</time></span> <a href="./articles/2018/Sep/15/hackathon/">Hackathon Teams on Slack</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2018-11-02T14:40:00-07:00"> Fri 02 November 2018</time>
+    </span>
 
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="../../../../../tag/battery.html">battery</a>
+        /
+	<a href="../../../../../tag/jupyter.html">jupyter</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h3>This is a Jupyter notebook derived from Bill Joy</h3>
+<p>The implementing company is <a href="https://ionicmaterials.com/">Ionic Materials</a></p>
+<p>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="c1"># These lines import the Numpy and Datascience modules.</span></span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span></span>
+<span class="code-line"><span class="kn">from</span> <span class="nn">datascience</span> <span class="k">import</span> <span class="o">*</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1"># These lines do some fancy plotting magic.</span></span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">matplotlib</span></span>
+<span class="code-line"><span class="o">%</span><span class="k">matplotlib</span> inline</span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plots</span></span>
+<span class="code-line"><span class="n">plots</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;fivethirtyeight&#39;</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">fixed</span><span class="p">,</span> <span class="n">interact_manual</span></span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span></span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="mi">2</span><span class="o">**</span><span class="mi">3</span></span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[1]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre><span class="code-line">8</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="ch">#!pip install datascience</span></span>
+<span class="code-line"><span class="c1">#import pandas as pd</span></span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">chemistry</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/chemistries.csv&#39;</span><span class="p">)</span></span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">chemistry</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span></span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[13]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>Particle size (D50), µm</th>
+      <th>Unnamed: 2</th>
+      <th>Surface Area (m2/g)</th>
+      <th>Unnamed: 4</th>
+      <th>Voltage</th>
+      <th>Capacity (mAh/g)</th>
+      <th>Unnamed: 7</th>
+      <th>Fit to</th>
+      <th>Unnamed: 9</th>
+      <th>...</th>
+      <th>Unnamed: 34</th>
+      <th>Unnamed: 35</th>
+      <th>Unnamed: 36</th>
+      <th>Unnamed: 37</th>
+      <th>Unnamed: 38</th>
+      <th>Unnamed: 39</th>
+      <th>Unnamed: 40</th>
+      <th>Unnamed: 41</th>
+      <th>Unnamed: 42</th>
+      <th>Unnamed: 43</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Active</td>
+      <td>Min</td>
+      <td>Max</td>
+      <td>Min</td>
+      <td>Max</td>
+      <td>(V, vs.Li)</td>
+      <td>Theoretical</td>
+      <td>Achieved</td>
+      <td>Graphite</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>anode active material kg/Wh</td>
+      <td>cathode active material kg/Wh</td>
+      <td>anode active material cost per kg</td>
+      <td>notes on anode active material cost</td>
+      <td>cathode active material cost per kg</td>
+      <td>notes on cathode active material cost</td>
+      <td>anode active material cost per Wh</td>
+      <td>cathode active material cost per Wh</td>
+      <td>total active material cost per Wh (theoretical...</td>
+      <td>total active material cost per kWh (theoretica...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Traditional Cathodes</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000969948186528497</td>
+      <td>0.00259647668393782</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>LiCoO2</td>
+      <td>6.5</td>
+      <td>9.5</td>
+      <td>0.4</td>
+      <td>0.75</td>
+      <td>3.9</td>
+      <td>274</td>
+      <td>155</td>
+      <td>KS6, SFG6</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000746113989637306</td>
+      <td>0.00203108808290155</td>
+      <td>$22.50</td>
+      <td>Slide 45 of the March 2015 Avicenne report say...</td>
+      <td>$40.00</td>
+      <td>Did a search for "lithium cobalt oxide" on Ali...</td>
+      <td>$0.016788</td>
+      <td>$0.081244</td>
+      <td>$0.098031</td>
+      <td>$98.031088</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>LiFePO4</td>
+      <td>2.5</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>16</td>
+      <td>3.45</td>
+      <td>170</td>
+      <td>160</td>
+      <td>KS4</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>LiMn2O4</td>
+      <td>20</td>
+      <td>25</td>
+      <td>0.4</td>
+      <td>1</td>
+      <td>4.05</td>
+      <td>148</td>
+      <td>120</td>
+      <td>KS15, SFG15</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.00105429150709619</td>
+      <td>0.0014111286325749</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>LiNiCoAlO2 (Ni:Co:Al=8.0:1.5:0.5</td>
+      <td>5</td>
+      <td>12</td>
+      <td>0.3</td>
+      <td>0.8</td>
+      <td>3.7</td>
+      <td>278</td>
+      <td>200</td>
+      <td>KS10,SFG10</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.0000435233160621762</td>
+      <td>0.00108186528497409</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>LiNiCoMnO2 (Ni:Co:Mn=5:2:3)</td>
+      <td>8</td>
+      <td>12</td>
+      <td>0.2</td>
+      <td>0.6</td>
+      <td>3.8</td>
+      <td>278</td>
+      <td>180</td>
+      <td>KS10,SFG10</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.00110713688784891</td>
+      <td>0.000782216279458466</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>LiNiCoMnO2 (Ni:Co:Mn=1:1:1)</td>
+      <td>9</td>
+      <td>12</td>
+      <td>0.2</td>
+      <td>0.4</td>
+      <td>3.8</td>
+      <td>278</td>
+      <td>180</td>
+      <td>KS10,SFG10</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>High-Voltage Cathodes</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>LiNi0.5Mn1.5O4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>4.7</td>
+      <td>148</td>
+      <td>130</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000155793688177108</td>
+      <td>0.00220336787564767</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>LiCoPO4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>4.8</td>
+      <td>166</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000115939488875987</td>
+      <td>0.00133606458609471</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>LiNiPO4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5.1</td>
+      <td>166</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>High-Capacity Cathodes</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Sulfur</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.05</td>
+      <td>1675</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000174093264248705</td>
+      <td>0.000743626943005181</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0.000298445595854922</td>
+      <td>$332.50</td>
+      <td>Did a search for "lithium metal foil" on Aliba...</td>
+      <td>$0.41</td>
+      <td>Did a search for "sulfur powder" on Alibaba. F...</td>
+      <td>$0.043415</td>
+      <td>$0.000122</td>
+      <td>$0.043537</td>
+      <td>$43.536870</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Anodes</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0.00158321749020599</td>
+      <td>$3.70</td>
+      <td>Did a search for "aluminum powder" on Alibaba....</td>
+      <td>$2.40</td>
+      <td>Steve Renter got a quote in March 2014 from a ...</td>
+      <td>$0.000606</td>
+      <td>$0.003800</td>
+      <td>$0.004406</td>
+      <td>$4.405712</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Lithium metal (Li)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>3862</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000172180151454763</td>
+      <td>0</td>
+      <td>$3.70</td>
+      <td>Same as  row 19 above.</td>
+      <td>$2.40</td>
+      <td>Same as row 19 above.</td>
+      <td>$0.000637</td>
+      <td>$0.001997</td>
+      <td>$0.002634</td>
+      <td>$2.634356</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Artificial graphite</td>
+      <td>NaN</td>
+      <td>20</td>
+      <td>NaN</td>
+      <td>4.075</td>
+      <td>0.1</td>
+      <td>372</td>
+      <td>360</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0.00162279792746114</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>MCMB</td>
+      <td>NaN</td>
+      <td>17.5</td>
+      <td>NaN</td>
+      <td>2.02</td>
+      <td>0.1</td>
+      <td>372</td>
+      <td>360</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000235614944095991</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Li4Ti5O12</td>
+      <td>NaN</td>
+      <td>1.47</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1.55</td>
+      <td>233</td>
+      <td>160</td>
+      <td>KS4, SFG6</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0.00036139896373057</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Zn metal (Zn)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.277</td>
+      <td>825</td>
+      <td>NaN</td>
+      <td>7.14</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0.00125129533678756</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Al metal (Al)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.364</td>
+      <td>2978</td>
+      <td>NaN</td>
+      <td>2.7</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.913</td>
+      <td>2154</td>
+      <td>1966</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.00101036269430052</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>116</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000154368411649098</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1103</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000176711208071993</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-988</td>
+      <td>-901.672399993025</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.0000900482401286403</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.0000705783503710965</td>
+      <td>0.00190561546001961</td>
+      <td>$332.50</td>
+      <td>Same as row 18 above.</td>
+      <td>$40.00</td>
+      <td>Same as row 4 above.</td>
+      <td>$0.023467</td>
+      <td>$0.076225</td>
+      <td>$0.099692</td>
+      <td>$99.691920</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000139896373056995</td>
+      <td>0.00106088082901554</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Map</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000373056994818653</td>
+      <td>0.00646632124352332</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Battery</td>
+      <td>Wh/Kg</td>
+      <td>Wh/L</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000159881569207994</td>
+      <td>0.000579570688378979</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Li-Ion</td>
+      <td>MnO2</td>
+      <td>MnO2 (2e)</td>
+      <td>Li metal</td>
+      <td>Si anode</td>
+      <td>alkaline</td>
+      <td>M/Sulfur</td>
+      <td>MMn2O4</td>
+      <td>...</td>
+      <td>0.000186528497409326</td>
+      <td>0.00115025906735751</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>Zn/MnO2</td>
+      <td>261</td>
+      <td>NaN</td>
+      <td>1533</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000336592777279988</td>
+      <td>0.00044879036970665</td>
+      <td>$2.75</td>
+      <td>Did a search for magnesium ingot on Alibaba. O...</td>
+      <td>$0.41</td>
+      <td>Same as row 18 above.</td>
+      <td>$0.000926</td>
+      <td>$0.000184</td>
+      <td>$0.001110</td>
+      <td>$1.109634</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>Zn/MnO2 (2e)</td>
+      <td>363</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2334</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000541534347317399</td>
+      <td>0.000962727728564265</td>
+      <td>$3.70</td>
+      <td>Same as row 19 above.</td>
+      <td>$0.41</td>
+      <td>Same as row 18 above.</td>
+      <td>$0.002004</td>
+      <td>$0.000395</td>
+      <td>$0.002398</td>
+      <td>$2.398395</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Ni/Zn</td>
+      <td>431</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1284</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.0000669589477879633</td>
+      <td>0.00166440813072937</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$30.00</td>
+      <td>Did a search for "lithium manganese spinel" on...</td>
+      <td>$0.000000</td>
+      <td>$0.051941</td>
+      <td>$0.051941</td>
+      <td>$51.941012</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Graphite/LCO</td>
+      <td>360</td>
+      <td>1097</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000233160621761658</td>
+      <td>0.00101424870466321</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>graphite/LIF</td>
+      <td>373</td>
+      <td>1092</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.000149222797927461</td>
+      <td>0.00108186528497409</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>LTO/LCO</td>
+      <td>158</td>
+      <td>781</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0.00135233160621762</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>LTO/LIF</td>
+      <td>152</td>
+      <td>758</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>Si/LTO</td>
+      <td>424</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1936</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0.0015419689119171</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>Si/LiCoPO4</td>
+      <td>689</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3155</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0.00210268487988695</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+      <td>$0.000000</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>Li/MnO2</td>
+      <td>889</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3308</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>Li/FeS2</td>
+      <td>1090</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1988</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>Li/S</td>
+      <td>2331</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2437</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Mg/S</td>
+      <td>1273</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2392</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>Al/S</td>
+      <td>665</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1466</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>Li/CFx</td>
+      <td>2257</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2474</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Li/LCO</td>
+      <td>506</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1887</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>Li/LiCoPO4</td>
+      <td>766</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2785</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>50 rows × 44 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">chemistry</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span></span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[22]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>Particle size (D50), µm</th>
+      <th>Unnamed: 2</th>
+      <th>Surface Area (m2/g)</th>
+      <th>Unnamed: 4</th>
+      <th>Voltage</th>
+      <th>Capacity (mAh/g)</th>
+      <th>Unnamed: 7</th>
+      <th>Fit to</th>
+      <th>Unnamed: 9</th>
+      <th>...</th>
+      <th>Unnamed: 34</th>
+      <th>Unnamed: 35</th>
+      <th>Unnamed: 36</th>
+      <th>Unnamed: 37</th>
+      <th>Unnamed: 38</th>
+      <th>Unnamed: 39</th>
+      <th>Unnamed: 40</th>
+      <th>Unnamed: 41</th>
+      <th>Unnamed: 42</th>
+      <th>Unnamed: 43</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>0 rows × 44 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">chemT</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;data/chemistries.csv&#39;</span><span class="p">)</span></span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">chemT</span></span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[28]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<table border="1" class="dataframe">
+    <thead>
+        <tr>
+            <th>Unnamed: 0</th> <th>Particle size (D50), µm</th> <th>Unnamed: 2</th> <th>Surface Area (m2/g)</th> <th>Unnamed: 4</th> <th>Voltage</th> <th>Capacity (mAh/g)</th> <th>Unnamed: 7</th> <th>Fit to </th> <th>Unnamed: 9</th> <th>Unnamed: 10</th> <th>Unnamed: 11</th> <th>Unnamed: 12</th> <th>Unnamed: 13</th> <th>Unnamed: 14</th> <th>409.786079182631</th> <th>Unnamed: 16</th> <th>Unnamed: 17</th> <th>Unnamed: 18</th> <th>Unnamed: 19</th> <th>Unnamed: 20</th> <th>Unnamed: 21</th> <th>Unnamed: 22</th> <th>Unnamed: 23</th> <th>Unnamed: 24</th> <th>Unnamed: 25</th> <th>Unnamed: 26</th> <th>Unnamed: 27</th> <th>Unnamed: 28</th> <th>Li foil thickness</th> <th>Unnamed: 30</th> <th>Q</th> <th>Unnamed: 32</th> <th>Unnamed: 33</th> <th>Unnamed: 34</th> <th>Unnamed: 35</th> <th>Unnamed: 36</th> <th>Unnamed: 37</th> <th>Unnamed: 38</th> <th>Unnamed: 39</th> <th>Unnamed: 40</th> <th>Unnamed: 41</th> <th>Unnamed: 42</th> <th>Unnamed: 43</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Active                          </td> <td>Min                    </td> <td>Max       </td> <td>Min                </td> <td>Max       </td> <td>(V, vs.Li)</td> <td>Theoretical     </td> <td>Achieved  </td> <td> Graphite  </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>Battery        </td> <td>Reaction               </td> <td>M               </td> <td>n          </td> <td>Ah/kg      </td> <td>V          </td> <td>Wh/kg      </td> <td>achieved   </td> <td>Anode Kg   </td> <td>Dens kg/L  </td> <td>Cathode kg </td> <td>Dens kg/L  </td> <td>Volume L   </td> <td>Wh/L       </td> <td>H2O volume </td> <td>n (H2O)    </td> <td>mil              </td> <td>cm         </td> <td>mAh/cm2</td> <td>nan        </td> <td>kg/Wh      </td> <td>anode active material kg/Wh</td> <td>cathode active material kg/Wh</td> <td>anode active material cost per kg </td> <td>notes on anode active material cost                         </td> <td>cathode active material cost per kg</td> <td>notes on cathode active material cost                       </td> <td>anode active material cost per Wh</td> <td>cathode active material cost per Wh</td> <td>total active material cost per Wh (theoretical minimum)</td> <td>total active material cost per kWh (theoretical minimum)</td>
+        </tr>
+        <tr>
+            <td>Traditional Cathodes            </td> <td>nan                    </td> <td>nan       </td> <td>nan                </td> <td>nan       </td> <td>nan       </td> <td>nan             </td> <td>nan       </td> <td>nan        </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>Zn/MnO2        </td> <td>1/2 Zn + MnO2+1/2H2O   </td> <td>128.5           </td> <td>1          </td> <td>208.6      </td> <td>1.25       </td> <td>261        </td> <td>nan        </td> <td>32.5       </td> <td>7.14       </td> <td>87.0       </td> <td>5.026      </td> <td>21.9       </td> <td>1533       </td> <td>9          </td> <td>0.5        </td> <td>2                </td> <td>0.0050     </td> <td>9.7    </td> <td>nan        </td> <td>0          </td> <td>0.000969948186528497       </td> <td>0.00259647668393782          </td> <td>nan                               </td> <td>nan                                                         </td> <td>nan                                </td> <td>nan                                                         </td> <td>$0.000000                        </td> <td>$0.000000                          </td> <td>$0.000000                                              </td> <td>$0.000000                                               </td>
+        </tr>
+        <tr>
+            <td>LiCoO2                          </td> <td>6.5                    </td> <td>9.5       </td> <td>0.4                </td> <td>0.75      </td> <td>3.9       </td> <td>274             </td> <td>155       </td> <td>KS6, SFG6  </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>Graphite/LCO   </td> <td>LiC6+2Li0.5CoO2        </td> <td>268             </td> <td>1          </td> <td>100.0      </td> <td>3.6        </td> <td>360        </td> <td>160        </td> <td>72.0       </td> <td>1.5        </td> <td>196.0      </td> <td>4.9        </td> <td>88.0       </td> <td>1097       </td> <td>0          </td> <td>nan        </td> <td>3                </td> <td>0.0075     </td> <td>14.5   </td> <td>nan        </td> <td>0          </td> <td>0.000746113989637306       </td> <td>0.00203108808290155          </td> <td>$22.50                            </td> <td>Slide 45 of the March 2015 Avicenne report says that in  ...</td> <td>$40.00                             </td> <td>Did a search for "lithium cobalt oxide" on Alibaba. Firs ...</td> <td>$0.016788                        </td> <td>$0.081244                          </td> <td>$0.098031                                              </td> <td>$98.031088                                              </td>
+        </tr>
+        <tr>
+            <td>LiFePO4                         </td> <td>2.5                    </td> <td>5         </td> <td>nan                </td> <td>16        </td> <td>3.45      </td> <td>170             </td> <td>160       </td> <td>KS4        </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>Zn/MnO2 (1.33e)</td> <td>0.67 Zn + MnO2+1/2H2O  </td> <td>139.2           </td> <td>1          </td> <td>256.1      </td> <td>1.2        </td> <td>307        </td> <td>210        </td> <td>43.6       </td> <td>7.14       </td> <td>86.7       </td> <td>5.026      </td> <td>23.3       </td> <td>1833       </td> <td>9          </td> <td>0.5        </td> <td>4                </td> <td>0.0100     </td> <td>19.3   </td> <td>nan        </td> <td>0          </td> <td>0                          </td> <td>0                            </td> <td>nan                               </td> <td>nan                                                         </td> <td>nan                                </td> <td>nan                                                         </td> <td>$0.000000                        </td> <td>$0.000000                          </td> <td>$0.000000                                              </td> <td>$0.000000                                               </td>
+        </tr>
+        <tr>
+            <td>LiMn2O4                         </td> <td>20                     </td> <td>25        </td> <td>0.4                </td> <td>1         </td> <td>4.05      </td> <td>148             </td> <td>120       </td> <td>KS15, SFG15</td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>Zn/MnO2 (2e)   </td> <td>Zn+MnO2+H20            </td> <td>170             </td> <td>2          </td> <td>315.4      </td> <td>1.15       </td> <td>363        </td> <td>nan        </td> <td>65.0       </td> <td>7.14       </td> <td>87.0       </td> <td>5.026      </td> <td>26.4       </td> <td>2334       </td> <td>18         </td> <td>1          </td> <td>5                </td> <td>0.0125     </td> <td>24.1   </td> <td>nan        </td> <td>0          </td> <td>0.00105429150709619        </td> <td>0.0014111286325749           </td> <td>nan                               </td> <td>nan                                                         </td> <td>nan                                </td> <td>nan                                                         </td> <td>$0.000000                        </td> <td>$0.000000                          </td> <td>$0.000000                                              </td> <td>$0.000000                                               </td>
+        </tr>
+        <tr>
+            <td>LiNiCoAlO2 (Ni:Co:Al=8.0:1.5:0.5</td> <td>5                      </td> <td>12        </td> <td>0.3                </td> <td>0.8       </td> <td>3.7       </td> <td>278             </td> <td>200       </td> <td>KS10,SFG10 </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>Li/MnO2        </td> <td>0.5Li+MnO2             </td> <td>90.5            </td> <td>1          </td> <td>296.2      </td> <td>3.0        </td> <td>889        </td> <td>250        </td> <td>3.5        </td> <td>0.5        </td> <td>87.0       </td> <td>5.026      </td> <td>24.3       </td> <td>3308       </td> <td>0          </td> <td>nan        </td> <td>10               </td> <td>0.0250     </td> <td>48.3   </td> <td>nan        </td> <td>0          </td> <td>0.0000435233160621762      </td> <td>0.00108186528497409          </td> <td>nan                               </td> <td>nan                                                         </td> <td>nan                                </td> <td>nan                                                         </td> <td>$0.000000                        </td> <td>$0.000000                          </td> <td>$0.000000                                              </td> <td>$0.000000                                               </td>
+        </tr>
+        <tr>
+            <td>LiNiCoMnO2 (Ni:Co:Mn=5:2:3)     </td> <td>8                      </td> <td>12        </td> <td>0.2                </td> <td>0.6       </td> <td>3.8       </td> <td>278             </td> <td>180       </td> <td>KS10,SFG10 </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>Ni/Zn          </td> <td>NiOOH+Zn+2H2O          </td> <td>193             </td> <td>2          </td> <td>277.8      </td> <td>1.55       </td> <td>431        </td> <td>nan        </td> <td>92.0       </td> <td>7.14       </td> <td>65.0       </td> <td>4.1        </td> <td>64.7       </td> <td>1284       </td> <td>36         </td> <td>2          </td> <td>15               </td> <td>0.0375     </td> <td>72.4   </td> <td>nan        </td> <td>0          </td> <td>0.00110713688784891        </td> <td>0.000782216279458466         </td> <td>nan                               </td> <td>nan                                                         </td> <td>nan                                </td> <td>nan                                                         </td> <td>$0.000000                        </td> <td>$0.000000                          </td> <td>$0.000000                                              </td> <td>$0.000000                                               </td>
+        </tr>
+        <tr>
+            <td>LiNiCoMnO2 (Ni:Co:Mn=1:1:1)     </td> <td>9                      </td> <td>12        </td> <td>0.2                </td> <td>0.4       </td> <td>3.8       </td> <td>278             </td> <td>180       </td> <td>KS10,SFG10 </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>graphite/LIF   </td> <td>LiC6+LiFePO4           </td> <td>237             </td> <td>1          </td> <td>113.1      </td> <td>3.3        </td> <td>373        </td> <td>nan        </td> <td>72.0       </td> <td>1.5        </td> <td>165.0      </td> <td>5          </td> <td>81.0       </td> <td>1092       </td> <td>0          </td> <td>nan        </td> <td>20               </td> <td>0.0500     </td> <td>96.6   </td> <td>nan        </td> <td>0          </td> <td>0                          </td> <td>0                            </td> <td>nan                               </td> <td>nan                                                         </td> <td>nan                                </td> <td>nan                                                         </td> <td>$0.000000                        </td> <td>$0.000000                          </td> <td>$0.000000                                              </td> <td>$0.000000                                               </td>
+        </tr>
+        <tr>
+            <td>nan                             </td> <td>nan                    </td> <td>nan       </td> <td>nan                </td> <td>nan       </td> <td>nan       </td> <td>nan             </td> <td>nan       </td> <td>nan        </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>LTO/LCO        </td> <td>Li7/3Ti5/3O4+2Li0.5CoO2</td> <td>356             </td> <td>1          </td> <td>75.2       </td> <td>2.1        </td> <td>158        </td> <td>nan        </td> <td>160.3      </td> <td>5          </td> <td>196.0      </td> <td>4.9        </td> <td>72.1       </td> <td>781        </td> <td>0          </td> <td>nan        </td> <td>nan              </td> <td>nan        </td> <td>nan    </td> <td>nan        </td> <td>0          </td> <td>0                          </td> <td>0                            </td> <td>nan                               </td> <td>nan                                                         </td> <td>nan                                </td> <td>nan                                                         </td> <td>$0.000000                        </td> <td>$0.000000                          </td> <td>$0.000000                                              </td> <td>$0.000000                                               </td>
+        </tr>
+        <tr>
+            <td>High-Voltage Cathodes           </td> <td>nan                    </td> <td>nan       </td> <td>nan                </td> <td>nan       </td> <td>nan       </td> <td>nan             </td> <td>nan       </td> <td>nan        </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>LTO/LIF        </td> <td>Li7/3Ti5/3O4+LiFePO4   </td> <td>318             </td> <td>1          </td> <td>84.2       </td> <td>1.8        </td> <td>152        </td> <td>nan        </td> <td>160.3      </td> <td>5          </td> <td>158.0      </td> <td>5          </td> <td>63.7       </td> <td>758        </td> <td>0          </td> <td>nan        </td> <td>nan              </td> <td>nan        </td> <td>nan    </td> <td>nan        </td> <td>0          </td> <td>0                          </td> <td>0                            </td> <td>nan                               </td> <td>nan                                                         </td> <td>nan                                </td> <td>nan                                                         </td> <td>$0.000000                        </td> <td>$0.000000                          </td> <td>$0.000000                                              </td> <td>$0.000000                                               </td>
+        </tr>
+    </tbody>
+</table>
+<p>... (59 rows omitted)</p>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">chemT</span> <span class="o">=</span> <span class="n">chemT</span><span class="o">.</span><span class="n">relabeled</span><span class="p">(</span><span class="s1">&#39;Unnamed: 0&#39;</span><span class="p">,</span> <span class="s1">&#39;Battery Chemistries&#39;</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">chemT</span></span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[29]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<table border="1" class="dataframe">
+    <thead>
+        <tr>
+            <th>Battery Chemistries</th> <th>Particle size (D50), µm</th> <th>Unnamed: 2</th> <th>Surface Area (m2/g)</th> <th>Unnamed: 4</th> <th>Voltage</th> <th>Capacity (mAh/g)</th> <th>Unnamed: 7</th> <th>Fit to </th> <th>Unnamed: 9</th> <th>Unnamed: 10</th> <th>Unnamed: 11</th> <th>Unnamed: 12</th> <th>Unnamed: 13</th> <th>Unnamed: 14</th> <th>409.786079182631</th> <th>Unnamed: 16</th> <th>Unnamed: 17</th> <th>Unnamed: 18</th> <th>Unnamed: 19</th> <th>Unnamed: 20</th> <th>Unnamed: 21</th> <th>Unnamed: 22</th> <th>Unnamed: 23</th> <th>Unnamed: 24</th> <th>Unnamed: 25</th> <th>Unnamed: 26</th> <th>Unnamed: 27</th> <th>Unnamed: 28</th> <th>Li foil thickness</th> <th>Unnamed: 30</th> <th>Q</th> <th>Unnamed: 32</th> <th>Unnamed: 33</th> <th>Unnamed: 34</th> <th>Unnamed: 35</th> <th>Unnamed: 36</th> <th>Unnamed: 37</th> <th>Unnamed: 38</th> <th>Unnamed: 39</th> <th>Unnamed: 40</th> <th>Unnamed: 41</th> <th>Unnamed: 42</th> <th>Unnamed: 43</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Active                          </td> <td>Min                    </td> <td>Max       </td> <td>Min                </td> <td>Max       </td> <td>(V, vs.Li)</td> <td>Theoretical     </td> <td>Achieved  </td> <td> Graphite  </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>Battery        </td> <td>Reaction               </td> <td>M               </td> <td>n          </td> <td>Ah/kg      </td> <td>V          </td> <td>Wh/kg      </td> <td>achieved   </td> <td>Anode Kg   </td> <td>Dens kg/L  </td> <td>Cathode kg </td> <td>Dens kg/L  </td> <td>Volume L   </td> <td>Wh/L       </td> <td>H2O volume </td> <td>n (H2O)    </td> <td>mil              </td> <td>cm         </td> <td>mAh/cm2</td> <td>nan        </td> <td>kg/Wh      </td> <td>anode active material kg/Wh</td> <td>cathode active material kg/Wh</td> <td>anode active material cost per kg </td> <td>notes on anode active material cost                         </td> <td>cathode active material cost per kg</td> <td>notes on cathode active material cost                       </td> <td>anode active material cost per Wh</td> <td>cathode active material cost per Wh</td> <td>total active material cost per Wh (theoretical minimum)</td> <td>total active material cost per kWh (theoretical minimum)</td>
+        </tr>
+        <tr>
+            <td>Traditional Cathodes            </td> <td>nan                    </td> <td>nan       </td> <td>nan                </td> <td>nan       </td> <td>nan       </td> <td>nan             </td> <td>nan       </td> <td>nan        </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>Zn/MnO2        </td> <td>1/2 Zn + MnO2+1/2H2O   </td> <td>128.5           </td> <td>1          </td> <td>208.6      </td> <td>1.25       </td> <td>261        </td> <td>nan        </td> <td>32.5       </td> <td>7.14       </td> <td>87.0       </td> <td>5.026      </td> <td>21.9       </td> <td>1533       </td> <td>9          </td> <td>0.5        </td> <td>2                </td> <td>0.0050     </td> <td>9.7    </td> <td>nan        </td> <td>0          </td> <td>0.000969948186528497       </td> <td>0.00259647668393782          </td> <td>nan                               </td> <td>nan                                                         </td> <td>nan                                </td> <td>nan                                                         </td> <td>$0.000000                        </td> <td>$0.000000                          </td> <td>$0.000000                                              </td> <td>$0.000000                                               </td>
+        </tr>
+        <tr>
+            <td>LiCoO2                          </td> <td>6.5                    </td> <td>9.5       </td> <td>0.4                </td> <td>0.75      </td> <td>3.9       </td> <td>274             </td> <td>155       </td> <td>KS6, SFG6  </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>Graphite/LCO   </td> <td>LiC6+2Li0.5CoO2        </td> <td>268             </td> <td>1          </td> <td>100.0      </td> <td>3.6        </td> <td>360        </td> <td>160        </td> <td>72.0       </td> <td>1.5        </td> <td>196.0      </td> <td>4.9        </td> <td>88.0       </td> <td>1097       </td> <td>0          </td> <td>nan        </td> <td>3                </td> <td>0.0075     </td> <td>14.5   </td> <td>nan        </td> <td>0          </td> <td>0.000746113989637306       </td> <td>0.00203108808290155          </td> <td>$22.50                            </td> <td>Slide 45 of the March 2015 Avicenne report says that in  ...</td> <td>$40.00                             </td> <td>Did a search for "lithium cobalt oxide" on Alibaba. Firs ...</td> <td>$0.016788                        </td> <td>$0.081244                          </td> <td>$0.098031                                              </td> <td>$98.031088                                              </td>
+        </tr>
+        <tr>
+            <td>LiFePO4                         </td> <td>2.5                    </td> <td>5         </td> <td>nan                </td> <td>16        </td> <td>3.45      </td> <td>170             </td> <td>160       </td> <td>KS4        </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>Zn/MnO2 (1.33e)</td> <td>0.67 Zn + MnO2+1/2H2O  </td> <td>139.2           </td> <td>1          </td> <td>256.1      </td> <td>1.2        </td> <td>307        </td> <td>210        </td> <td>43.6       </td> <td>7.14       </td> <td>86.7       </td> <td>5.026      </td> <td>23.3       </td> <td>1833       </td> <td>9          </td> <td>0.5        </td> <td>4                </td> <td>0.0100     </td> <td>19.3   </td> <td>nan        </td> <td>0          </td> <td>0                          </td> <td>0                            </td> <td>nan                               </td> <td>nan                                                         </td> <td>nan                                </td> <td>nan                                                         </td> <td>$0.000000                        </td> <td>$0.000000                          </td> <td>$0.000000                                              </td> <td>$0.000000                                               </td>
+        </tr>
+        <tr>
+            <td>LiMn2O4                         </td> <td>20                     </td> <td>25        </td> <td>0.4                </td> <td>1         </td> <td>4.05      </td> <td>148             </td> <td>120       </td> <td>KS15, SFG15</td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>Zn/MnO2 (2e)   </td> <td>Zn+MnO2+H20            </td> <td>170             </td> <td>2          </td> <td>315.4      </td> <td>1.15       </td> <td>363        </td> <td>nan        </td> <td>65.0       </td> <td>7.14       </td> <td>87.0       </td> <td>5.026      </td> <td>26.4       </td> <td>2334       </td> <td>18         </td> <td>1          </td> <td>5                </td> <td>0.0125     </td> <td>24.1   </td> <td>nan        </td> <td>0          </td> <td>0.00105429150709619        </td> <td>0.0014111286325749           </td> <td>nan                               </td> <td>nan                                                         </td> <td>nan                                </td> <td>nan                                                         </td> <td>$0.000000                        </td> <td>$0.000000                          </td> <td>$0.000000                                              </td> <td>$0.000000                                               </td>
+        </tr>
+        <tr>
+            <td>LiNiCoAlO2 (Ni:Co:Al=8.0:1.5:0.5</td> <td>5                      </td> <td>12        </td> <td>0.3                </td> <td>0.8       </td> <td>3.7       </td> <td>278             </td> <td>200       </td> <td>KS10,SFG10 </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>Li/MnO2        </td> <td>0.5Li+MnO2             </td> <td>90.5            </td> <td>1          </td> <td>296.2      </td> <td>3.0        </td> <td>889        </td> <td>250        </td> <td>3.5        </td> <td>0.5        </td> <td>87.0       </td> <td>5.026      </td> <td>24.3       </td> <td>3308       </td> <td>0          </td> <td>nan        </td> <td>10               </td> <td>0.0250     </td> <td>48.3   </td> <td>nan        </td> <td>0          </td> <td>0.0000435233160621762      </td> <td>0.00108186528497409          </td> <td>nan                               </td> <td>nan                                                         </td> <td>nan                                </td> <td>nan                                                         </td> <td>$0.000000                        </td> <td>$0.000000                          </td> <td>$0.000000                                              </td> <td>$0.000000                                               </td>
+        </tr>
+        <tr>
+            <td>LiNiCoMnO2 (Ni:Co:Mn=5:2:3)     </td> <td>8                      </td> <td>12        </td> <td>0.2                </td> <td>0.6       </td> <td>3.8       </td> <td>278             </td> <td>180       </td> <td>KS10,SFG10 </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>Ni/Zn          </td> <td>NiOOH+Zn+2H2O          </td> <td>193             </td> <td>2          </td> <td>277.8      </td> <td>1.55       </td> <td>431        </td> <td>nan        </td> <td>92.0       </td> <td>7.14       </td> <td>65.0       </td> <td>4.1        </td> <td>64.7       </td> <td>1284       </td> <td>36         </td> <td>2          </td> <td>15               </td> <td>0.0375     </td> <td>72.4   </td> <td>nan        </td> <td>0          </td> <td>0.00110713688784891        </td> <td>0.000782216279458466         </td> <td>nan                               </td> <td>nan                                                         </td> <td>nan                                </td> <td>nan                                                         </td> <td>$0.000000                        </td> <td>$0.000000                          </td> <td>$0.000000                                              </td> <td>$0.000000                                               </td>
+        </tr>
+        <tr>
+            <td>LiNiCoMnO2 (Ni:Co:Mn=1:1:1)     </td> <td>9                      </td> <td>12        </td> <td>0.2                </td> <td>0.4       </td> <td>3.8       </td> <td>278             </td> <td>180       </td> <td>KS10,SFG10 </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>graphite/LIF   </td> <td>LiC6+LiFePO4           </td> <td>237             </td> <td>1          </td> <td>113.1      </td> <td>3.3        </td> <td>373        </td> <td>nan        </td> <td>72.0       </td> <td>1.5        </td> <td>165.0      </td> <td>5          </td> <td>81.0       </td> <td>1092       </td> <td>0          </td> <td>nan        </td> <td>20               </td> <td>0.0500     </td> <td>96.6   </td> <td>nan        </td> <td>0          </td> <td>0                          </td> <td>0                            </td> <td>nan                               </td> <td>nan                                                         </td> <td>nan                                </td> <td>nan                                                         </td> <td>$0.000000                        </td> <td>$0.000000                          </td> <td>$0.000000                                              </td> <td>$0.000000                                               </td>
+        </tr>
+        <tr>
+            <td>nan                             </td> <td>nan                    </td> <td>nan       </td> <td>nan                </td> <td>nan       </td> <td>nan       </td> <td>nan             </td> <td>nan       </td> <td>nan        </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>LTO/LCO        </td> <td>Li7/3Ti5/3O4+2Li0.5CoO2</td> <td>356             </td> <td>1          </td> <td>75.2       </td> <td>2.1        </td> <td>158        </td> <td>nan        </td> <td>160.3      </td> <td>5          </td> <td>196.0      </td> <td>4.9        </td> <td>72.1       </td> <td>781        </td> <td>0          </td> <td>nan        </td> <td>nan              </td> <td>nan        </td> <td>nan    </td> <td>nan        </td> <td>0          </td> <td>0                          </td> <td>0                            </td> <td>nan                               </td> <td>nan                                                         </td> <td>nan                                </td> <td>nan                                                         </td> <td>$0.000000                        </td> <td>$0.000000                          </td> <td>$0.000000                                              </td> <td>$0.000000                                               </td>
+        </tr>
+        <tr>
+            <td>High-Voltage Cathodes           </td> <td>nan                    </td> <td>nan       </td> <td>nan                </td> <td>nan       </td> <td>nan       </td> <td>nan             </td> <td>nan       </td> <td>nan        </td> <td>nan       </td> <td>nan        </td> <td>nan        </td> <td>nan        </td> <td>LTO/LIF        </td> <td>Li7/3Ti5/3O4+LiFePO4   </td> <td>318             </td> <td>1          </td> <td>84.2       </td> <td>1.8        </td> <td>152        </td> <td>nan        </td> <td>160.3      </td> <td>5          </td> <td>158.0      </td> <td>5          </td> <td>63.7       </td> <td>758        </td> <td>0          </td> <td>nan        </td> <td>nan              </td> <td>nan        </td> <td>nan    </td> <td>nan        </td> <td>0          </td> <td>0                          </td> <td>0                            </td> <td>nan                               </td> <td>nan                                                         </td> <td>nan                                </td> <td>nan                                                         </td> <td>$0.000000                        </td> <td>$0.000000                          </td> <td>$0.000000                                              </td> <td>$0.000000                                               </td>
+        </tr>
+    </tbody>
+</table>
+<p>... (59 rows omitted)</p>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+ 
+
+</p>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Part 1 of the power-post-series series</h4>
+</section>
+        </article>
     </section>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
@@ -12192,48 +13724,57 @@ Water, Power, Network            </a>
 <li class="list-group-item">
   <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
   <ul class="list-group" id="recentposts">
-    <li class="list-group-item"><a href="./articles/2018/Nov/02/battery-post/">Battery Technology: Solid State Electrolyte</a></li>
-    <li class="list-group-item"><a href="./articles/2018/Nov/02/waveglider/">Waveglider</a></li>
-    <li class="list-group-item"><a href="./articles/2018/Nov/02/Nuclear/">North Korea Nuclear Test: Mount Mantap</a></li>
-    <li class="list-group-item"><a href="./articles/2018/Sep/27/voting/">Voting Architecture for the 21st century</a></li>
+    <li class="list-group-item"><a href="../../../../../articles/2018/Nov/02/battery-post/">Battery Technology: Solid State Electrolyte</a></li>
+    <li class="list-group-item"><a href="../../../../../articles/2018/Nov/02/waveglider/">Waveglider</a></li>
+    <li class="list-group-item"><a href="../../../../../articles/2018/Nov/02/Nuclear/">North Korea Nuclear Test: Mount Mantap</a></li>
+    <li class="list-group-item"><a href="../../../../../articles/2018/Sep/27/voting/">Voting Architecture for the 21st century</a></li>
   </ul>
 </li>
 <!-- End Sidebar/Recent Posts -->
 
 <!-- Sidebar/Tag Cloud -->
 <li class="list-group-item">
-  <a href="./"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+  <a href="../../../../../"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
   <ul class="list-group " id="tags">
     <li class="list-group-item tag-1">
-      <a href="./tag/data-science.html">Data Science</a>
+      <a href="../../../../../tag/data-science.html">Data Science</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="./tag/remote-sensing.html">Remote Sensing</a>
+      <a href="../../../../../tag/remote-sensing.html">Remote Sensing</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="./tag/jupyter.html">jupyter</a>
+      <a href="../../../../../tag/jupyter.html">jupyter</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="./tag/battery.html">battery</a>
+      <a href="../../../../../tag/battery.html">battery</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="./tag/stanford.html">Stanford</a>
+      <a href="../../../../../tag/stanford.html">Stanford</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="./tag/water.html">Water</a>
+      <a href="../../../../../tag/water.html">Water</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="./tag/nuclear.html">Nuclear</a>
+      <a href="../../../../../tag/nuclear.html">Nuclear</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="./tag/cal-epa.html">Cal EPA</a>
+      <a href="../../../../../tag/cal-epa.html">Cal EPA</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="./tag/paris-cop.html">Paris COP</a>
+      <a href="../../../../../tag/paris-cop.html">Paris COP</a>
     </li>
   </ul>
 </li>
 <!-- End Sidebar/Tag Cloud -->
+
+<!-- Sidebar/Series -->
+<li class="list-group-item">
+  <h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Series</span></h4>
+  <ul class="list-group">
+  </ul>
+</li>
+<!-- End Sidebar/Series -->
+
 
 <!-- Sidebar/Links -->
 <li class="list-group-item">
@@ -12289,15 +13830,15 @@ Water, Power, Network            </a>
       </div>
    </div>
 </footer>
-<script src="./theme/js/jquery.min.js"></script>
+<script src="../../../../../theme/js/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="./theme/js/bootstrap.min.js"></script>
+<script src="../../../../../theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="./theme/js/respond.min.js"></script>
+<script src="../../../../../theme/js/respond.min.js"></script>
 
-    <script src="./static/js/custom.js"></script>
+    <script src="../../../../../static/js/custom.js"></script>
 
 
 <script type="text/javascript">
