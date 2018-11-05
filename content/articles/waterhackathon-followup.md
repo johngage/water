@@ -1,5 +1,6 @@
-Title: WaterHackathon Followup
+Title: WaterHackathon
 Slug: waterhackathon-followup
+Category: Water
 Date: 2018-09-17 14:32:34
 Tags: Water, Cal EPA
 

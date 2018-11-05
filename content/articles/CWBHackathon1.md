@@ -1,7 +1,7 @@
 Title: California Water Board Hackathon 1
 Slug: first-post
 Date: 2018-09-15 12:00
-Category: Deep Insight
+Category: Water
 Tags:  Data Science
 Author: John Gage
 Summary: My first post.

@@ -1,7 +1,7 @@
 Title: California Water Board Hackathon 3 Data Sets
 Slug: third-post
 Date: 2018-09-15 12:00
-Category: Article
+Category: Water
 Tags: Data Science
 Author: John Gage
 Summary: First of Water Series.
@@ -16,7 +16,7 @@ Data sets for water data cross-linking project: how to correspond data elements 
 
 A list of state agencies should have footnotes.
 - California State Water Resources Board
-- California Water Project 
+- California Water Project
 
 #### List CA professional staff
 - existing *Tableau* visualizations by professional water board staff

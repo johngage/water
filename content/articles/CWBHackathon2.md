@@ -1,7 +1,7 @@
 Title: California Water Board Hackathon 2
 Slug: second-post
 Date: 2018-09-15 12:00
-Category: Article
+Category: Water
 Tags: Data Science
 Author: John Gage
 Summary: My first post.

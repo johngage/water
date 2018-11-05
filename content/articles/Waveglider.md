@@ -1,5 +1,6 @@
 Title: Waveglider
 Date: 2018-11-2 14:40
+Category: Oceans
 
 
 Wave Glider SV3 Wave Engine GPCTD+DO Spare Sensor (SKU Code:)

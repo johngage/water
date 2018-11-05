@@ -2,7 +2,7 @@ Title: Battery Technology: Solid State Electrolyte
 Date: 2018-11-2 14:40
 Modified: 2018-11-2 14:40
 Status: published
-Category: Power posts
+Category: Power
 Tags: battery, jupyter
 Slug: battery-post
 Authors: John Gage

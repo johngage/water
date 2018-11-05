@@ -1,4 +1,4 @@
-:Title: Tables:rst
+:Title: Tables:test
 :Slug: Trying reStructuredText
 :Date: 2018-09-15 12:00
 :Category: Blogs

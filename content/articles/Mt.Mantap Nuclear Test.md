@@ -1,7 +1,7 @@
 Title: North Korea Nuclear Test: Mount Mantap
 Slug: Nuclear
 Date: 2018-11-2 9:00
-Category: Article
+Category: Nuclear
 Tags: Nuclear, Remote Sensing
 Author: John Gage
 Summary: UC Berkeley Analysis
