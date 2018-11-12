@@ -8,7 +8,7 @@ SITESUBTITLE = 'City Critical Infrastructure'
 
 SITEURL = 'http://johngage.github.io/water'
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+RELATIVE_URLS = False
 
 
 # Time and Date settings
@@ -77,7 +77,7 @@ DISPLAY_PAGES_ON_MENU = True
 #Note all urls are relative to output folder, not content
 MENUITEMS = [
              #('About', '/pages/about'),
-             ('Posts', '/posts/2018'),
+             ('Posts', '/water/articles/2018/index.html'),
              #('Tags', '/tags'),
              ('Categories', '/categories.html')
              ]
