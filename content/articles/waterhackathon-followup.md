@@ -3,6 +3,7 @@ Slug: waterhackathon-followup
 Category: Water
 Date: 2018-09-17 14:32:34
 Tags: Water, Cal EPA
+Series: water-post-series
 
 
 What happened? Who did what? what are the names of the `team members`_ ?

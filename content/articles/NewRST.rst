@@ -1,13 +1,16 @@
 Elections--United States: 2018
-##############################
+###############################
 
-:date: 2010-11-13 10:20
+:date: 2018-11-13 10:20
 :tags: Voting, Critical Infrastructure
-:category: Critical Infrastructure
+:category: Power
 :slug: Voting
 :author: Paul Krugman
 :summary: Overall Design of Elections
+:status: published
+:series: Voting
 
+This will be turned into :abbr:`HTML (HyperText Markup Language)`.
 
 Structural Problems
 ___________________
