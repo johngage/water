@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Water, Power, Network - Power</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/power.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2018-11-02T14:40:00-07:00</updated><entry><title>Battery Technology: Solid State Electrolyte</title><link href="https://johngage.github.io/water/articles/2018/Nov/02/battery-post/" rel="alternate"></link><published>2018-11-02T14:40:00-07:00</published><updated>2018-11-02T14:40:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-02:/water/articles/2018/Nov/02/battery-post/</id><summary type="html">&lt;p&gt;This is the first post of a series of posts on energy. It will show a jupyter notebook encapsulating fifty battery chemistries.&lt;/p&gt;</summary><content type="html">&lt;h3&gt;This is a Jupyter notebook derived from Bill Joy&lt;/h3&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Water, Power, Network - Power</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/power.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2018-11-13T10:20:00-08:00</updated><subtitle>City Critical Infrastructure</subtitle><entry><title>Elections--United States: 2018</title><link href="https://johngage.github.io/water/Voting.html" rel="alternate"></link><published>2018-11-13T10:20:00-08:00</published><updated>2018-11-13T10:20:00-08:00</updated><author><name>Paul Krugman</name></author><id>tag:johngage.github.io,2018-11-13:/water/Voting.html</id><summary type="html">&lt;p class="first last"&gt;Overall Design of Elections&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;This will be turned into &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;.&lt;/p&gt;
+&lt;div class="section" id="structural-problems"&gt;
+&lt;h2&gt;Structural Problems&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class="section" id="ballot-design"&gt;
+&lt;h2&gt;Ballot Design&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class="section" id="absentee-counting-process"&gt;
+&lt;h2&gt;Absentee Counting Process&lt;/h2&gt;
+&lt;div class="section" id="how-we-vote"&gt;
+&lt;h3&gt;How We Vote&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="diagram-of-all-election-elements"&gt;
+&lt;h2&gt;Diagram of all Election Elements&lt;/h2&gt;
+&lt;/div&gt;
+</content><category term="Voting"></category><category term="Critical Infrastructure"></category></entry><entry><title>Battery Technology: Solid State Electrolyte</title><link href="https://johngage.github.io/water/battery-post.html" rel="alternate"></link><published>2018-11-02T14:40:00-07:00</published><updated>2018-11-02T14:40:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-02:/water/battery-post.html</id><summary type="html">&lt;p&gt;This is the first post of a series of posts on energy. It will show a jupyter notebook encapsulating fifty battery chemistries.&lt;/p&gt;</summary><content type="html">&lt;h3 id="this-is-a-jupyter-notebook-derived-from-bill-joy"&gt;This is a Jupyter notebook derived from Bill Joy&lt;/h3&gt;
 &lt;p&gt;The implementing company is &lt;a href="https://ionicmaterials.com/"&gt;Ionic Materials&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
@@ -1598,4 +1615,4 @@
 &lt;/div&gt;
  
 
-&lt;/p&gt;</content><category term="battery"></category><category term="jupyter"></category></entry></feed>
+&lt;/p&gt;</content><category term="battery"></category><category term="jupyter"></category></entry><entry><title>Test</title><link href="https://johngage.github.io/water/test.html" rel="alternate"></link><published>2018-11-02T14:40:00-07:00</published><updated>2018-11-02T14:40:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-02:/water/test.html</id><summary type="html">&lt;h4 id="test-tuesday-markdown"&gt;Test Tuesday Markdown&lt;/h4&gt;</summary><content type="html">&lt;h4 id="test-tuesday-markdown"&gt;Test Tuesday Markdown&lt;/h4&gt;</content></entry></feed>
