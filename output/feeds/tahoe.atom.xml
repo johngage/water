@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Water, Power, Network - Tahoe</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/tahoe.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2018-11-24T00:00:00-08:00</updated><subtitle>City Critical Infrastructure</subtitle><entry><title>TahoeBuoyHistory</title><link href="https://johngage.github.io/water/tahoebuoyhistory.html" rel="alternate"></link><published>2018-11-24T00:00:00-08:00</published><updated>2018-11-24T00:00:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-24:/water/tahoebuoyhistory.html</id><summary type="html">&lt;h2 id="testing-links"&gt;Testing links&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/author/john-gage.html"&gt;a link to works by John Gage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/author/paul-krugman.html"&gt;a link to works by Paul Krugman&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What does this do?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/battery-post.html"&gt;a link relative to the current file&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/index.html"&gt;link to index&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;h2 id="testing-links"&gt;Testing links&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/author/john-gage.html"&gt;a link to works by John Gage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/author/paul-krugman.html"&gt;a link to works by Paul Krugman&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What does this do?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/battery-post.html"&gt;a link relative to the current file&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/index.html"&gt;link to index&lt;/a&gt;&lt;/p&gt;</content></entry></feed>

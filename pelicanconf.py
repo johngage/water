@@ -5,8 +5,8 @@ from __future__ import unicode_literals
 AUTHOR = 'John Gage'
 SITENAME = 'Water, Power, Network'
 SITESUBTITLE = 'City Critical Infrastructure'
-SITEURL = ''
-#SITEURL = 'http://johngage.github.io/water'
+#SITEURL = ''
+SITEURL = 'http://johngage.github.io/water'
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
@@ -105,7 +105,7 @@ IGNORE_FILES = ['.#*', '.ipynb_checkpoints']
 I18N_TEMPLATES_LANG = 'en'
 MARKUP = ('md', 'ipynb', 'html')
 MARKDOWN = {
-    'extension_configs': {
+        'extension_configs': {
         'markdown.extensions.toc': {'title': 'Table of contents:'}, #consider out
         'markdown.extensions.codehilite': {'css_class': 'highlight'},
         'markdown.extensions.extra': {},
@@ -134,22 +134,26 @@ SOCIAL = (
           ('Time', 'http://timeanddate.com'))
 
 DEFAULT_PAGINATION = 10
-
+MULTI_NEIGHBORS = 3
 PLUGIN_PATHS = ['pelican-plugins' ]
 #PLUGINS = ['i18n_subsites', ]
 PLUGINS = [
-    'i18n_subsites','series','tag_cloud',
+    'better_codeblock_line_numbering',
+    'i18n_subsites',
     'liquid_tags.img', 'liquid_tags.video', 'liquid_tags.youtube', 'liquid_tags.notebook',
     'liquid_tags.vimeo',
     'liquid_tags.include_code',
+    'neighbors',
+    'multi_neighbors',
+    'pelican-ipynb.markup',
     #'pelican_javascript',
     'related_posts',
-    'render_math','tipue_search',
-    'pelican-ipynb.markup',
-    'neighbors',
+    'render_math',
+    'series',
+    'tag_cloud',
+    'tipue_search',
     #'bootswatch_markdown_css',
     #'ipynb.markup',
-    'better_codeblock_line_numbering'
     ]
 JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.i18n'],
@@ -157,7 +161,7 @@ JINJA_ENVIRONMENT = {
 I18N_TEMPLATES_LANG = 'en'
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 # URL settings
 #ARTICLE_URL = 'articles/{date:%Y}/{date:%b}/{date:%d}/{slug}/'
