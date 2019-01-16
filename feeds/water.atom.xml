@@ -1,31 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Water, Power, Network - Water</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/water.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2018-09-17T14:32:34-07:00</updated><subtitle>City Critical Infrastructure</subtitle><entry><title>WaterHackathon</title><link href="https://johngage.github.io/water/waterhackathon-followup.html" rel="alternate"></link><published>2018-09-17T14:32:34-07:00</published><updated>2018-09-17T14:32:34-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-17:/water/waterhackathon-followup.html</id><summary type="html">&lt;p&gt;What happened? Who did what? what are the names of the &lt;code&gt;team members&lt;/code&gt;_ ?&lt;/p&gt;
-&lt;p&gt;.. _&lt;code&gt;team members&lt;/code&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Water, Power, Network - Water</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/water.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2018-11-27T00:00:00-08:00</updated><subtitle>City Critical Infrastructure</subtitle><entry><title>Digital Plant Operational Data</title><link href="https://johngage.github.io/water/digital-plant-operational-data.html" rel="alternate"></link><published>2018-11-27T00:00:00-08:00</published><updated>2018-11-27T00:00:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-27:/water/digital-plant-operational-data.html</id><summary type="html">&lt;h4 id="notes-on-rachel-slabaugh-nuclear-plant-digital-data-and-machine-learning"&gt;Notes on Rachel Slabaugh Nuclear Plant Digital Data and Machine Learning&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;BIDS presentation Tuesday, 27 Nov 2018&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Nuclear plants are 3-5X more expensive to build and maintain than fossil fuel&lt;/p&gt;
+&lt;p&gt;Major operational and maintenance costs are personnel&lt;/p&gt;
+&lt;p&gt;Example of &lt;em&gt;Southern Nuclear&lt;/em&gt;, one of US nuclear operators:
+&lt;em&gt; 6 months of data …&lt;/em&gt;&lt;/p&gt;</summary><content type="html">&lt;h4 id="notes-on-rachel-slabaugh-nuclear-plant-digital-data-and-machine-learning"&gt;Notes on Rachel Slabaugh Nuclear Plant Digital Data and Machine Learning&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;BIDS presentation Tuesday, 27 Nov 2018&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Nuclear plants are 3-5X more expensive to build and maintain than fossil fuel&lt;/p&gt;
+&lt;p&gt;Major operational and maintenance costs are personnel&lt;/p&gt;
+&lt;p&gt;Example of &lt;em&gt;Southern Nuclear&lt;/em&gt;, one of US nuclear operators:
+&lt;em&gt; 6 months of data is 1 Terabyte: reveals how little is monitored.
+&lt;/em&gt; No retention of older data
+* Little analysis, not set up to allow machine learning&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Need physics-based models with machine learning parameter estimation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Battery Fault Detection: capture beginning of temperature rise; do not wait until threshold temperature is reached, with damage already present. Use Kalman filter with Theta = 0.3 to catch beginning&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content></entry><entry><title>WaterHackathon</title><link href="https://johngage.github.io/water/waterhackathon-followup.html" rel="alternate"></link><published>2018-09-17T14:32:34-07:00</published><updated>2018-09-17T14:32:34-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-17:/water/waterhackathon-followup.html</id><summary type="html">&lt;h3 id="examples"&gt;Examples:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Follow-up:&lt;/li&gt;
+&lt;li&gt;Berkeley Wata Data Collaborative:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What happened? Who did what? what are the names of the &lt;code&gt;team members&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;.. &lt;em&gt;&lt;code&gt;team members&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;List all open water datasets: who, what, when, where, why&lt;/li&gt;
 &lt;li&gt;State listing of water districts&lt;/li&gt;
 &lt;li&gt;Open and Transparent Water Data Act (AB 1755)&lt;/li&gt;
-&lt;li&gt;Sustainable Groundwater Management
-Agencies&lt;/li&gt;
-&lt;li&gt;disadvantaged unincorporated communities?&lt;/li&gt;
-&lt;li&gt;small systems to …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;What happened? Who did what? what are the names of the &lt;code&gt;team members&lt;/code&gt;_ ?&lt;/p&gt;
-&lt;p&gt;.. _&lt;code&gt;team members&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;Sustainable Groundwater Management Agencies&lt;/li&gt;
+&lt;li&gt;disadvantaged unincorporated …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;h3 id="examples"&gt;Examples:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Follow-up:&lt;/li&gt;
+&lt;li&gt;Berkeley Wata Data Collaborative:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What happened? Who did what? what are the names of the &lt;code&gt;team members&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;.. &lt;em&gt;&lt;code&gt;team members&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;List all open water datasets: who, what, when, where, why&lt;/li&gt;
 &lt;li&gt;State listing of water districts&lt;/li&gt;
 &lt;li&gt;Open and Transparent Water Data Act (AB 1755)&lt;/li&gt;
-&lt;li&gt;Sustainable Groundwater Management
-Agencies&lt;/li&gt;
+&lt;li&gt;Sustainable Groundwater Management Agencies&lt;/li&gt;
 &lt;li&gt;disadvantaged unincorporated communities?&lt;/li&gt;
-&lt;li&gt;small systems to accurately define their service
-boundaries?&lt;/li&gt;
-&lt;li&gt;means for communities
-to quickly identify where there may be nearby, available water resources to address a water
-shortage?&lt;/li&gt;
-&lt;li&gt;annual electronic reporting data collected by the Drinking Water Division of the
-State Water Resources Control Board?
-9.&lt;/li&gt;
-&lt;/ol&gt;</content><category term="Water"></category><category term="Cal EPA"></category></entry><entry><title>California Water Board Hackathon 1</title><link href="https://johngage.github.io/water/first-post.html" rel="alternate"></link><published>2018-09-15T12:00:00-07:00</published><updated>2018-09-15T12:00:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-15:/water/first-post.html</id><summary type="html">&lt;p&gt;My first post.&lt;/p&gt;</summary><content type="html">&lt;h2 id="california-water-data-challenge"&gt;California Water Data Challenge&lt;/h2&gt;
+&lt;li&gt;small systems to accurately define their service boundaries?&lt;/li&gt;
+&lt;li&gt;means for communities to quickly identify where there may be nearby, available water resources to address a water shortage?&lt;/li&gt;
+&lt;li&gt;annual electronic reporting data collected by the Drinking Water Division of the State Water Resources Control Board?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;Eileen White, EBMUD Director of WasteWater&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Water Data Collaborative ||
+--|---|--
+Anthony Suen|
+Violet |
+10 students|Weekly meeting&lt;/p&gt;</content><category term="Water"></category><category term="Cal EPA"></category></entry><entry><title>California Water Board Hackathon 1</title><link href="https://johngage.github.io/water/first-post.html" rel="alternate"></link><published>2018-09-15T12:00:00-07:00</published><updated>2018-09-15T12:00:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-15:/water/first-post.html</id><summary type="html">&lt;p&gt;My first post.&lt;/p&gt;</summary><content type="html">&lt;h2 id="california-water-data-challenge"&gt;California Water Data Challenge&lt;/h2&gt;
 &lt;h3 id="u-c-berkeley-hackathon-september-california-wide-award-ceremonyoctober"&gt;U C Berkeley Hackathon: September; California-wide award ceremony:October&lt;/h3&gt;
 &lt;p&gt;Teams gathered at the Berkeley Institute of Data Science to spend two days creating new windows into California's publicly available water data.&lt;/p&gt;
 &lt;p&gt;In preparation, the BIDS team created a list of ten data sets to choose from.  &lt;/p&gt;
@@ -59,6 +87,11 @@ State Water Resources Control Board?
 &lt;tr&gt;
 &lt;td&gt;1&lt;/td&gt;
 &lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;

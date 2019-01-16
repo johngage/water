@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Water, Power, Network - Tools</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/tools.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2018-11-13T10:20:00-08:00</updated><subtitle>City Critical Infrastructure</subtitle><entry><title>A rst document</title><link href="https://johngage.github.io/water/my-super-post.html" rel="alternate"></link><published>2018-11-13T10:20:00-08:00</published><updated>2010-10-04T18:40:00-07:00</updated><author><name>Alexis Metaireau</name></author><id>tag:johngage.github.io,2018-11-13:/water/my-super-post.html</id><summary type="html">&lt;p class="first last"&gt;Short version for index and feeds&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Water, Power, Network - Tools</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/tools.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2018-12-29T00:00:00-08:00</updated><subtitle>City Critical Infrastructure</subtitle><entry><title>A rst document</title><link href="https://johngage.github.io/water/my-super-post.html" rel="alternate"></link><published>2018-11-13T10:20:00-08:00</published><updated>2010-10-04T18:40:00-07:00</updated><author><name>Alexis Metaireau</name></author><id>tag:johngage.github.io,2018-11-13:/water/my-super-post.html</id><summary type="html">&lt;p class="first last"&gt;Short version for index and feeds&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="this-is-it"&gt;
 &lt;h2&gt;This is it...&lt;/h2&gt;
 &lt;p&gt;and more......&lt;/p&gt;
@@ -63,9 +63,14 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;#BBD0E0&lt;/p&gt;
-</content><category term="Table"></category><category term="How-to"></category></entry><entry><title>How This Site Was Created</title><link href="https://johngage.github.io/water/how-this-site-was-created.html" rel="alternate"></link><published>2018-11-12T17:00:00-08:00</published><updated>2018-11-12T17:00:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-12:/water/how-this-site-was-created.html</id><summary type="html">&lt;p&gt;Site Design&lt;/p&gt;</summary><content type="html">&lt;h2 id="this-site-was-patterned-on-the-site-created-by-peter-k-professor-of-engineering-at-portland-community-college"&gt;This site was patterned on the site created by Peter K. Professor of Engineering at Portland Community College&lt;/h2&gt;
+</content><category term="Table"></category><category term="How-to"></category></entry><entry><title>How This Site Was Created</title><link href="https://johngage.github.io/water/how-this-site-was-created.html" rel="alternate"></link><published>2018-11-12T17:00:00-08:00</published><updated>2018-12-29T00:00:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-12:/water/how-this-site-was-created.html</id><summary type="html">&lt;p&gt;Site Design&lt;/p&gt;</summary><content type="html">&lt;h2 id="this-site-was-patterned-on-the-site-created-by-peter-kazarinoff-professor-of-engineering-at-portland-community-college"&gt;This site was patterned on the site created by Peter Kazarinoff, Professor of Engineering at Portland Community College&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;He describes the tools, the editors, and the templates needed for a static web site.&lt;/li&gt;
+&lt;li&gt;He describes the tools, the editors, and the templates needed for a static web site. His site is&lt;/li&gt;
+&lt;li&gt;He has intriguing tools for conversion of Jupyter notebooks into LaTex.&lt;/li&gt;
+&lt;li&gt;Using his list of Pelican plugins.&lt;/li&gt;
+&lt;li&gt;
+&lt;h2 id="using-a-modification-of-his-pelicanconfpy-files-some-problems-with-final-rendering-and-with-publishconfpy"&gt;Using a modification of his pelicanconf.py files.  Some problems with final rendering, and with publishconf.py&lt;/h2&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="november-13-2018"&gt;November 13, 2018&lt;/h3&gt;
 &lt;p&gt;The author of Pelican, Alexis Metaireau, and the current maintainer of the pelican github site, Justin Meyer and 35 others, just released Pelican 4.0.&lt;/p&gt;
@@ -77,7 +82,7 @@
 &lt;span class="code-line"&gt;&lt;/span&gt;
 &lt;span class="code-line"&gt; &lt;span class="o"&gt;**&lt;/span&gt; &lt;span class="n"&gt;Writing&lt;/span&gt; &lt;span class="n"&gt;styles&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;_nb_header&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;this&lt;/span&gt; &lt;span class="n"&gt;should&lt;/span&gt; &lt;span class="n"&gt;be&lt;/span&gt; &lt;span class="n"&gt;included&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;theme&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;/span&gt;
 &lt;span class="code-line"&gt;&lt;/span&gt;
-&lt;span class="code-line"&gt;&lt;span class="n"&gt;CRITICAL&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;UndefinedError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;gettext&amp;#39;&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="n"&gt;undefined&lt;/span&gt;  &lt;/span&gt;
+&lt;span class="code-line"&gt;&lt;span class="n"&gt;CRITICAL&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;UndefinedError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;gettext&amp;#39;&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="n"&gt;undefined&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
