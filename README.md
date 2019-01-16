@@ -18,6 +18,9 @@ E.g.,
 15Oct: was on develop branch, so could not see webpage; merged develop into master, but now can only see this .md file.
 
 - how to see the pelican-themed website?
+### - 2019.Jan.16 : remaining issues
+1. updating publishconf.py...get format error, possibly due to upgrade to pelican 4; need to update submodules, which may be accomplished by reloading from github.
+2. 
 
 
 - Make github repository
