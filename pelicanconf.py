@@ -1,3 +1,4 @@
+#Current pelicanconf.py 2019
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
@@ -13,14 +14,20 @@ RELATIVE_URLS = True
 
 # PATH settings
 PATH = 'content'
-ARTICLE_PATHS = ['articles']
-PAGE_PATHS = ['pages']
-
+PAGE_PATHS    = ['pages']
+ARTICLE_PATHS = ['posts']  #could be posts
 STATIC_PATHS = ['images',
                 'data',
                 'publications',
                 'extra'
+                'code',
                 ]
+PLUGIN_PATHS = ['pelican-plugins' ]
+EXTRA_PATH_METADATA = {
+    'extra/custom.css': {'path': 'static/css/custom.css'},
+    'extra/jupyter.css': {'path': 'static/css/jupyter.css'},
+    'extra/custom.js': {'path': 'static/js/custom.js'}
+}
 
 TIMEZONE = 'America/Los_Angeles'
 
@@ -39,16 +46,14 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-#EXTRA_HEADER = open('_nb_header.html').read()#.decode('utf-8')
+#EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
 #this reads in the huge file of css definitions: where did this come from?
+#in the liquid plugin.notebook.py file
 FAVICON = 'images/sunlight.png'
 
 CUSTOM_CSS = 'static/css/custom.css'
 CUSTOM_JS = 'static/js/custom.js'
-EXTRA_PATH_METADATA = {
-    'extra/custom.css': {'path': 'static/css/custom.css'},
-    'extra/custom.js': {'path': 'static/js/custom.js'}
-}
+
 # for Tique Search Plugin
 DIRECT_TEMPLATES = ('index','tags', 'categories', 'authors', 'archives', 'search')
 
@@ -116,6 +121,12 @@ MARKDOWN = {
     },
     'output_format': 'html5',
 }
+# mapping: language_code -> settings_overrides_dict
+I18N_SUBSITES = {
+'fr': {
+'SITENAME': 'blog français',
+}
+}
 
 # Blogroll
 LINKS = (
@@ -135,16 +146,17 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 MULTI_NEIGHBORS = 3
-PLUGIN_PATHS = ['pelican-plugins' ]
 #PLUGINS = ['i18n_subsites', ]
 PLUGINS = [
     'better_codeblock_line_numbering',
-    'i18n_subsites',
-    'liquid_tags.img', 'liquid_tags.video', 'liquid_tags.youtube', 'liquid_tags.notebook',
+    #'ipynb.liquid',
+    #'i18n_subsites',
+    'liquid_tags.img', 'liquid_tags.video', 'liquid_tags.youtube',
+    'liquid_tags.notebook',
     'liquid_tags.vimeo',
     'liquid_tags.include_code',
-    'neighbors',
     'multi_neighbors',
+    'neighbors',
     'pelican-ipynb.markup',
     #'pelican_javascript',
     'related_posts',
@@ -155,10 +167,8 @@ PLUGINS = [
     #'bootswatch_markdown_css',
     #'ipynb.markup',
     ]
-JINJA_ENVIRONMENT = {
-    'extensions': ['jinja2.ext.i18n'],
-}
-I18N_TEMPLATES_LANG = 'en'
+
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
@@ -168,3 +178,6 @@ RELATIVE_URLS = True
 #ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
 #PAGE_URL = 'pages/{slug}/'
 #PAGE_SAVE_AS = 'pages/{slug}/index.html'
+ABOUT_ME = 'I work on water programs at the Kibera Town Centre in Nairobi, Kenya. ' \
+           'I am on the Berkeley 2050 Commission for Berkeley, California. ' \
+           'I work on integrating data science and Jupyter notebooks in urban water research.'

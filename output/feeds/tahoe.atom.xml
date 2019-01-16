@@ -1,12 +1,371 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Water, Power, Network - Tahoe</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/tahoe.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2018-11-24T00:00:00-08:00</updated><subtitle>City Critical Infrastructure</subtitle><entry><title>TahoeBuoyHistory</title><link href="https://johngage.github.io/water/tahoebuoyhistory.html" rel="alternate"></link><published>2018-11-24T00:00:00-08:00</published><updated>2018-11-24T00:00:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-24:/water/tahoebuoyhistory.html</id><summary type="html">&lt;h2 id="testing-links"&gt;Testing links&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://johngage.github.io/water/author/john-gage.html"&gt;a link to works by John Gage&lt;/a&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Water, Power, Network - Tahoe</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/tahoe.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2018-12-28T00:00:00-08:00</updated><subtitle>City Critical Infrastructure</subtitle><entry><title>Lake Tahoe Presentation</title><link href="https://johngage.github.io/water/lake-tahoe-presentation.html" rel="alternate"></link><published>2018-12-28T00:00:00-08:00</published><updated>2018-12-28T00:00:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-12-28:/water/lake-tahoe-presentation.html</id><summary type="html">&lt;p&gt;How to get the Atom template to work?&lt;/p&gt;</summary><content type="html">&lt;p&gt;How to get the Atom template to work?&lt;/p&gt;</content></entry><entry><title>Pre-1972 imagery of Sunnyside, Lake Tahoe</title><link href="https://johngage.github.io/water/pre-1972-imagery-of-sunnyside-lake-tahoe.html" rel="alternate"></link><published>2018-12-16T13:41:00-08:00</published><updated>2018-12-16T13:41:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-12-16:/water/pre-1972-imagery-of-sunnyside-lake-tahoe.html</id><summary type="html">&lt;h3 id="sunnyside-lake-tahoe-historical-sources"&gt;Sunnyside, Lake Tahoe:  Historical Sources&lt;/h3&gt;
+&lt;p&gt;To build an accurate picture of the piers and buoys in Lake Tahoe over the past century, we must combine source documents from many repositories:
+ - written documents from official sources, including Grant Deeds from Placer County, Tahoe Regional Park Authority, California State Lands Commission, and …&lt;/p&gt;</summary><content type="html">&lt;h3 id="sunnyside-lake-tahoe-historical-sources"&gt;Sunnyside, Lake Tahoe:  Historical Sources&lt;/h3&gt;
+&lt;p&gt;To build an accurate picture of the piers and buoys in Lake Tahoe over the past century, we must combine source documents from many repositories:
+ - written documents from official sources, including Grant Deeds from Placer County, Tahoe Regional Park Authority, California State Lands Commission, and the United States Army Corps of Engineers.
+ - Aerial and satellite imagery from a variety of sources.  Section 2 contains a listing of sources and holdings.&lt;/p&gt;
+&lt;p&gt;-There will be a Stakeholder Science Committee meeting on January 8, 2019, time TBD, at the Tahoe Regional Planning Agency (128 Market St, Stateline, NV 89410).
+- A list of source materials and their repositories, including:&lt;/p&gt;
+&lt;p&gt;Source Data  |   |
+--|---|--
+US Geological Survey  |   |
+US Forestry Service  |   |
+USArmy COE   |   |
+US Bureau of Land Management  |   |
+US Dep of Agriculture|   |
+US Forest Service  |   |
+US Lake Tahoe Basin Management Unit LTBMU  |  1973 |
+Lake Tahoe West Restoration Partnership  |   |
+|   |
+California Dep of Transportion  |   |
+California Dep of Water Resources  |   |
+California Dep of Parks  |   |
+  |   |
+Placer County records  |   |
+Tahoe Regional Planning Association   |   |
+University of California, Davis  |   |
+University of California, Santa Barbara  |   |
+University of California, Berkeley  |   |
+University of California, Riverside|   |
+Stanford University  |   |
+University of Nevada, Reno|   |
+Commercial repositories  |   |
+Radman Aerial Services|   |   |&lt;/p&gt;
+&lt;p&gt;-&lt;/p&gt;</content></entry><entry><title>Lake Tahoe Imagery</title><link href="https://johngage.github.io/water/lake-tahoe-imagery.html" rel="alternate"></link><published>2018-11-24T00:00:00-08:00</published><updated>2018-11-24T00:00:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-24:/water/lake-tahoe-imagery.html</id><summary type="html">&lt;p&gt;[[toc]]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Do This&lt;/li&gt;
+&lt;li&gt;[x] words&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="testing-links-sunrise"&gt;Testing links  :sunrise:&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/author/john-gage.html"&gt;a link to works by John Gage&lt;/a&gt;
+&lt;a href="google.com" title="Link to search"&gt;Go to Google&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://johngage.github.io/water/author/paul-krugman.html"&gt;a link to works by Paul Krugman&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;What does this do?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://johngage.github.io/water/battery-post.html"&gt;a link relative to the current file&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://johngage.github.io/water/index.html"&gt;link to index&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;h2 id="testing-links"&gt;Testing links&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://johngage.github.io/water/author/john-gage.html"&gt;a link to works by John Gage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="#hyph"&gt;hyphen&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What does this do? [#hyph]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/battery-post.html"&gt;a link to Batteries relative to the current file&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[Where to go][]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/index.html"&gt;link to index&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="#testing-links"&gt;link to …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;[[toc]]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Do This&lt;/li&gt;
+&lt;li&gt;[x] words&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="testing-links-sunrise"&gt;Testing links  :sunrise:&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/author/john-gage.html"&gt;a link to works by John Gage&lt;/a&gt;
+&lt;a href="google.com" title="Link to search"&gt;Go to Google&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://johngage.github.io/water/author/paul-krugman.html"&gt;a link to works by Paul Krugman&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;What does this do?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://johngage.github.io/water/battery-post.html"&gt;a link relative to the current file&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://johngage.github.io/water/index.html"&gt;link to index&lt;/a&gt;&lt;/p&gt;</content></entry></feed>
+&lt;p&gt;See the &lt;a href="#hyph"&gt;hyphen&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What does this do? [#hyph]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/battery-post.html"&gt;a link to Batteries relative to the current file&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[Where to go][]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/index.html"&gt;link to index&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="#testing-links"&gt;link to headline&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="#buoy"&gt;link to buoy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="#tail-end-tag"&gt;link to tail end tag&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="1950 Miller pier and buoys: PAI" src="images/2018/12/1950-pai-tahoe-050-labeled.png"&gt;&lt;/p&gt;
+&lt;h3 id="tahoe-imagery"&gt;Tahoe Imagery&lt;/h3&gt;
+&lt;p&gt;Area of Interest&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Corner&lt;/th&gt;
+&lt;th&gt;Lat&lt;/th&gt;
+&lt;th&gt;Long&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;NW&lt;/td&gt;
+&lt;td&gt;39.143860&lt;/td&gt;
+&lt;td&gt;-120.152582&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;NE&lt;/td&gt;
+&lt;td&gt;39.143912&lt;/td&gt;
+&lt;td&gt;-120.150970&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SE&lt;/td&gt;
+&lt;td&gt;39.141406&lt;/td&gt;
+&lt;td&gt;-120.150828&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SW&lt;/td&gt;
+&lt;td&gt;39.141674&lt;/td&gt;
+&lt;td&gt;-120.152616&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;this is underscore&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Sites&lt;/th&gt;
+&lt;th&gt;Links&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;USGS&lt;/td&gt;
+&lt;td&gt;https://pubs.usgs.gov/ds/376/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;this is [hyphen]: #hyph&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id="a-list-of-imagery"&gt;A List of imagery&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Location&lt;/th&gt;
+&lt;th align="center"&gt;Series&lt;/th&gt;
+&lt;th&gt;Call Number&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;UC Davis aerial photo library&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1940&lt;/td&gt;
+&lt;td&gt;HDOs for the southern Lake Tahoe Basin&lt;/td&gt;
+&lt;td&gt;.&lt;/td&gt;
+&lt;td align="center"&gt;.&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1969&lt;/td&gt;
+&lt;td&gt;HDOs for the entire Lake Tahoe Basin&lt;/td&gt;
+&lt;td&gt;.&lt;/td&gt;
+&lt;td align="center"&gt;.&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1962&lt;/td&gt;
+&lt;td&gt;Photo mosaic index sheet 1-14   Project covers complete county&lt;/td&gt;
+&lt;td&gt;No Photos&lt;/td&gt;
+&lt;td align="center"&gt;PLA&lt;/td&gt;
+&lt;td&gt;G4363.P5A4 1962. C2   None&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td&gt;G4363.P5A4 1971. C3&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1962&lt;/td&gt;
+&lt;td&gt;Photo mosaic index sheet 1-14  Project covers complete county&lt;/td&gt;
+&lt;td&gt;No Photos&lt;/td&gt;
+&lt;td align="center"&gt;PLA&lt;/td&gt;
+&lt;td&gt;G4363.P5A4 1962. C2    None&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1964&lt;/td&gt;
+&lt;td&gt;Photo mosaic indexsheet 1-4 Project covers western portion of county&lt;/td&gt;
+&lt;td&gt;No Photos&lt;/td&gt;
+&lt;td align="center"&gt;ABM&lt;/td&gt;
+&lt;td&gt;G4363.P5A4 1964. U6 None&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1971&lt;/td&gt;
+&lt;td&gt;Photo mosaic index sheet 1-7   Project covers complete county&lt;/td&gt;
+&lt;td&gt;Complete photoset of project area   2492 [errror: 2942]&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td&gt;G4363.P5A4 1971. C3 Non-stereo&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1971&lt;/td&gt;
+&lt;td&gt;Photo mosaic index sheet 1-2  Project covers western portion of county&lt;/td&gt;
+&lt;td&gt;No Photos&lt;/td&gt;
+&lt;td align="center"&gt;ABM&lt;/td&gt;
+&lt;td&gt;G4363.P5A4 1971. U6    None&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1938&lt;/td&gt;
+&lt;td&gt;Photo mosaic index sheet 1-3   Project covers western portion of county&lt;/td&gt;
+&lt;td&gt;Complete photoset of project area&lt;/td&gt;
+&lt;td align="center"&gt;ABM&lt;/td&gt;
+&lt;td&gt;G4363.P5A4 1938. U6    Non-stereo Photoset includes large 20x25in. aerial photographs&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1969&lt;/td&gt;
+&lt;td&gt;Richerson, Peter J.&lt;/td&gt;
+&lt;td&gt;Community ecology of the Lake Tahoe plankton.&lt;/td&gt;
+&lt;td align="center"&gt;[Davis, Calif.] 1969.&lt;/td&gt;
+&lt;td&gt;UCD Special Collections (NRLF)     LD781 D5J 1969 R535     AVAILABLE   RESTRICTED USE&lt;/td&gt;
+&lt;td&gt;Description    111 \U+25a1. illus. Thesis Thesis--University of California, Davis.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;UCSB listing of all imagery for Placer County
+http://mil.library.ucsb.edu/apcatalog/ap_indexes/county.php?county_id=215&amp;amp;state_id=5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Framefinder&lt;/p&gt;
+&lt;p&gt;monody-cagey-fiesta-untrue&lt;/p&gt;
+&lt;p&gt;39.1422605,-120.1521439&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Buoy&lt;/th&gt;
+&lt;th&gt;Lat&lt;/th&gt;
+&lt;th&gt;Long&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Lovewell&lt;/td&gt;
+&lt;td&gt;39.142418&lt;/td&gt;
+&lt;td&gt;-120.151224&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;May&lt;/td&gt;
+&lt;td&gt;39.142275&lt;/td&gt;
+&lt;td&gt;-120.151335&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Gage&lt;/td&gt;
+&lt;td&gt;39.142242&lt;/td&gt;
+&lt;td&gt;-120.151583&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Marston&lt;/td&gt;
+&lt;td&gt;39.142099&lt;/td&gt;
+&lt;td&gt;-120.151378&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;VDB1&lt;/td&gt;
+&lt;td&gt;39.141968&lt;/td&gt;
+&lt;td&gt;-120.151730&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;VDB2&lt;/td&gt;
+&lt;td&gt;39.141872&lt;/td&gt;
+&lt;td&gt;-120.151867&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;VDB3&lt;/td&gt;
+&lt;td&gt;39.141862&lt;/td&gt;
+&lt;td&gt;-120.152068&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;VDB4&lt;/td&gt;
+&lt;td&gt;39.141700&lt;/td&gt;
+&lt;td&gt;-120.152170&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;rmarston@telstarinc.com,
+ Melisssa@midkiffandassoc.com,
+gary@midkiffandassoc.com,
+ gagemail@comcast.net&lt;/p&gt;
+&lt;p&gt;http://dev.virtualearth.net/REST/v1/Imagery/Metadata/Aerial/55.923,-133.653?zl=19&amp;amp;key=AoDUA8UQYQE4MBLf4G6XJqmmrbXZG9wdhFag0jbbcF2RNZwnNQnP4_tJ-FYL45GP&lt;/p&gt;
+&lt;p&gt;Viewing the ERDAS_IMG multi-layered images requires specialized software. A free desktop viewer, ERDAS ER Viewer is available from Hexagon Geospatial. ERDAS_IMG files can be viewed in GeoViewer, freely downloadable from LizardTech. ERDAS_IMG files can be read and written by ArcGIS Desktop and other ESRI applications. See Supported raster dataset file formats from ArcGIS help. It is also supported by Safe Software's FME engine for format conversion.&lt;/p&gt;
+&lt;p&gt;There appear to be two software libraries that support the reading and writing of ERDAS_IMG files:&lt;/p&gt;
+&lt;p&gt;The open source GDAL/OGR library. See GDAL: HFA -- Erdas Imagine .img. This capability in GDAL derives from a project evidently supported by Intergraph around 2004. Intergraph was owner of ERDAS IMAGINE software at the time. This project yielded a C++ API that is integrated into GDAL and also a utility img2tif designed to convert ERDAS_IMG files to GeoTIFFs. As of January 2015, the former link to the source code for img2tif (with a date of 2006) is no longer online. See former project page via the Internet Archive for more information. The compilers of this resource do not know whether GDAL support handles new variants of the ERDAS_IMG format. Comments welcome. This library is used by the open source QGIS and GRASS applications.
+The IMAGINE Developers' Toolkit, included in the Producer suite of the Power Portfolio from Hexagon Geospatial. This toolkit supports reading and writing of ERDAS_IMG files.&lt;/p&gt;
+&lt;h3 id="tail-end-tag"&gt;Tail end tag&lt;/h3&gt;
+&lt;h1 id="section-1"&gt;Section 1&lt;/h1&gt;
+&lt;p&gt;The formula, &lt;span class="math"&gt;\(y=mx+c\)&lt;/span&gt;, is displayed inline.
+Some symbols and equations (such as
+&lt;span class="math"&gt;\(\sum{x}\)&lt;/span&gt; or &lt;span class="math"&gt;\(\frac{1}{2}\)&lt;/span&gt;) are rescaled
+to prevent disruptions to the regular
+line spacing.
+For more voluminous equations (such as
+&lt;span class="math"&gt;\(\sum{\frac{(\mu - \bar{x})^2}{n-1}}\)&lt;/span&gt;),
+some line spacing disruptions are unavoidable.
+Math should then be displayed in displayed mode.
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\\sum{\frac{(\mu - \bar{x})^2}{n-1}}$$&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content></entry></feed>

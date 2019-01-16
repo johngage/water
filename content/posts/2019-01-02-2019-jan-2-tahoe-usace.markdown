@@ -1,0 +1,32 @@
+---
+layout: "post"
+title: "2019 Jan 2 Tahoe USACOE"
+Date: 2019-01-02 08:23
+---
+
+### 2 Jan 2019 Army Corps of Engineers Applicatation Status
+
+Monday, Bob Marston and I reviewed all imagery and other documentation so far assembled.
+
+We agree that we must succeed in this application, and that, so far, we have a suggestive, but not conclusive case to present to Aaron Park at USACE.
+
+I have superimposed all imagery in a GoogleEarth Pro document which allows us to compare the five major image collections. It draws on the Dropbox collection of thirty images. I will place the KML file in the Dropbox folder so Gary and Melissa can see what Bob and I reviewed.
+
+Year  |Visible   |Image: Held   | Image: To Acquire  |Comments
+--|---|---|---|--
+1939  |May pier, May house, no Miller pier   | CDJ 14-55, 14-76  |   |  no buoys
+1950  |Miller pier, May pier, May buoy   |PAI 157   |   |After much work, only two buoys visible; 6 small white wave dots near Miller pier
+1950  |Miller pier, May pier, May buoy   | PAI 158  |   |  Does not show same white wave dots => Miller pier dots are artifacts
+1950  |Same flight   |   |  149, 148, 154, 155, 156, 159 |see reference doc showing all PAI overflights from FrameFinder; 157 and 158 do not show Miller buoys, so these won't, either
+1952  |   | ABM 3K-10  |   | no buoys, some dots
+1952  |   |   |   3K-11|  will order, hope for good dots
+1953  |   |  165, 166 |   |  some dots
+1955  |Topo   |   |   |    shows Miller house, Miller pier, May pier, May house
+1956  |   | 10-18, 10-19  |   |  lo-res
+1961-1962  |  |10-126  |   |  some dots
+1961-1962  |    |11-48  |   |  some different dots
+1961-1962  |   | |10-179, 10-180, 10-181  |     ordered 10-180, 10-181, 10-127 from UCSB
+1963  | Cal DOT  |   |  ASC 600-149, CAS Roll 1, expossures 138,139 |  query in to Radman Aerial Surveys, Sacramento, recommended by Young Lee, Chief of Photogrammetry, DOT
+1968-1969  | Miller pier, May pier, May buoy, Tahoe Park buoy  |  USGS from GoogleEarth |   |  good dots; two best dots show May buoy,  boat moored to buoy in Tahoe Park buoy field;  other dots look almost as good as May buoy, Tahoe Park buoy with boat
+1970  | Tahoe shoreline: 1:300  |   |   |  query in to US Forestry in Salt Lake City; shut for Trump shutdown
+1971  |   |   | CAS 10-024  |

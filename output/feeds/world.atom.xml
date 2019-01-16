@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Water, Power, Network - World</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/world.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2018-11-03T12:40:00-07:00</updated><subtitle>City Critical Infrastructure</subtitle><entry><title>UC Berkeley Data Science 8.1x</title><link href="https://johngage.github.io/water/Lab5.html" rel="alternate"></link><published>2018-11-03T12:40:00-07:00</published><updated>2018-11-03T12:40:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-03:/water/Lab5.html</id><summary type="html">&lt;p&gt;Lab 5: World, from edX Data Science 8.1x&lt;/p&gt;</summary><content type="html">&lt;p&gt;This post contains a Jupyter notebook from edX.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://hub.data8x.berkeley.edu/user/f2708e40fcd875ea32c5500086286bd1/notebooks/materials-x18/materials/x18/lab/1/lab05/lab05.ipynb#"&gt;Lab 5&lt;/a&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Water, Power, Network - World</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/world.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2018-11-03T12:40:00-07:00</updated><subtitle>City Critical Infrastructure</subtitle><entry><title>UC Berkeley Data Science 8.1x Lab 5</title><link href="https://johngage.github.io/water/Lab5.html" rel="alternate"></link><published>2018-11-03T12:40:00-07:00</published><updated>2018-11-03T12:40:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-03:/water/Lab5.html</id><summary type="html">&lt;p&gt;Lab 5: World, from edX Data Science 8.1x&lt;/p&gt;</summary><content type="html">&lt;h4 id="incorporating-jupyter-notebooks"&gt;Incorporating Jupyter notebooks&lt;/h4&gt;
+&lt;p&gt;This post contains a Jupyter notebook from the 2018 edX series on Data Science from UC Berkley. The series included three segments, and will be repeated in January, 2019.&lt;/p&gt;
+&lt;p&gt;Here is the link to the version stored on UCBerkeley hub:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://hub.data8x.berkeley.edu/user/f2708e40fcd875ea32c5500086286bd1/notebooks/materials-x18/materials/x18/lab/1/lab05/lab05.ipynb#"&gt;Lab 5: Gapminder animation of World Bank and WHO data&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This is the inclusion of the actual Jupyter notebook; pelican converts it to pure HTML, using a long CSS file, and stores the HTML in the "notebook" subdirectory of "content".&lt;/p&gt;
 &lt;p&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
@@ -10,7 +14,7 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -20,7 +24,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt output_prompt"&gt;Out[1]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[1]:&lt;/div&gt;
 
 
 
@@ -36,8 +40,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h1 id="Lab-5:-World-Progress"&gt;Lab 5: World Progress&lt;a class="anchor-link" href="#Lab-5:-World-Progress"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Welcome to lab 5!&lt;/p&gt;
 &lt;p&gt;This final lab in Data 8.1x brings together many of the topics so far, including data table manipulation, visualization, and iteration. The content of the lab is based on a series of talks by Hans Rosling, a statistician who advised many world leaders about the changing state of the world's population.&lt;/p&gt;
@@ -70,14 +73,13 @@
 &lt;span class="code-line"&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;gofer.ok&lt;/span&gt; &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;check&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;The global population of humans reached 1 billion around 1800, 3 billion around 1960, and 7 billion around 2011. The potential impact of exponential population growth has concerned scientists, economists, and politicians alike.&lt;/p&gt;
 &lt;p&gt;The UN Population Division estimates that the world population will likely continue to grow throughout the 21st century, but at a slower rate, perhaps reaching 11 billion by 2100. However, the UN does not rule out scenarios of more extreme growth.&lt;/p&gt;
@@ -102,7 +104,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;population&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;40&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -112,7 +114,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -295,8 +297,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="1.-Bangladesh"&gt;1. Bangladesh&lt;a class="anchor-link" href="#1.-Bangladesh"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;In the &lt;code&gt;population&lt;/code&gt; table, the &lt;code&gt;geo&lt;/code&gt; column contains three-letter codes established by the &lt;a href="https://en.wikipedia.org/wiki/International_Organization_for_Standardization"&gt;International Organization for Standardization&lt;/a&gt; (ISO) in the &lt;a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3#Current_codes"&gt;Alpha-3&lt;/a&gt; standard. We will begin by taking a close look at Bangladesh. Inspect the standard to find the 3-letter code for Bangladesh.&lt;/p&gt;
 
@@ -304,8 +305,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;strong&gt;Question 1.1&lt;/strong&gt; &lt;br/&gt;Create a table called &lt;code&gt;b_pop&lt;/code&gt; that has two columns labeled &lt;code&gt;time&lt;/code&gt; and &lt;code&gt;population_total&lt;/code&gt;. The first column should contain the years from 1970 through 2015 (including both 1970 and 2015) and the second should contain the population of Bangladesh in each of those years.&lt;/p&gt;
 
@@ -322,7 +322,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;b_pop&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -332,7 +332,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt output_prompt"&gt;Out[30]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[30]:&lt;/div&gt;
 
 
 
@@ -402,14 +402,13 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;check&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tests/q1_1.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Run the following cell to create a table called &lt;code&gt;b_five&lt;/code&gt; that has the population of Bangladesh every five years. At a glance, it appears that the population of Bangladesh has been growing quickly indeed!&lt;/p&gt;
 
@@ -433,14 +432,13 @@
 &lt;span class="code-line"&gt;&lt;span class="c1"&gt;#print(type(b_five))&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Run the next cell to create a table called &lt;code&gt;b_five_growth&lt;/code&gt; which shows the growth rate for each five-year period from 1970 through 2010.&lt;/p&gt;
 
@@ -457,7 +455,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;b_five_growth&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;annual_growth&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;PercentFormatter&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -472,14 +470,13 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;b_five_growth&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;num_rows&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;While the population has grown every five years since 1970, the annual growth rate decreased dramatically from 1985 to 2005. Let's look at some other information in order to develop a possible explanation. Run the next cell to load three additional tables of measurements about countries over time.&lt;/p&gt;
 
@@ -498,7 +495,7 @@
 &lt;span class="code-line"&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;child_mortality&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -508,7 +505,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
@@ -545,8 +542,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;The &lt;code&gt;life_expectancy&lt;/code&gt; table contains a statistic that is often used to measure how long people live, called &lt;em&gt;life expectancy at birth&lt;/em&gt;. This number, for a country in a given year, &lt;a href="http://blogs.worldbank.org/opendata/what-does-life-expectancy-birth-really-mean"&gt;does not measure how long babies born in that year are expected to live&lt;/a&gt;. Instead, it measures how long someone would live, on average, if the &lt;em&gt;mortality conditions&lt;/em&gt; in that year persisted throughout their lifetime. These "mortality conditions" describe what fraction of people at each age survived the year. So, it is a way of measuring the proportion of people that are staying alive, aggregated over different age groups in the population.&lt;/p&gt;
 
@@ -554,8 +550,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;The &lt;code&gt;fertility&lt;/code&gt; table contains a statistic that is often used to measure how many babies are being born, the &lt;em&gt;total fertility rate&lt;/em&gt;. This number describes the &lt;a href="https://www.measureevaluation.org/prh/rh_indicators/specific/fertility/total-fertility-rate"&gt;number of children a woman would have in her lifetime&lt;/a&gt;, on average, if the current rates of birth by age of the mother persisted throughout her child bearing years, assuming she survived through age 49.&lt;/p&gt;
 
@@ -563,8 +558,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;strong&gt;Question 1.2.&lt;/strong&gt; &lt;br/&gt;Write a function &lt;code&gt;fertility_over_time&lt;/code&gt; that takes the Alpha-3 code of a &lt;code&gt;country&lt;/code&gt; and a &lt;code&gt;start&lt;/code&gt; year. It returns a two-column table with labels "&lt;code&gt;Year&lt;/code&gt;" and "&lt;code&gt;Children per woman&lt;/code&gt;" that can be used to generate a line chart of the country's fertility rate each year, starting at the &lt;code&gt;start&lt;/code&gt; year. The plot should include the &lt;code&gt;start&lt;/code&gt; year and all later years that appear in the &lt;code&gt;fertility&lt;/code&gt; table.&lt;/p&gt;
 &lt;p&gt;Then, in the next cell, call your &lt;code&gt;fertility_over_time&lt;/code&gt; function on the Alpha-3 code for Bangladesh and the year 1970 in order to plot how Bangladesh's fertility rate has changed since 1970. Note that the function &lt;code&gt;fertility_over_time&lt;/code&gt; should not return the plot itself &lt;strong&gt;The expression that draws the line plot is provided for you; please don't change it.&lt;/strong&gt;&lt;/p&gt;
@@ -586,7 +580,7 @@
 &lt;span class="code-line"&gt;    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;country_fertility_after_start&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -600,7 +594,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;fertility_over_time&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bangladesh_code&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1970&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# You should *not* change this line.&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -610,7 +604,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -635,7 +629,7 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;check&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tests/q1_2.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -645,7 +639,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -660,8 +654,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;strong&gt;Question 1.3.&lt;/strong&gt; &lt;br/&gt;Using both the &lt;code&gt;fertility&lt;/code&gt; and &lt;code&gt;child_mortality&lt;/code&gt; tables, draw a scatter diagram with one point for each year, starting with 1970, that has Bangladesh's total fertility on the horizontal axis and its child mortality on the vertical axis.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The expression that draws the scatter diagram is provided for you; please don't change it.&lt;/strong&gt; Instead, create a table called &lt;code&gt;post_1969_fertility_and_child_mortality&lt;/code&gt; with the appropriate column labels and data in order to generate the chart correctly. Use the label "&lt;code&gt;Children per woman&lt;/code&gt;" to describe total fertility and the label "&lt;code&gt;Child deaths per 1000 born&lt;/code&gt;" to describe child mortality.&lt;/p&gt;
@@ -689,7 +682,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;post_1969_fertility_and_child_mortality&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;scatter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Children per woman&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Child deaths per 1000 born&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# You should *not* change this line.&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -699,7 +692,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
@@ -721,7 +714,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -746,14 +739,13 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;check&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tests/q1_3.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="2.-The-World"&gt;2. The World&lt;a class="anchor-link" href="#2.-The-World"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The change observed in Bangladesh since 1970 can also be observed in many other developing countries: health services improve, life expectancy increases, and child mortality decreases. At the same time, the fertility rate often plummets, and so the population growth rate decreases despite increasing longevity.&lt;/p&gt;
 
@@ -761,8 +753,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Run the next cell to see a line plot of the world population from 1800 through 2005.  You might recognize some of the code used!&lt;/p&gt;
 
@@ -777,7 +768,7 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;population&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;where&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;time&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;are&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;between&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1800&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2006&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;drop&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;geo&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;group&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;time&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -787,7 +778,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -805,8 +796,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;strong&gt;Question 2.1.&lt;/strong&gt; Create a function &lt;code&gt;stats_for_year&lt;/code&gt; that takes a &lt;code&gt;year&lt;/code&gt; and returns a table of statistics. The table it returns should have four columns: &lt;code&gt;geo&lt;/code&gt;, &lt;code&gt;population_total&lt;/code&gt;, &lt;code&gt;children_per_woman_total_fertility&lt;/code&gt;, and &lt;code&gt;child_mortality_under_5_per_1000_born&lt;/code&gt;. Each row should contain one Alpha-3 country code and three statistics: population, fertility rate, and child mortality for that &lt;code&gt;year&lt;/code&gt; from the &lt;code&gt;population&lt;/code&gt;, &lt;code&gt;fertility&lt;/code&gt; and &lt;code&gt;child_mortality&lt;/code&gt; tables. Only include rows for which all three statistics are available for the country and year.&lt;/p&gt;
 &lt;p&gt;In addition, restrict the result to country codes that appears in &lt;code&gt;big_50&lt;/code&gt;, an array of the 50 most populous countries in 2010. This restriction will speed up computations later in the project.&lt;/p&gt;
@@ -842,14 +832,13 @@
 &lt;span class="code-line"&gt;    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;yearstat&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Try calling your function &lt;code&gt;stats_for_year&lt;/code&gt; on any year between 1960 and 2010 in the cell below.  Try to understand the output of &lt;code&gt;stats_for_year&lt;/code&gt;.&lt;/p&gt;
 
@@ -864,7 +853,7 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;stats_for_year&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1960&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -874,7 +863,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -1103,7 +1092,7 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;check&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tests/q2_1.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1113,7 +1102,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -1128,8 +1117,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;strong&gt;Question 2.2.&lt;/strong&gt; &lt;br/&gt;Create a table called &lt;code&gt;pop_by_decade&lt;/code&gt; with two columns called &lt;code&gt;decade&lt;/code&gt; and &lt;code&gt;population&lt;/code&gt;. It has a row for each &lt;code&gt;year&lt;/code&gt; since 1960 that starts a decade. The &lt;code&gt;population&lt;/code&gt; column contains the total population of all countries included in the result of &lt;code&gt;stats_for_year(year)&lt;/code&gt; for the first &lt;code&gt;year&lt;/code&gt; of the decade. For example, 1960 is the first year of the 1960's decade. You should see that these countries contain most of the world's population.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Hint:&lt;/em&gt; It may be helpful to use the provided &lt;code&gt;pop_for_year&lt;/code&gt; that computes this total population, then &lt;code&gt;apply&lt;/code&gt; it to the &lt;code&gt;decade&lt;/code&gt; column.&lt;/p&gt;
@@ -1154,7 +1142,7 @@
 &lt;span class="code-line"&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;The proportion of world population of the big 50 in 2015 is&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pop_for_year&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2015&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;worldpop&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2015&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1164,7 +1152,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
@@ -1191,7 +1179,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;pop_by_decade&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;NumberFormatter&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1201,7 +1189,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt output_prompt"&gt;Out[41]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[41]:&lt;/div&gt;
 
 
 
@@ -1254,7 +1242,7 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;check&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tests/q2_2.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1264,7 +1252,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -1279,8 +1267,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;The &lt;code&gt;countries&lt;/code&gt; table describes various characteristics of countries. The &lt;code&gt;country&lt;/code&gt; column contains the same codes as the &lt;code&gt;geo&lt;/code&gt; column in each of the other data tables (&lt;code&gt;population&lt;/code&gt;, &lt;code&gt;fertility&lt;/code&gt;, and &lt;code&gt;child_mortality&lt;/code&gt;). The &lt;code&gt;world_6region&lt;/code&gt; column classifies each country into a region of the world. Run the cell below to inspect the data.&lt;/p&gt;
 
@@ -1296,7 +1283,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;countries&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;select&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;world_6region&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1306,7 +1293,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt output_prompt"&gt;Out[43]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[43]:&lt;/div&gt;
 
 
 
@@ -1369,8 +1356,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;strong&gt;Question 2.3.&lt;/strong&gt; &lt;br/&gt;Create a table called &lt;code&gt;region_counts&lt;/code&gt; that has two columns, &lt;code&gt;region&lt;/code&gt; and &lt;code&gt;count&lt;/code&gt;. It should describe the count of how many countries in each region appear in the result of &lt;code&gt;stats_for_year(1960)&lt;/code&gt;. For example, one row would have &lt;code&gt;south_asia&lt;/code&gt; as its &lt;code&gt;world_6region&lt;/code&gt; value and an integer as its &lt;code&gt;count&lt;/code&gt; value: the number of large South Asian countries for which we have population, fertility, and child mortality numbers from 1960.&lt;/p&gt;
 
@@ -1398,7 +1384,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;region_counts&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;labels&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1408,7 +1394,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
@@ -1425,7 +1411,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt output_prompt"&gt;Out[44]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[44]:&lt;/div&gt;
 
 
 
@@ -1448,7 +1434,7 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;check&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tests/q2_3.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1458,7 +1444,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -1473,8 +1459,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;The following scatter diagram compares total fertility rate and child mortality rate for each country in 1960. The area of each dot represents the population of the country, and the color represents its region of the world. Run the cell. Do you think you can identify any of the dots?&lt;/p&gt;
 
@@ -1508,7 +1493,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;fertility_vs_child_mortality&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1960&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1518,7 +1503,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -1536,8 +1521,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;The result of the cell below is interactive. It may take several minutes to run because it computers 55 tables (one for each year). When it's done, a scatter plot and a slider should appear.&lt;/p&gt;
 &lt;p&gt;Drag the slider to the right to see how countries have changed over time. You'll find that the great divide between so-called "Western" and "developing" countries that existed in the 1960's has nearly disappeared. This shift in fertility rates is the reason that the global population is expected to grow more slowly in the 21st century than it did in the 19th and 20th centuries.&lt;/p&gt;
@@ -1561,7 +1545,7 @@
 &lt;span class="code-line"&gt;                     &lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;widgets&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;IntSlider&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;min&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1960&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;max&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2015&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1960&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1571,7 +1555,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -1579,10 +1563,10 @@
 
  
  
-&lt;div id="45f9b077-b4c6-4df9-8e19-00230e18b79a"&gt;&lt;/div&gt;
+&lt;div id="a2a60c9e-cb99-46d4-81af-b9355e665c72"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_widget_view "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
+var element = $('#a2a60c9e-cb99-46d4-81af-b9355e665c72');
 &lt;/script&gt;
 &lt;script type="application/vnd.jupyter.widget-view+json"&gt;
 {"model_id": "2f317a436f2c4a23b7b8eeaa435c02e9", "version_major": 2, "version_minor": 0}
@@ -1596,8 +1580,7 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="Submission"&gt;Submission&lt;a class="anchor-link" href="#Submission"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Congratulations, you're done with lab 5 and Data 8.1x!  Be sure to&lt;/p&gt;
 &lt;ul&gt;
@@ -1623,7 +1606,20 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 &lt;span class="code-line"&gt;    &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;grade_notebook&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;lab05.ipynb&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;sorted&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;glob&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;glob&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tests/q*.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
+    &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt; &lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 

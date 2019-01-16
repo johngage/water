@@ -4,10 +4,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'John Gage'
-SITENAME = 'WaterPowerData'
+SITENAME = 'WaterPowerData'  #old name
 SITEURL = ''
-
-PATH = 'content'
 
 TIMEZONE = 'America/Los_Angeles'
 
@@ -18,7 +16,8 @@ DEFAULT_LANG = 'en'
 PATH = 'content'
 PAGE_PATHS = ['pages']
 ARTICLE_PATHS = ['posts']
-STATIC_PATHS = ['images','extra',
+STATIC_PATHS = ['images',
+                'extra',
                 'posts/seaborn_bar_plot_files',
                 'posts/micropython',
                 'extra/CNAME',
@@ -34,7 +33,7 @@ STATIC_PATHS = ['images','extra',
 PLUGIN_PATHS = ['pelican-plugins']
 EXTRA_PATH_METADATA = {
     	'extra/custom.css': {'path': 'static/css/custom.css'},
-	'extra/jupyter.css': {'path': 'static/css/jupyter.css'},
+	    'extra/jupyter.css': {'path': 'static/css/jupyter.css'},
     	'extra/custom.js': {'path': 'static/js/custom.js'},
     	'extra/CNAME': {'path': 'CNAME'},
 }
@@ -72,17 +71,21 @@ IPYNB_IGNORE_CSS = True  ###change back!!!!!!!!!!!!!
 #Plugins, extensions
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 PLUGINS = [
-    'i18n_subsites','series','tag_cloud',
-    'liquid_tags.img', 'liquid_tags.video', 'liquid_tags.youtube', 'liquid_tags.notebook',
+    'bootswatch_markdown_css',
+    'i18n_subsites',
+    'tag_cloud',
+    'liquid_tags.img', 'liquid_tags.video', 'liquid_tags.youtube',
+    'liquid_tags.notebook',
     'liquid_tags.vimeo',
     'liquid_tags.include_code',
-    'pelican_javascript',
-    'related_posts',
-    'render_math','tipue_search','pelican-ipynb.markup',
     'neighbors',
-    'bootswatch_markdown_css',] #'pelican_javascript','pelican-ipynb.markup', 'pelican-bootstrapify'
-
-#
+    'pelican_javascript',
+    'pelican-ipynb.markup',
+    'related_posts',
+    'render_math',
+    'tipue_search',
+    'series',
+    ] #'pelican_javascript','pelican-ipynb.markup', 'pelican-bootstrapify'
 
 NOTEBOOK_DIR = 'posts'
 
@@ -167,9 +170,9 @@ ARCHIVES_SAVE_AS = 'archives.html'
 DISPLAY_ARCHIVE_ON_MENU = True
 YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'
-ABOUT_ME = 'I teach engineering at a community college in the Pacific Northwest. ' \
-           'I am interested in programming and how to help students. ' \
-           'Here I mostly blog about Python, MATLAB and how programing can be incorporated into engineering education.'
+ABOUT_ME = 'I work on water programs at the Kibera Town Centre in Nairobi, Kenya ' \
+           'I am on the Berkeley 2050 Commission for Berkeley, California ' \
+           'I work on integrating data science and Jupyter notebooks in urban water research'
 #AVATAR = 'images/about_me_image.png'
 
 # for Tique Search Plugin

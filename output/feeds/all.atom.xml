@@ -1,15 +1,699 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Water, Power, Network</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/all.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2018-11-24T00:00:00-08:00</updated><subtitle>City Critical Infrastructure</subtitle><entry><title>TahoeBuoyHistory</title><link href="https://johngage.github.io/water/tahoebuoyhistory.html" rel="alternate"></link><published>2018-11-24T00:00:00-08:00</published><updated>2018-11-24T00:00:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-24:/water/tahoebuoyhistory.html</id><summary type="html">&lt;h2 id="testing-links"&gt;Testing links&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://johngage.github.io/water/author/john-gage.html"&gt;a link to works by John Gage&lt;/a&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Water, Power, Network</title><link href="https://johngage.github.io/water/" rel="alternate"></link><link href="https://johngage.github.io/water/feeds/all.atom.xml" rel="self"></link><id>https://johngage.github.io/water/</id><updated>2019-01-10T09:03:00-08:00</updated><subtitle>City Critical Infrastructure</subtitle><entry><title>"Outline of KTC curriculum for computing and data science"</title><link href="https://johngage.github.io/water/outline-of-ktc-curriculum-for-computing-and-data-science.html" rel="alternate"></link><published>2019-01-10T09:03:00-08:00</published><updated>2019-01-10T09:03:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2019-01-10:/water/outline-of-ktc-curriculum-for-computing-and-data-science.html</id><summary type="html">&lt;h3 id="stages-of-familiarity-with-computing-and-internet"&gt;Stages of familiarity with computing and Internet&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Mobile device:
+Familiarity with carrier codes, costs; constantly updated reviews of devices, deals, costs&lt;/li&gt;
+&lt;li&gt;Messaging&lt;/li&gt;
+&lt;li&gt;Mail&lt;/li&gt;
+&lt;li&gt;Browser&lt;/li&gt;
+&lt;li&gt;M-pesa and other payment systems&lt;/li&gt;
+&lt;li&gt;Video&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Images: photos, family pictures&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Laptop devices;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Network&lt;/li&gt;
+&lt;li&gt;Browsers&lt;/li&gt;
+&lt;li&gt;Microsoft applications: Word, Excel;&lt;/li&gt;
+&lt;li&gt;Other open applications: other word processors; open spreadsheets …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;h3 id="stages-of-familiarity-with-computing-and-internet"&gt;Stages of familiarity with computing and Internet&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Mobile device:
+Familiarity with carrier codes, costs; constantly updated reviews of devices, deals, costs&lt;/li&gt;
+&lt;li&gt;Messaging&lt;/li&gt;
+&lt;li&gt;Mail&lt;/li&gt;
+&lt;li&gt;Browser&lt;/li&gt;
+&lt;li&gt;M-pesa and other payment systems&lt;/li&gt;
+&lt;li&gt;Video&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Images: photos, family pictures&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Laptop devices;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Network&lt;/li&gt;
+&lt;li&gt;Browsers&lt;/li&gt;
+&lt;li&gt;Microsoft applications: Word, Excel;&lt;/li&gt;
+&lt;li&gt;Other open applications: other word processors; open spreadsheets;&lt;/li&gt;
+&lt;li&gt;command line interface&lt;/li&gt;
+&lt;li&gt;File system structure;&lt;/li&gt;
+&lt;/ol&gt;</content></entry><entry><title>"2019 Jan 2 Tahoe USACOE"</title><link href="https://johngage.github.io/water/2019-jan-2-tahoe-usacoe.html" rel="alternate"></link><published>2019-01-02T08:23:00-08:00</published><updated>2019-01-02T08:23:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2019-01-02:/water/2019-jan-2-tahoe-usacoe.html</id><summary type="html">&lt;h3 id="2-jan-2019-army-corps-of-engineers-applicatation-status"&gt;2 Jan 2019 Army Corps of Engineers Applicatation Status&lt;/h3&gt;
+&lt;p&gt;Monday, Bob Marston and I reviewed all imagery and other documentation so far assembled.&lt;/p&gt;
+&lt;p&gt;We agree that we must succeed in this application, and that, so far, we have a suggestive, but not conclusive case to present to Aaron Park at …&lt;/p&gt;</summary><content type="html">&lt;h3 id="2-jan-2019-army-corps-of-engineers-applicatation-status"&gt;2 Jan 2019 Army Corps of Engineers Applicatation Status&lt;/h3&gt;
+&lt;p&gt;Monday, Bob Marston and I reviewed all imagery and other documentation so far assembled.&lt;/p&gt;
+&lt;p&gt;We agree that we must succeed in this application, and that, so far, we have a suggestive, but not conclusive case to present to Aaron Park at USACE.&lt;/p&gt;
+&lt;p&gt;I have superimposed all imagery in a GoogleEarth Pro document which allows us to compare the five major image collections. It draws on the Dropbox collection of thirty images. I will place the KML file in the Dropbox folder so Gary and Melissa can see what Bob and I reviewed.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Visible&lt;/th&gt;
+&lt;th&gt;Image: Held&lt;/th&gt;
+&lt;th&gt;Image: To Acquire&lt;/th&gt;
+&lt;th&gt;Comments&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1939&lt;/td&gt;
+&lt;td&gt;May pier, May house, no Miller pier&lt;/td&gt;
+&lt;td&gt;CDJ 14-55, 14-76&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;no buoys&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1950&lt;/td&gt;
+&lt;td&gt;Miller pier, May pier, May buoy&lt;/td&gt;
+&lt;td&gt;PAI 157&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;After much work, only two buoys visible; 6 small white wave dots near Miller pier&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1950&lt;/td&gt;
+&lt;td&gt;Miller pier, May pier, May buoy&lt;/td&gt;
+&lt;td&gt;PAI 158&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Does not show same white wave dots =&amp;gt; Miller pier dots are artifacts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1950&lt;/td&gt;
+&lt;td&gt;Same flight&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;149, 148, 154, 155, 156, 159&lt;/td&gt;
+&lt;td&gt;see reference doc showing all PAI overflights from FrameFinder; 157 and 158 do not show Miller buoys, so these won't, either&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1952&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;ABM 3K-10&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;no buoys, some dots&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1952&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;3K-11&lt;/td&gt;
+&lt;td&gt;will order, hope for good dots&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1953&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;165, 166&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;some dots&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1955&lt;/td&gt;
+&lt;td&gt;Topo&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;shows Miller house, Miller pier, May pier, May house&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1956&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;10-18, 10-19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;lo-res&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1961-1962&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;10-126&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;some dots&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1961-1962&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;11-48&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;some different dots&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1961-1962&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;10-179, 10-180, 10-181&lt;/td&gt;
+&lt;td&gt;ordered 10-180, 10-181, 10-127 from UCSB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1963&lt;/td&gt;
+&lt;td&gt;Cal DOT&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;ASC 600-149, CAS Roll 1, expossures 138,139&lt;/td&gt;
+&lt;td&gt;query in to Radman Aerial Surveys, Sacramento, recommended by Young Lee, Chief of Photogrammetry, DOT&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1968-1969&lt;/td&gt;
+&lt;td&gt;Miller pier, May pier, May buoy, Tahoe Park buoy&lt;/td&gt;
+&lt;td&gt;USGS from GoogleEarth&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;good dots; two best dots show May buoy,  boat moored to buoy in Tahoe Park buoy field;  other dots look almost as good as May buoy, Tahoe Park buoy with boat&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1970&lt;/td&gt;
+&lt;td&gt;Tahoe shoreline: 1:300&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;query in to US Forestry in Salt Lake City; shut for Trump shutdown&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1971&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;CAS 10-024&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</content></entry><entry><title>"Saturday Dec 29 Work Outline"</title><link href="https://johngage.github.io/water/saturday-dec-29-work-outline.html" rel="alternate"></link><published>2018-12-29T08:30:00-08:00</published><updated>2018-12-29T08:30:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-12-29:/water/saturday-dec-29-work-outline.html</id><summary type="html">&lt;h3 id="getting-up-to-speed-to-finish-tahoe-project"&gt;Getting up to speed to finish Tahoe Project&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Build complete set of imagery for talk with Bob Marston&lt;/li&gt;
+&lt;li&gt;Outline presentation to USACOE&lt;/li&gt;
+&lt;li&gt;List all future possible images&lt;/li&gt;
+&lt;li&gt;Check with Radman Aerial Services, 6220 24&lt;sup&gt;th&lt;/sup&gt; Street, Sacramento; 916 391 1651&lt;/li&gt;
+&lt;li&gt;Check with Cal DWR:&lt;/li&gt;
+&lt;/ol&gt;</summary><content type="html">&lt;h3 id="getting-up-to-speed-to-finish-tahoe-project"&gt;Getting up to speed to finish Tahoe Project&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Build complete set of imagery for talk with Bob Marston&lt;/li&gt;
+&lt;li&gt;Outline presentation to USACOE&lt;/li&gt;
+&lt;li&gt;List all future possible images&lt;/li&gt;
+&lt;li&gt;Check with Radman Aerial Services, 6220 24&lt;sup&gt;th&lt;/sup&gt; Street, Sacramento; 916 391 1651&lt;/li&gt;
+&lt;li&gt;Check with Cal DWR:&lt;/li&gt;
+&lt;/ol&gt;</content></entry><entry><title>"Results of visit to California Department of Transportation Photogrammetry"</title><link href="https://johngage.github.io/water/results-of-visit-to-california-department-of-transportation-photogrammetry.html" rel="alternate"></link><published>2018-12-28T14:31:00-08:00</published><updated>2018-12-28T14:31:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-12-28:/water/results-of-visit-to-california-department-of-transportation-photogrammetry.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;met with Lee&lt;/li&gt;
+&lt;li&gt;found visual index of 1963 imagery&lt;/li&gt;
+&lt;li&gt;
+&lt;h2 id="need-to-contact-imagery-vendor-for-costs-of-copying"&gt;Need to contact Imagery vendor for costs of copying&lt;/h2&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;met with Lee&lt;/li&gt;
+&lt;li&gt;found visual index of 1963 imagery&lt;/li&gt;
+&lt;li&gt;
+&lt;h2 id="need-to-contact-imagery-vendor-for-costs-of-copying"&gt;Need to contact Imagery vendor for costs of copying&lt;/h2&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content></entry><entry><title>Lake Tahoe Presentation</title><link href="https://johngage.github.io/water/lake-tahoe-presentation.html" rel="alternate"></link><published>2018-12-28T00:00:00-08:00</published><updated>2018-12-28T00:00:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-12-28:/water/lake-tahoe-presentation.html</id><summary type="html">&lt;p&gt;How to get the Atom template to work?&lt;/p&gt;</summary><content type="html">&lt;p&gt;How to get the Atom template to work?&lt;/p&gt;</content></entry><entry><title>Pre-1972 imagery of Sunnyside, Lake Tahoe</title><link href="https://johngage.github.io/water/pre-1972-imagery-of-sunnyside-lake-tahoe.html" rel="alternate"></link><published>2018-12-16T13:41:00-08:00</published><updated>2018-12-16T13:41:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-12-16:/water/pre-1972-imagery-of-sunnyside-lake-tahoe.html</id><summary type="html">&lt;h3 id="sunnyside-lake-tahoe-historical-sources"&gt;Sunnyside, Lake Tahoe:  Historical Sources&lt;/h3&gt;
+&lt;p&gt;To build an accurate picture of the piers and buoys in Lake Tahoe over the past century, we must combine source documents from many repositories:
+ - written documents from official sources, including Grant Deeds from Placer County, Tahoe Regional Park Authority, California State Lands Commission, and …&lt;/p&gt;</summary><content type="html">&lt;h3 id="sunnyside-lake-tahoe-historical-sources"&gt;Sunnyside, Lake Tahoe:  Historical Sources&lt;/h3&gt;
+&lt;p&gt;To build an accurate picture of the piers and buoys in Lake Tahoe over the past century, we must combine source documents from many repositories:
+ - written documents from official sources, including Grant Deeds from Placer County, Tahoe Regional Park Authority, California State Lands Commission, and the United States Army Corps of Engineers.
+ - Aerial and satellite imagery from a variety of sources.  Section 2 contains a listing of sources and holdings.&lt;/p&gt;
+&lt;p&gt;-There will be a Stakeholder Science Committee meeting on January 8, 2019, time TBD, at the Tahoe Regional Planning Agency (128 Market St, Stateline, NV 89410).
+- A list of source materials and their repositories, including:&lt;/p&gt;
+&lt;p&gt;Source Data  |   |
+--|---|--
+US Geological Survey  |   |
+US Forestry Service  |   |
+USArmy COE   |   |
+US Bureau of Land Management  |   |
+US Dep of Agriculture|   |
+US Forest Service  |   |
+US Lake Tahoe Basin Management Unit LTBMU  |  1973 |
+Lake Tahoe West Restoration Partnership  |   |
+|   |
+California Dep of Transportion  |   |
+California Dep of Water Resources  |   |
+California Dep of Parks  |   |
+  |   |
+Placer County records  |   |
+Tahoe Regional Planning Association   |   |
+University of California, Davis  |   |
+University of California, Santa Barbara  |   |
+University of California, Berkeley  |   |
+University of California, Riverside|   |
+Stanford University  |   |
+University of Nevada, Reno|   |
+Commercial repositories  |   |
+Radman Aerial Services|   |   |&lt;/p&gt;
+&lt;p&gt;-&lt;/p&gt;</content></entry><entry><title>Deep Learning</title><link href="https://johngage.github.io/water/deep-learning.html" rel="alternate"></link><published>2018-11-30T09:48:40-08:00</published><updated>2018-11-30T09:48:40-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-30:/water/deep-learning.html</id><summary type="html">&lt;h3 id="jeff-dean"&gt;Jeff Dean&lt;/h3&gt;
+&lt;p&gt;@JeffDean
+ai.google/research/people/jeff&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;David Patterson, Carlos Sequin, David Culler,&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;ML for robotic control&lt;/p&gt;
+&lt;p&gt;90 ML paper / year&lt;/p&gt;</summary><content type="html">&lt;h3 id="jeff-dean"&gt;Jeff Dean&lt;/h3&gt;
+&lt;p&gt;@JeffDean
+ai.google/research/people/jeff&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;David Patterson, Carlos Sequin, David Culler,&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;ML for robotic control&lt;/p&gt;
+&lt;p&gt;90 ML paper / year&lt;/p&gt;</content></entry><entry><title>C2M Cleantech to Market</title><link href="https://johngage.github.io/water/c2m-cleantech-to-market.html" rel="alternate"></link><published>2018-11-30T00:00:00-08:00</published><updated>2018-11-30T00:00:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-30:/water/c2m-cleantech-to-market.html</id><summary type="html">&lt;h3 id="c2m-cleantech-to-market"&gt;C2M: Cleantech to Market&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Brian Steele:&lt;/li&gt;
+&lt;li&gt;Innovation Council: Randy Katz&lt;/li&gt;
+&lt;/ul&gt;</summary><content type="html">&lt;h3 id="c2m-cleantech-to-market"&gt;C2M: Cleantech to Market&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Brian Steele:&lt;/li&gt;
+&lt;li&gt;Innovation Council: Randy Katz&lt;/li&gt;
+&lt;/ul&gt;</content></entry><entry><title>Data Science Courses</title><link href="https://johngage.github.io/water/data-science-courses.html" rel="alternate"></link><published>2018-11-30T00:00:00-08:00</published><updated>2018-11-30T00:00:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-30:/water/data-science-courses.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;Eric...; Alex  ;&lt;/li&gt;
+&lt;li&gt;E-157 Environmental Justice&lt;/li&gt;
+&lt;li&gt;ER 190; Duncan Calloway&lt;/li&gt;
+&lt;li&gt;ER 190 HW 5 Air quality
+2.5 micron K-nearest neighbors scikit-learn&lt;/li&gt;
+&lt;li&gt;MCB 32: Intro to Human Physiology: Alex&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;421 lab students
+* targets: Bio 1A&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;E 157 : Khalid Khadir&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOC 130AC: social inequality:
+Tract data&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Legalst-123: Data, Predicciton and Law&lt;/p&gt;
+&lt;p&gt;election …&lt;/p&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;Eric...; Alex  ;&lt;/li&gt;
+&lt;li&gt;E-157 Environmental Justice&lt;/li&gt;
+&lt;li&gt;ER 190; Duncan Calloway&lt;/li&gt;
+&lt;li&gt;ER 190 HW 5 Air quality
+2.5 micron K-nearest neighbors scikit-learn&lt;/li&gt;
+&lt;li&gt;MCB 32: Intro to Human Physiology: Alex&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;421 lab students
+* targets: Bio 1A&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;E 157 : Khalid Khadir&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOC 130AC: social inequality:
+Tract data&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Legalst-123: Data, Predicciton and Law&lt;/p&gt;
+&lt;p&gt;election data into pandas
+&lt;em&gt; ESPM-163AC: Environmetal Justice
+&lt;/em&gt; XRHETOR-R1A: The Craft of Writing&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Global 150:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Spring:&lt;/p&gt;
+&lt;p&gt;1as 150
+E 157 AC
+ESPM 156
+CP 101
+EEP 147
+ds-curriculum@berkeley.edu
+ds-modules.GITHUB_PAGES_BRANCH&lt;/p&gt;
+&lt;p&gt;Michael Cohen mcohen@newsunroad.com&lt;/p&gt;</content></entry><entry><title>Berkeley Vision 2050 Commission</title><link href="https://johngage.github.io/water/berkeley-vision-2050-commission.html" rel="alternate"></link><published>2018-11-28T00:00:00-08:00</published><updated>2018-11-28T00:00:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-28:/water/berkeley-vision-2050-commission.html</id><summary type="html">&lt;h3 id="planning-berkeley-future"&gt;Planning Berkeley Future&lt;/h3&gt;
+&lt;p&gt;Last year, following the initiative by Gordon Wozniak and John Gage, Mayor Jesse Arreguín created the Berkeley 2050 Commission, ratified this November in Berkeley by the passage of Prop R.  We have four committees: Technology, Quality of Life, Financial and Management, and Environment. We plan to spend …&lt;/p&gt;</summary><content type="html">&lt;h3 id="planning-berkeley-future"&gt;Planning Berkeley Future&lt;/h3&gt;
+&lt;p&gt;Last year, following the initiative by Gordon Wozniak and John Gage, Mayor Jesse Arreguín created the Berkeley 2050 Commission, ratified this November in Berkeley by the passage of Prop R.  We have four committees: Technology, Quality of Life, Financial and Management, and Environment. We plan to spend 2019 in a series of exploratory meetings with all elements of the Berkeley community, culminating in a comprehensive plan for infrastructure investment.&lt;/p&gt;
+&lt;p&gt;UrbanSim would be an ideal platform, it seems, for exploration of a range of possible futures in these meetings.&lt;/p&gt;
+&lt;p&gt;Berkeley will spend over $1 billion dollars in infrastructure maintenance, modification, and renovation in the next thirty years. We plan to explore the impact of new technologies on the costs of street surfacing and storm water treatment, waste water and clean water decentralization, energy system decentralization, re-engineering of all continuity systems--communications, energy distribution, water flows, transportation and materiel movement, piping systems,--and examine the costs and benefits of re-engineering all structures in Berkeley for resilience and efficiency.&lt;/p&gt;
+&lt;p&gt;Michael Reilly, Metropolitan Transportation Commission, San Francisco, California
+Agile urban modelling to support regional planning in the San Francisco bay area&lt;/p&gt;
+&lt;p&gt;Bryan T. Adey, Claudio Martani, Natalia Papathanasiou, Marcel Burkhalter, ETH
+Zürich
+Principles for estimating and communicating the sustainability of intervention programmes
+on infrastructure&lt;/p&gt;
+&lt;p&gt;Samuel Maurer, Paul Waddell, University of California, Berkeley
+Template-based task orchestration for urban modelling&lt;/p&gt;
+&lt;p&gt;Michael Ndwiga, Richard Mulwa, Juha Siikamaki and Jessica Alvsilver, University of
+Nairobi
+Valuing Urban Green Spaces and Nature Restoration in a Developing Country: Application
+of Choice Experiment&lt;/p&gt;
+&lt;p&gt;Joseph Ferreira, MIT
+Mi Diao, National University of Singapore
+Diem Le, Xiaohu Zhang, Singapore/MIT Alliance for Research and Technology
+Roberto Ponce Lopez, Jingsi Shaw, MIT
+Yi Zhu, Shanghai University of Finance and Economics
+P. Christopher Zegras, MIT
+Integrating Accessibility Measures into the Microsimulation of Daily Real Estate Market
+Dynamics&lt;/p&gt;
+&lt;p&gt;Paul Waddell, Samuel Maurer, Geoff Boeing, University of California, Berkeley
+Ignacio Garcia-Dorado, Google Research
+Max Gardner, Emily Porter, University of California, Berkeley
+Daniel Aliaga, Purdue University
+Architecture for modular microsimulation of real estate markets and transportation&lt;/p&gt;
+&lt;p&gt;Michael Wegener, Spiekermann &amp;amp; Wegener Urban and Regional Research (S&amp;amp;W)
+Modelling Long-term Urban Change&lt;/p&gt;
+&lt;p&gt;Keith C. Clarke, University of California, Santa Barbara
+Urbanization and global change in California&lt;/p&gt;
+&lt;p&gt;Roger White, Lien Poelmans, Karolien Vermeiren, Inge Uljee, Guy Engelen, Flemish
+Institute for Technological Research
+Long term simulation of urban development scenarios in support of spatial policy planning&lt;/p&gt;
+&lt;p&gt;https://www.nytimes.com/interactive/2016/05/18/upshot/which-buildings-in-manhattan-couldnt-be-built-again-today.html&lt;/p&gt;
+&lt;p&gt;http://www.quantierra.com/&lt;/p&gt;</content></entry><entry><title>Digital Plant Operational Data</title><link href="https://johngage.github.io/water/digital-plant-operational-data.html" rel="alternate"></link><published>2018-11-27T00:00:00-08:00</published><updated>2018-11-27T00:00:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-27:/water/digital-plant-operational-data.html</id><summary type="html">&lt;h4 id="notes-on-rachel-slabaugh-nuclear-plant-digital-data-and-machine-learning"&gt;Notes on Rachel Slabaugh Nuclear Plant Digital Data and Machine Learning&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;BIDS presentation Tuesday, 27 Nov 2018&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Nuclear plants are 3-5X more expensive to build and maintain than fossil fuel&lt;/p&gt;
+&lt;p&gt;Major operational and maintenance costs are personnel&lt;/p&gt;
+&lt;p&gt;Example of &lt;em&gt;Southern Nuclear&lt;/em&gt;, one of US nuclear operators:
+&lt;em&gt; 6 months of data …&lt;/em&gt;&lt;/p&gt;</summary><content type="html">&lt;h4 id="notes-on-rachel-slabaugh-nuclear-plant-digital-data-and-machine-learning"&gt;Notes on Rachel Slabaugh Nuclear Plant Digital Data and Machine Learning&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;BIDS presentation Tuesday, 27 Nov 2018&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Nuclear plants are 3-5X more expensive to build and maintain than fossil fuel&lt;/p&gt;
+&lt;p&gt;Major operational and maintenance costs are personnel&lt;/p&gt;
+&lt;p&gt;Example of &lt;em&gt;Southern Nuclear&lt;/em&gt;, one of US nuclear operators:
+&lt;em&gt; 6 months of data is 1 Terabyte: reveals how little is monitored.
+&lt;/em&gt; No retention of older data
+* Little analysis, not set up to allow machine learning&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Need physics-based models with machine learning parameter estimation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Battery Fault Detection: capture beginning of temperature rise; do not wait until threshold temperature is reached, with damage already present. Use Kalman filter with Theta = 0.3 to catch beginning&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content></entry><entry><title>Lake Tahoe Imagery</title><link href="https://johngage.github.io/water/lake-tahoe-imagery.html" rel="alternate"></link><published>2018-11-24T00:00:00-08:00</published><updated>2018-11-24T00:00:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-24:/water/lake-tahoe-imagery.html</id><summary type="html">&lt;p&gt;[[toc]]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Do This&lt;/li&gt;
+&lt;li&gt;[x] words&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="testing-links-sunrise"&gt;Testing links  :sunrise:&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/author/john-gage.html"&gt;a link to works by John Gage&lt;/a&gt;
+&lt;a href="google.com" title="Link to search"&gt;Go to Google&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://johngage.github.io/water/author/paul-krugman.html"&gt;a link to works by Paul Krugman&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;What does this do?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://johngage.github.io/water/battery-post.html"&gt;a link relative to the current file&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://johngage.github.io/water/index.html"&gt;link to index&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;h2 id="testing-links"&gt;Testing links&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://johngage.github.io/water/author/john-gage.html"&gt;a link to works by John Gage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="#hyph"&gt;hyphen&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What does this do? [#hyph]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/battery-post.html"&gt;a link to Batteries relative to the current file&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[Where to go][]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/index.html"&gt;link to index&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="#testing-links"&gt;link to …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;[[toc]]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Do This&lt;/li&gt;
+&lt;li&gt;[x] words&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="testing-links-sunrise"&gt;Testing links  :sunrise:&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/author/john-gage.html"&gt;a link to works by John Gage&lt;/a&gt;
+&lt;a href="google.com" title="Link to search"&gt;Go to Google&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://johngage.github.io/water/author/paul-krugman.html"&gt;a link to works by Paul Krugman&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;What does this do?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://johngage.github.io/water/battery-post.html"&gt;a link relative to the current file&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://johngage.github.io/water/index.html"&gt;link to index&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>Elections--United States: 2018</title><link href="https://johngage.github.io/water/Voting.html" rel="alternate"></link><published>2018-11-13T10:20:00-08:00</published><updated>2018-11-13T10:20:00-08:00</updated><author><name>Paul Krugman</name></author><id>tag:johngage.github.io,2018-11-13:/water/Voting.html</id><summary type="html">&lt;p class="first last"&gt;Overall Design of Elections&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="#hyph"&gt;hyphen&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What does this do? [#hyph]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/battery-post.html"&gt;a link to Batteries relative to the current file&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[Where to go][]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://johngage.github.io/water/index.html"&gt;link to index&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="#testing-links"&gt;link to headline&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="#buoy"&gt;link to buoy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="#tail-end-tag"&gt;link to tail end tag&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="1950 Miller pier and buoys: PAI" src="images/2018/12/1950-pai-tahoe-050-labeled.png"&gt;&lt;/p&gt;
+&lt;h3 id="tahoe-imagery"&gt;Tahoe Imagery&lt;/h3&gt;
+&lt;p&gt;Area of Interest&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Corner&lt;/th&gt;
+&lt;th&gt;Lat&lt;/th&gt;
+&lt;th&gt;Long&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;NW&lt;/td&gt;
+&lt;td&gt;39.143860&lt;/td&gt;
+&lt;td&gt;-120.152582&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;NE&lt;/td&gt;
+&lt;td&gt;39.143912&lt;/td&gt;
+&lt;td&gt;-120.150970&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SE&lt;/td&gt;
+&lt;td&gt;39.141406&lt;/td&gt;
+&lt;td&gt;-120.150828&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SW&lt;/td&gt;
+&lt;td&gt;39.141674&lt;/td&gt;
+&lt;td&gt;-120.152616&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;this is underscore&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Sites&lt;/th&gt;
+&lt;th&gt;Links&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;USGS&lt;/td&gt;
+&lt;td&gt;https://pubs.usgs.gov/ds/376/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;this is [hyphen]: #hyph&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id="a-list-of-imagery"&gt;A List of imagery&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Location&lt;/th&gt;
+&lt;th align="center"&gt;Series&lt;/th&gt;
+&lt;th&gt;Call Number&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;UC Davis aerial photo library&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1940&lt;/td&gt;
+&lt;td&gt;HDOs for the southern Lake Tahoe Basin&lt;/td&gt;
+&lt;td&gt;.&lt;/td&gt;
+&lt;td align="center"&gt;.&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1969&lt;/td&gt;
+&lt;td&gt;HDOs for the entire Lake Tahoe Basin&lt;/td&gt;
+&lt;td&gt;.&lt;/td&gt;
+&lt;td align="center"&gt;.&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1962&lt;/td&gt;
+&lt;td&gt;Photo mosaic index sheet 1-14   Project covers complete county&lt;/td&gt;
+&lt;td&gt;No Photos&lt;/td&gt;
+&lt;td align="center"&gt;PLA&lt;/td&gt;
+&lt;td&gt;G4363.P5A4 1962. C2   None&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td&gt;G4363.P5A4 1971. C3&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1962&lt;/td&gt;
+&lt;td&gt;Photo mosaic index sheet 1-14  Project covers complete county&lt;/td&gt;
+&lt;td&gt;No Photos&lt;/td&gt;
+&lt;td align="center"&gt;PLA&lt;/td&gt;
+&lt;td&gt;G4363.P5A4 1962. C2    None&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1964&lt;/td&gt;
+&lt;td&gt;Photo mosaic indexsheet 1-4 Project covers western portion of county&lt;/td&gt;
+&lt;td&gt;No Photos&lt;/td&gt;
+&lt;td align="center"&gt;ABM&lt;/td&gt;
+&lt;td&gt;G4363.P5A4 1964. U6 None&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1971&lt;/td&gt;
+&lt;td&gt;Photo mosaic index sheet 1-7   Project covers complete county&lt;/td&gt;
+&lt;td&gt;Complete photoset of project area   2492 [errror: 2942]&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td&gt;G4363.P5A4 1971. C3 Non-stereo&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1971&lt;/td&gt;
+&lt;td&gt;Photo mosaic index sheet 1-2  Project covers western portion of county&lt;/td&gt;
+&lt;td&gt;No Photos&lt;/td&gt;
+&lt;td align="center"&gt;ABM&lt;/td&gt;
+&lt;td&gt;G4363.P5A4 1971. U6    None&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1938&lt;/td&gt;
+&lt;td&gt;Photo mosaic index sheet 1-3   Project covers western portion of county&lt;/td&gt;
+&lt;td&gt;Complete photoset of project area&lt;/td&gt;
+&lt;td align="center"&gt;ABM&lt;/td&gt;
+&lt;td&gt;G4363.P5A4 1938. U6    Non-stereo Photoset includes large 20x25in. aerial photographs&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1969&lt;/td&gt;
+&lt;td&gt;Richerson, Peter J.&lt;/td&gt;
+&lt;td&gt;Community ecology of the Lake Tahoe plankton.&lt;/td&gt;
+&lt;td align="center"&gt;[Davis, Calif.] 1969.&lt;/td&gt;
+&lt;td&gt;UCD Special Collections (NRLF)     LD781 D5J 1969 R535     AVAILABLE   RESTRICTED USE&lt;/td&gt;
+&lt;td&gt;Description    111 \U+25a1. illus. Thesis Thesis--University of California, Davis.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;UCSB listing of all imagery for Placer County
+http://mil.library.ucsb.edu/apcatalog/ap_indexes/county.php?county_id=215&amp;amp;state_id=5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Framefinder&lt;/p&gt;
+&lt;p&gt;monody-cagey-fiesta-untrue&lt;/p&gt;
+&lt;p&gt;39.1422605,-120.1521439&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Buoy&lt;/th&gt;
+&lt;th&gt;Lat&lt;/th&gt;
+&lt;th&gt;Long&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Lovewell&lt;/td&gt;
+&lt;td&gt;39.142418&lt;/td&gt;
+&lt;td&gt;-120.151224&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;May&lt;/td&gt;
+&lt;td&gt;39.142275&lt;/td&gt;
+&lt;td&gt;-120.151335&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Gage&lt;/td&gt;
+&lt;td&gt;39.142242&lt;/td&gt;
+&lt;td&gt;-120.151583&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Marston&lt;/td&gt;
+&lt;td&gt;39.142099&lt;/td&gt;
+&lt;td&gt;-120.151378&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;VDB1&lt;/td&gt;
+&lt;td&gt;39.141968&lt;/td&gt;
+&lt;td&gt;-120.151730&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;VDB2&lt;/td&gt;
+&lt;td&gt;39.141872&lt;/td&gt;
+&lt;td&gt;-120.151867&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;VDB3&lt;/td&gt;
+&lt;td&gt;39.141862&lt;/td&gt;
+&lt;td&gt;-120.152068&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;VDB4&lt;/td&gt;
+&lt;td&gt;39.141700&lt;/td&gt;
+&lt;td&gt;-120.152170&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;rmarston@telstarinc.com,
+ Melisssa@midkiffandassoc.com,
+gary@midkiffandassoc.com,
+ gagemail@comcast.net&lt;/p&gt;
+&lt;p&gt;http://dev.virtualearth.net/REST/v1/Imagery/Metadata/Aerial/55.923,-133.653?zl=19&amp;amp;key=AoDUA8UQYQE4MBLf4G6XJqmmrbXZG9wdhFag0jbbcF2RNZwnNQnP4_tJ-FYL45GP&lt;/p&gt;
+&lt;p&gt;Viewing the ERDAS_IMG multi-layered images requires specialized software. A free desktop viewer, ERDAS ER Viewer is available from Hexagon Geospatial. ERDAS_IMG files can be viewed in GeoViewer, freely downloadable from LizardTech. ERDAS_IMG files can be read and written by ArcGIS Desktop and other ESRI applications. See Supported raster dataset file formats from ArcGIS help. It is also supported by Safe Software's FME engine for format conversion.&lt;/p&gt;
+&lt;p&gt;There appear to be two software libraries that support the reading and writing of ERDAS_IMG files:&lt;/p&gt;
+&lt;p&gt;The open source GDAL/OGR library. See GDAL: HFA -- Erdas Imagine .img. This capability in GDAL derives from a project evidently supported by Intergraph around 2004. Intergraph was owner of ERDAS IMAGINE software at the time. This project yielded a C++ API that is integrated into GDAL and also a utility img2tif designed to convert ERDAS_IMG files to GeoTIFFs. As of January 2015, the former link to the source code for img2tif (with a date of 2006) is no longer online. See former project page via the Internet Archive for more information. The compilers of this resource do not know whether GDAL support handles new variants of the ERDAS_IMG format. Comments welcome. This library is used by the open source QGIS and GRASS applications.
+The IMAGINE Developers' Toolkit, included in the Producer suite of the Power Portfolio from Hexagon Geospatial. This toolkit supports reading and writing of ERDAS_IMG files.&lt;/p&gt;
+&lt;h3 id="tail-end-tag"&gt;Tail end tag&lt;/h3&gt;
+&lt;h1 id="section-1"&gt;Section 1&lt;/h1&gt;
+&lt;p&gt;The formula, &lt;span class="math"&gt;\(y=mx+c\)&lt;/span&gt;, is displayed inline.
+Some symbols and equations (such as
+&lt;span class="math"&gt;\(\sum{x}\)&lt;/span&gt; or &lt;span class="math"&gt;\(\frac{1}{2}\)&lt;/span&gt;) are rescaled
+to prevent disruptions to the regular
+line spacing.
+For more voluminous equations (such as
+&lt;span class="math"&gt;\(\sum{\frac{(\mu - \bar{x})^2}{n-1}}\)&lt;/span&gt;),
+some line spacing disruptions are unavoidable.
+Math should then be displayed in displayed mode.
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\\sum{\frac{(\mu - \bar{x})^2}{n-1}}$$&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content></entry><entry><title>Elections--United States: 2018</title><link href="https://johngage.github.io/water/Voting.html" rel="alternate"></link><published>2018-11-13T10:20:00-08:00</published><updated>2018-11-13T10:20:00-08:00</updated><author><name>Paul Krugman</name></author><id>tag:johngage.github.io,2018-11-13:/water/Voting.html</id><summary type="html">&lt;p class="first last"&gt;Overall Design of Elections&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;This will be turned into &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;.&lt;/p&gt;
 &lt;div class="section" id="structural-problems"&gt;
 &lt;h2&gt;Structural Problems&lt;/h2&gt;
@@ -90,9 +774,14 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;#BBD0E0&lt;/p&gt;
-</content><category term="Table"></category><category term="How-to"></category></entry><entry><title>How This Site Was Created</title><link href="https://johngage.github.io/water/how-this-site-was-created.html" rel="alternate"></link><published>2018-11-12T17:00:00-08:00</published><updated>2018-11-12T17:00:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-12:/water/how-this-site-was-created.html</id><summary type="html">&lt;p&gt;Site Design&lt;/p&gt;</summary><content type="html">&lt;h2 id="this-site-was-patterned-on-the-site-created-by-peter-k-professor-of-engineering-at-portland-community-college"&gt;This site was patterned on the site created by Peter K. Professor of Engineering at Portland Community College&lt;/h2&gt;
+</content><category term="Table"></category><category term="How-to"></category></entry><entry><title>How This Site Was Created</title><link href="https://johngage.github.io/water/how-this-site-was-created.html" rel="alternate"></link><published>2018-11-12T17:00:00-08:00</published><updated>2018-12-29T00:00:00-08:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-12:/water/how-this-site-was-created.html</id><summary type="html">&lt;p&gt;Site Design&lt;/p&gt;</summary><content type="html">&lt;h2 id="this-site-was-patterned-on-the-site-created-by-peter-kazarinoff-professor-of-engineering-at-portland-community-college"&gt;This site was patterned on the site created by Peter Kazarinoff, Professor of Engineering at Portland Community College&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;He describes the tools, the editors, and the templates needed for a static web site.&lt;/li&gt;
+&lt;li&gt;He describes the tools, the editors, and the templates needed for a static web site. His site is&lt;/li&gt;
+&lt;li&gt;He has intriguing tools for conversion of Jupyter notebooks into LaTex.&lt;/li&gt;
+&lt;li&gt;Using his list of Pelican plugins.&lt;/li&gt;
+&lt;li&gt;
+&lt;h2 id="using-a-modification-of-his-pelicanconfpy-files-some-problems-with-final-rendering-and-with-publishconfpy"&gt;Using a modification of his pelicanconf.py files.  Some problems with final rendering, and with publishconf.py&lt;/h2&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="november-13-2018"&gt;November 13, 2018&lt;/h3&gt;
 &lt;p&gt;The author of Pelican, Alexis Metaireau, and the current maintainer of the pelican github site, Justin Meyer and 35 others, just released Pelican 4.0.&lt;/p&gt;
@@ -104,7 +793,7 @@
 &lt;span class="code-line"&gt;&lt;/span&gt;
 &lt;span class="code-line"&gt; &lt;span class="o"&gt;**&lt;/span&gt; &lt;span class="n"&gt;Writing&lt;/span&gt; &lt;span class="n"&gt;styles&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;_nb_header&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;this&lt;/span&gt; &lt;span class="n"&gt;should&lt;/span&gt; &lt;span class="n"&gt;be&lt;/span&gt; &lt;span class="n"&gt;included&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;theme&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;/span&gt;
 &lt;span class="code-line"&gt;&lt;/span&gt;
-&lt;span class="code-line"&gt;&lt;span class="n"&gt;CRITICAL&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;UndefinedError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;gettext&amp;#39;&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="n"&gt;undefined&lt;/span&gt;  &lt;/span&gt;
+&lt;span class="code-line"&gt;&lt;span class="n"&gt;CRITICAL&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;UndefinedError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;gettext&amp;#39;&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="n"&gt;undefined&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -142,8 +831,12 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;This seemed to get rid of the &lt;em&gt;gettext undefined&lt;/em&gt; error, and the site rendered.&lt;/p&gt;</content><category term="Guide"></category></entry><entry><title>UC Berkeley Data Science 8.1x</title><link href="https://johngage.github.io/water/Lab5.html" rel="alternate"></link><published>2018-11-03T12:40:00-07:00</published><updated>2018-11-03T12:40:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-03:/water/Lab5.html</id><summary type="html">&lt;p&gt;Lab 5: World, from edX Data Science 8.1x&lt;/p&gt;</summary><content type="html">&lt;p&gt;This post contains a Jupyter notebook from edX.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://hub.data8x.berkeley.edu/user/f2708e40fcd875ea32c5500086286bd1/notebooks/materials-x18/materials/x18/lab/1/lab05/lab05.ipynb#"&gt;Lab 5&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This seemed to get rid of the &lt;em&gt;gettext undefined&lt;/em&gt; error, and the site rendered.&lt;/p&gt;</content><category term="Guide"></category></entry><entry><title>UC Berkeley Data Science 8.1x Lab 5</title><link href="https://johngage.github.io/water/Lab5.html" rel="alternate"></link><published>2018-11-03T12:40:00-07:00</published><updated>2018-11-03T12:40:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-03:/water/Lab5.html</id><summary type="html">&lt;p&gt;Lab 5: World, from edX Data Science 8.1x&lt;/p&gt;</summary><content type="html">&lt;h4 id="incorporating-jupyter-notebooks"&gt;Incorporating Jupyter notebooks&lt;/h4&gt;
+&lt;p&gt;This post contains a Jupyter notebook from the 2018 edX series on Data Science from UC Berkley. The series included three segments, and will be repeated in January, 2019.&lt;/p&gt;
+&lt;p&gt;Here is the link to the version stored on UCBerkeley hub:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://hub.data8x.berkeley.edu/user/f2708e40fcd875ea32c5500086286bd1/notebooks/materials-x18/materials/x18/lab/1/lab05/lab05.ipynb#"&gt;Lab 5: Gapminder animation of World Bank and WHO data&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This is the inclusion of the actual Jupyter notebook; pelican converts it to pure HTML, using a long CSS file, and stores the HTML in the "notebook" subdirectory of "content".&lt;/p&gt;
 &lt;p&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
@@ -153,7 +846,7 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -163,7 +856,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt output_prompt"&gt;Out[1]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[1]:&lt;/div&gt;
 
 
 
@@ -179,8 +872,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h1 id="Lab-5:-World-Progress"&gt;Lab 5: World Progress&lt;a class="anchor-link" href="#Lab-5:-World-Progress"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Welcome to lab 5!&lt;/p&gt;
 &lt;p&gt;This final lab in Data 8.1x brings together many of the topics so far, including data table manipulation, visualization, and iteration. The content of the lab is based on a series of talks by Hans Rosling, a statistician who advised many world leaders about the changing state of the world's population.&lt;/p&gt;
@@ -213,14 +905,13 @@
 &lt;span class="code-line"&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;gofer.ok&lt;/span&gt; &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;check&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;The global population of humans reached 1 billion around 1800, 3 billion around 1960, and 7 billion around 2011. The potential impact of exponential population growth has concerned scientists, economists, and politicians alike.&lt;/p&gt;
 &lt;p&gt;The UN Population Division estimates that the world population will likely continue to grow throughout the 21st century, but at a slower rate, perhaps reaching 11 billion by 2100. However, the UN does not rule out scenarios of more extreme growth.&lt;/p&gt;
@@ -245,7 +936,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;population&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;40&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -255,7 +946,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -438,8 +1129,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="1.-Bangladesh"&gt;1. Bangladesh&lt;a class="anchor-link" href="#1.-Bangladesh"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;In the &lt;code&gt;population&lt;/code&gt; table, the &lt;code&gt;geo&lt;/code&gt; column contains three-letter codes established by the &lt;a href="https://en.wikipedia.org/wiki/International_Organization_for_Standardization"&gt;International Organization for Standardization&lt;/a&gt; (ISO) in the &lt;a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3#Current_codes"&gt;Alpha-3&lt;/a&gt; standard. We will begin by taking a close look at Bangladesh. Inspect the standard to find the 3-letter code for Bangladesh.&lt;/p&gt;
 
@@ -447,8 +1137,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;strong&gt;Question 1.1&lt;/strong&gt; &lt;br/&gt;Create a table called &lt;code&gt;b_pop&lt;/code&gt; that has two columns labeled &lt;code&gt;time&lt;/code&gt; and &lt;code&gt;population_total&lt;/code&gt;. The first column should contain the years from 1970 through 2015 (including both 1970 and 2015) and the second should contain the population of Bangladesh in each of those years.&lt;/p&gt;
 
@@ -465,7 +1154,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;b_pop&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -475,7 +1164,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt output_prompt"&gt;Out[30]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[30]:&lt;/div&gt;
 
 
 
@@ -545,14 +1234,13 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;check&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tests/q1_1.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Run the following cell to create a table called &lt;code&gt;b_five&lt;/code&gt; that has the population of Bangladesh every five years. At a glance, it appears that the population of Bangladesh has been growing quickly indeed!&lt;/p&gt;
 
@@ -576,14 +1264,13 @@
 &lt;span class="code-line"&gt;&lt;span class="c1"&gt;#print(type(b_five))&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Run the next cell to create a table called &lt;code&gt;b_five_growth&lt;/code&gt; which shows the growth rate for each five-year period from 1970 through 2010.&lt;/p&gt;
 
@@ -600,7 +1287,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;b_five_growth&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;annual_growth&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;PercentFormatter&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -615,14 +1302,13 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;b_five_growth&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;num_rows&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;While the population has grown every five years since 1970, the annual growth rate decreased dramatically from 1985 to 2005. Let's look at some other information in order to develop a possible explanation. Run the next cell to load three additional tables of measurements about countries over time.&lt;/p&gt;
 
@@ -641,7 +1327,7 @@
 &lt;span class="code-line"&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;child_mortality&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -651,7 +1337,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
@@ -688,8 +1374,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;The &lt;code&gt;life_expectancy&lt;/code&gt; table contains a statistic that is often used to measure how long people live, called &lt;em&gt;life expectancy at birth&lt;/em&gt;. This number, for a country in a given year, &lt;a href="http://blogs.worldbank.org/opendata/what-does-life-expectancy-birth-really-mean"&gt;does not measure how long babies born in that year are expected to live&lt;/a&gt;. Instead, it measures how long someone would live, on average, if the &lt;em&gt;mortality conditions&lt;/em&gt; in that year persisted throughout their lifetime. These "mortality conditions" describe what fraction of people at each age survived the year. So, it is a way of measuring the proportion of people that are staying alive, aggregated over different age groups in the population.&lt;/p&gt;
 
@@ -697,8 +1382,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;The &lt;code&gt;fertility&lt;/code&gt; table contains a statistic that is often used to measure how many babies are being born, the &lt;em&gt;total fertility rate&lt;/em&gt;. This number describes the &lt;a href="https://www.measureevaluation.org/prh/rh_indicators/specific/fertility/total-fertility-rate"&gt;number of children a woman would have in her lifetime&lt;/a&gt;, on average, if the current rates of birth by age of the mother persisted throughout her child bearing years, assuming she survived through age 49.&lt;/p&gt;
 
@@ -706,8 +1390,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;strong&gt;Question 1.2.&lt;/strong&gt; &lt;br/&gt;Write a function &lt;code&gt;fertility_over_time&lt;/code&gt; that takes the Alpha-3 code of a &lt;code&gt;country&lt;/code&gt; and a &lt;code&gt;start&lt;/code&gt; year. It returns a two-column table with labels "&lt;code&gt;Year&lt;/code&gt;" and "&lt;code&gt;Children per woman&lt;/code&gt;" that can be used to generate a line chart of the country's fertility rate each year, starting at the &lt;code&gt;start&lt;/code&gt; year. The plot should include the &lt;code&gt;start&lt;/code&gt; year and all later years that appear in the &lt;code&gt;fertility&lt;/code&gt; table.&lt;/p&gt;
 &lt;p&gt;Then, in the next cell, call your &lt;code&gt;fertility_over_time&lt;/code&gt; function on the Alpha-3 code for Bangladesh and the year 1970 in order to plot how Bangladesh's fertility rate has changed since 1970. Note that the function &lt;code&gt;fertility_over_time&lt;/code&gt; should not return the plot itself &lt;strong&gt;The expression that draws the line plot is provided for you; please don't change it.&lt;/strong&gt;&lt;/p&gt;
@@ -729,7 +1412,7 @@
 &lt;span class="code-line"&gt;    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;country_fertility_after_start&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -743,7 +1426,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;fertility_over_time&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bangladesh_code&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1970&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# You should *not* change this line.&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -753,7 +1436,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -778,7 +1461,7 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;check&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tests/q1_2.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -788,7 +1471,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -803,8 +1486,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;strong&gt;Question 1.3.&lt;/strong&gt; &lt;br/&gt;Using both the &lt;code&gt;fertility&lt;/code&gt; and &lt;code&gt;child_mortality&lt;/code&gt; tables, draw a scatter diagram with one point for each year, starting with 1970, that has Bangladesh's total fertility on the horizontal axis and its child mortality on the vertical axis.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The expression that draws the scatter diagram is provided for you; please don't change it.&lt;/strong&gt; Instead, create a table called &lt;code&gt;post_1969_fertility_and_child_mortality&lt;/code&gt; with the appropriate column labels and data in order to generate the chart correctly. Use the label "&lt;code&gt;Children per woman&lt;/code&gt;" to describe total fertility and the label "&lt;code&gt;Child deaths per 1000 born&lt;/code&gt;" to describe child mortality.&lt;/p&gt;
@@ -832,7 +1514,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;post_1969_fertility_and_child_mortality&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;scatter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Children per woman&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Child deaths per 1000 born&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# You should *not* change this line.&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -842,7 +1524,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
@@ -864,7 +1546,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -889,14 +1571,13 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;check&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tests/q1_3.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="2.-The-World"&gt;2. The World&lt;a class="anchor-link" href="#2.-The-World"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The change observed in Bangladesh since 1970 can also be observed in many other developing countries: health services improve, life expectancy increases, and child mortality decreases. At the same time, the fertility rate often plummets, and so the population growth rate decreases despite increasing longevity.&lt;/p&gt;
 
@@ -904,8 +1585,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Run the next cell to see a line plot of the world population from 1800 through 2005.  You might recognize some of the code used!&lt;/p&gt;
 
@@ -920,7 +1600,7 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;population&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;where&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;time&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;are&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;between&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1800&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2006&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;drop&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;geo&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;group&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;time&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -930,7 +1610,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -948,8 +1628,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;strong&gt;Question 2.1.&lt;/strong&gt; Create a function &lt;code&gt;stats_for_year&lt;/code&gt; that takes a &lt;code&gt;year&lt;/code&gt; and returns a table of statistics. The table it returns should have four columns: &lt;code&gt;geo&lt;/code&gt;, &lt;code&gt;population_total&lt;/code&gt;, &lt;code&gt;children_per_woman_total_fertility&lt;/code&gt;, and &lt;code&gt;child_mortality_under_5_per_1000_born&lt;/code&gt;. Each row should contain one Alpha-3 country code and three statistics: population, fertility rate, and child mortality for that &lt;code&gt;year&lt;/code&gt; from the &lt;code&gt;population&lt;/code&gt;, &lt;code&gt;fertility&lt;/code&gt; and &lt;code&gt;child_mortality&lt;/code&gt; tables. Only include rows for which all three statistics are available for the country and year.&lt;/p&gt;
 &lt;p&gt;In addition, restrict the result to country codes that appears in &lt;code&gt;big_50&lt;/code&gt;, an array of the 50 most populous countries in 2010. This restriction will speed up computations later in the project.&lt;/p&gt;
@@ -985,14 +1664,13 @@
 &lt;span class="code-line"&gt;    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;yearstat&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Try calling your function &lt;code&gt;stats_for_year&lt;/code&gt; on any year between 1960 and 2010 in the cell below.  Try to understand the output of &lt;code&gt;stats_for_year&lt;/code&gt;.&lt;/p&gt;
 
@@ -1007,7 +1685,7 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;stats_for_year&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1960&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1017,7 +1695,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -1246,7 +1924,7 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;check&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tests/q2_1.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1256,7 +1934,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -1271,8 +1949,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;strong&gt;Question 2.2.&lt;/strong&gt; &lt;br/&gt;Create a table called &lt;code&gt;pop_by_decade&lt;/code&gt; with two columns called &lt;code&gt;decade&lt;/code&gt; and &lt;code&gt;population&lt;/code&gt;. It has a row for each &lt;code&gt;year&lt;/code&gt; since 1960 that starts a decade. The &lt;code&gt;population&lt;/code&gt; column contains the total population of all countries included in the result of &lt;code&gt;stats_for_year(year)&lt;/code&gt; for the first &lt;code&gt;year&lt;/code&gt; of the decade. For example, 1960 is the first year of the 1960's decade. You should see that these countries contain most of the world's population.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Hint:&lt;/em&gt; It may be helpful to use the provided &lt;code&gt;pop_for_year&lt;/code&gt; that computes this total population, then &lt;code&gt;apply&lt;/code&gt; it to the &lt;code&gt;decade&lt;/code&gt; column.&lt;/p&gt;
@@ -1297,7 +1974,7 @@
 &lt;span class="code-line"&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;The proportion of world population of the big 50 in 2015 is&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pop_for_year&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2015&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;worldpop&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2015&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1307,7 +1984,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
@@ -1334,7 +2011,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;pop_by_decade&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;NumberFormatter&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1344,7 +2021,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt output_prompt"&gt;Out[41]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[41]:&lt;/div&gt;
 
 
 
@@ -1397,7 +2074,7 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;check&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tests/q2_2.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1407,7 +2084,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -1422,8 +2099,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;The &lt;code&gt;countries&lt;/code&gt; table describes various characteristics of countries. The &lt;code&gt;country&lt;/code&gt; column contains the same codes as the &lt;code&gt;geo&lt;/code&gt; column in each of the other data tables (&lt;code&gt;population&lt;/code&gt;, &lt;code&gt;fertility&lt;/code&gt;, and &lt;code&gt;child_mortality&lt;/code&gt;). The &lt;code&gt;world_6region&lt;/code&gt; column classifies each country into a region of the world. Run the cell below to inspect the data.&lt;/p&gt;
 
@@ -1439,7 +2115,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;countries&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;select&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;world_6region&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1449,7 +2125,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt output_prompt"&gt;Out[43]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[43]:&lt;/div&gt;
 
 
 
@@ -1512,8 +2188,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;strong&gt;Question 2.3.&lt;/strong&gt; &lt;br/&gt;Create a table called &lt;code&gt;region_counts&lt;/code&gt; that has two columns, &lt;code&gt;region&lt;/code&gt; and &lt;code&gt;count&lt;/code&gt;. It should describe the count of how many countries in each region appear in the result of &lt;code&gt;stats_for_year(1960)&lt;/code&gt;. For example, one row would have &lt;code&gt;south_asia&lt;/code&gt; as its &lt;code&gt;world_6region&lt;/code&gt; value and an integer as its &lt;code&gt;count&lt;/code&gt; value: the number of large South Asian countries for which we have population, fertility, and child mortality numbers from 1960.&lt;/p&gt;
 
@@ -1541,7 +2216,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;region_counts&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;labels&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1551,7 +2226,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
@@ -1568,7 +2243,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt output_prompt"&gt;Out[44]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[44]:&lt;/div&gt;
 
 
 
@@ -1591,7 +2266,7 @@
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;check&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tests/q2_3.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1601,7 +2276,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -1616,8 +2291,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;The following scatter diagram compares total fertility rate and child mortality rate for each country in 1960. The area of each dot represents the population of the country, and the color represents its region of the world. Run the cell. Do you think you can identify any of the dots?&lt;/p&gt;
 
@@ -1651,7 +2325,7 @@
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;fertility_vs_child_mortality&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1960&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1661,7 +2335,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -1679,8 +2353,7 @@
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;The result of the cell below is interactive. It may take several minutes to run because it computers 55 tables (one for each year). When it's done, a scatter plot and a slider should appear.&lt;/p&gt;
 &lt;p&gt;Drag the slider to the right to see how countries have changed over time. You'll find that the great divide between so-called "Western" and "developing" countries that existed in the 1960's has nearly disappeared. This shift in fertility rates is the reason that the global population is expected to grow more slowly in the 21st century than it did in the 19th and 20th centuries.&lt;/p&gt;
@@ -1704,7 +2377,7 @@
 &lt;span class="code-line"&gt;                     &lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;widgets&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;IntSlider&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;min&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1960&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;max&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2015&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1960&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1714,7 +2387,7 @@
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt"&gt;&lt;/div&gt;
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
@@ -1722,10 +2395,10 @@
 
  
  
-&lt;div id="45f9b077-b4c6-4df9-8e19-00230e18b79a"&gt;&lt;/div&gt;
+&lt;div id="a2a60c9e-cb99-46d4-81af-b9355e665c72"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_widget_view "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
+var element = $('#a2a60c9e-cb99-46d4-81af-b9355e665c72');
 &lt;/script&gt;
 &lt;script type="application/vnd.jupyter.widget-view+json"&gt;
 {"model_id": "2f317a436f2c4a23b7b8eeaa435c02e9", "version_major": 2, "version_minor": 0}
@@ -1739,8 +2412,7 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="Submission"&gt;Submission&lt;a class="anchor-link" href="#Submission"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Congratulations, you're done with lab 5 and Data 8.1x!  Be sure to&lt;/p&gt;
 &lt;ul&gt;
@@ -1766,14 +2438,27 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 &lt;span class="code-line"&gt;    &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;grade_notebook&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;lab05.ipynb&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;sorted&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;glob&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;glob&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tests/q*.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
+    &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt; &lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
  
 
-&lt;/p&gt;</content><category term="jupyter"></category></entry><entry><title>Battery Technology: Solid State Electrolyte</title><link href="https://johngage.github.io/water/battery-post.html" rel="alternate"></link><published>2018-11-02T14:40:00-07:00</published><updated>2018-11-02T14:40:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-02:/water/battery-post.html</id><summary type="html">&lt;p&gt;This is the first post of a series of posts on energy. It will show a jupyter notebook encapsulating fifty battery chemistries.&lt;/p&gt;</summary><content type="html">&lt;h3 id="this-is-a-jupyter-notebook-derived-from-bill-joy"&gt;This is a Jupyter notebook derived from Bill Joy&lt;/h3&gt;
+&lt;/p&gt;</content><category term="jupyter"></category></entry><entry><title>Battery Technology: Solid State Electrolyte</title><link href="https://johngage.github.io/water/battery-post.html" rel="alternate"></link><published>2018-11-02T14:40:00-07:00</published><updated>2018-11-02T14:40:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-02:/water/battery-post.html</id><summary type="html">&lt;p&gt;This is the first post of a series of posts on energy. It will show a jupyter notebook encapsulating fifty battery chemistries.&lt;/p&gt;</summary><content type="html">&lt;h3 id="this-is-a-jupyter-notebook-of-physical-characteristics-of-battery-chemistries-derived-from-bill-joy"&gt;This is a Jupyter notebook of physical characteristics of battery chemistries derived from Bill Joy&lt;/h3&gt;
 &lt;p&gt;The implementing company is &lt;a href="https://ionicmaterials.com/"&gt;Ionic Materials&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
@@ -1795,7 +2480,7 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 &lt;span class="code-line"&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;ipywidgets&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;widgets&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1808,7 +2493,7 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1818,7 +2503,7 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt output_prompt"&gt;Out[1]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[1]:&lt;/div&gt;
 
 
 
@@ -1842,7 +2527,7 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 &lt;span class="code-line"&gt;&lt;span class="c1"&gt;#import pandas as pd&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1855,7 +2540,7 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;chemistry&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;data/chemistries.csv&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1868,7 +2553,7 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;chemistry&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1878,7 +2563,7 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt output_prompt"&gt;Out[13]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[13]:&lt;/div&gt;
 
 
 
@@ -3145,7 +3830,7 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;chemistry&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3155,7 +3840,7 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt output_prompt"&gt;Out[22]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[22]:&lt;/div&gt;
 
 
 
@@ -3222,7 +3907,7 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;chemT&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Table&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_table&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;data/chemistries.csv&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3235,7 +3920,7 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;chemT&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3245,7 +3930,7 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt output_prompt"&gt;Out[28]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[28]:&lt;/div&gt;
 
 
 
@@ -3307,7 +3992,7 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 &lt;span class="code-line"&gt;&lt;span class="n"&gt;chemT&lt;/span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3317,7 +4002,7 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 
 &lt;div class="output_area"&gt;
 
-&lt;div class="prompt output_prompt"&gt;Out[29]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[29]:&lt;/div&gt;
 
 
 
@@ -3370,6 +4055,19 @@ var element = $('#45f9b077-b4c6-4df9-8e19-00230e18b79a');
 &lt;/div&gt;
 
 &lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt; &lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
  
 
 &lt;/p&gt;</content><category term="battery"></category><category term="jupyter"></category></entry><entry><title>Test</title><link href="https://johngage.github.io/water/test.html" rel="alternate"></link><published>2018-11-02T14:40:00-07:00</published><updated>2018-11-02T14:40:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-02:/water/test.html</id><summary type="html">&lt;h4 id="test-tuesday-markdown"&gt;Test Tuesday Markdown&lt;/h4&gt;</summary><content type="html">&lt;h4 id="test-tuesday-markdown"&gt;Test Tuesday Markdown&lt;/h4&gt;</content></entry><entry><title>Waveglider</title><link href="https://johngage.github.io/water/waveglider.html" rel="alternate"></link><published>2018-11-02T14:40:00-07:00</published><updated>2018-11-02T14:40:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-11-02:/water/waveglider.html</id><summary type="html">&lt;p&gt;Wave Glider SV3 Wave Engine GPCTD+DO Spare Sensor (SKU Code:)
@@ -3395,6 +4093,16 @@ This sensor kit includes a pumped Turner C3 Fluorometer in a custom foam compart
 &lt;p&gt;List of technologies by date of introduction&lt;/p&gt;
 &lt;p&gt;point-to-point
 mass&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Richard Barnes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Washingtonpost.com/wonkblog&lt;/p&gt;
+&lt;p&gt;Stephen Nass&lt;/p&gt;
+&lt;p&gt;quantify the shape of the districts
+compactness.&lt;/p&gt;
+&lt;p&gt;Compactness score: establish metric&lt;/p&gt;
+&lt;p&gt;Three scores:
+22 of them&lt;/p&gt;
 &lt;p&gt;devices.&lt;/p&gt;
 &lt;p&gt;volume/velocity/variety/veracity&lt;/p&gt;
 &lt;p&gt;what frequencies can we see?
@@ -3412,33 +4120,41 @@ animation of branching&lt;/p&gt;
 slide of timeline: key applications
 devices/&lt;/p&gt;
 &lt;p&gt;show what is inside voting machine; circuit Board
-Can we use the internet.....show book covers?&lt;/p&gt;</content><category term="Stanford"></category><category term="Data Science"></category></entry><entry><title>WaterHackathon</title><link href="https://johngage.github.io/water/waterhackathon-followup.html" rel="alternate"></link><published>2018-09-17T14:32:34-07:00</published><updated>2018-09-17T14:32:34-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-17:/water/waterhackathon-followup.html</id><summary type="html">&lt;p&gt;What happened? Who did what? what are the names of the &lt;code&gt;team members&lt;/code&gt;_ ?&lt;/p&gt;
-&lt;p&gt;.. _&lt;code&gt;team members&lt;/code&gt;&lt;/p&gt;
+Can we use the internet.....show book covers?&lt;/p&gt;</content><category term="Stanford"></category><category term="Data Science"></category></entry><entry><title>WaterHackathon</title><link href="https://johngage.github.io/water/waterhackathon-followup.html" rel="alternate"></link><published>2018-09-17T14:32:34-07:00</published><updated>2018-09-17T14:32:34-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-17:/water/waterhackathon-followup.html</id><summary type="html">&lt;h3 id="examples"&gt;Examples:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Follow-up:&lt;/li&gt;
+&lt;li&gt;Berkeley Wata Data Collaborative:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What happened? Who did what? what are the names of the &lt;code&gt;team members&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;.. &lt;em&gt;&lt;code&gt;team members&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;List all open water datasets: who, what, when, where, why&lt;/li&gt;
 &lt;li&gt;State listing of water districts&lt;/li&gt;
 &lt;li&gt;Open and Transparent Water Data Act (AB 1755)&lt;/li&gt;
-&lt;li&gt;Sustainable Groundwater Management
-Agencies&lt;/li&gt;
-&lt;li&gt;disadvantaged unincorporated communities?&lt;/li&gt;
-&lt;li&gt;small systems to …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;What happened? Who did what? what are the names of the &lt;code&gt;team members&lt;/code&gt;_ ?&lt;/p&gt;
-&lt;p&gt;.. _&lt;code&gt;team members&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;Sustainable Groundwater Management Agencies&lt;/li&gt;
+&lt;li&gt;disadvantaged unincorporated …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;h3 id="examples"&gt;Examples:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Follow-up:&lt;/li&gt;
+&lt;li&gt;Berkeley Wata Data Collaborative:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What happened? Who did what? what are the names of the &lt;code&gt;team members&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;.. &lt;em&gt;&lt;code&gt;team members&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;List all open water datasets: who, what, when, where, why&lt;/li&gt;
 &lt;li&gt;State listing of water districts&lt;/li&gt;
 &lt;li&gt;Open and Transparent Water Data Act (AB 1755)&lt;/li&gt;
-&lt;li&gt;Sustainable Groundwater Management
-Agencies&lt;/li&gt;
+&lt;li&gt;Sustainable Groundwater Management Agencies&lt;/li&gt;
 &lt;li&gt;disadvantaged unincorporated communities?&lt;/li&gt;
-&lt;li&gt;small systems to accurately define their service
-boundaries?&lt;/li&gt;
-&lt;li&gt;means for communities
-to quickly identify where there may be nearby, available water resources to address a water
-shortage?&lt;/li&gt;
-&lt;li&gt;annual electronic reporting data collected by the Drinking Water Division of the
-State Water Resources Control Board?
-9.&lt;/li&gt;
-&lt;/ol&gt;</content><category term="Water"></category><category term="Cal EPA"></category></entry><entry><title>Dan Kammen at College of Marin</title><link href="https://johngage.github.io/water/COM%20post.html" rel="alternate"></link><published>2018-09-15T12:00:00-07:00</published><updated>2018-09-15T12:00:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-15:/water/COM post.html</id><summary type="html">&lt;p&gt;Next steps&lt;/p&gt;</summary><content type="html">&lt;h2 id="california-environment-data-challenge"&gt;California Environment Data Challenge&lt;/h2&gt;
+&lt;li&gt;small systems to accurately define their service boundaries?&lt;/li&gt;
+&lt;li&gt;means for communities to quickly identify where there may be nearby, available water resources to address a water shortage?&lt;/li&gt;
+&lt;li&gt;annual electronic reporting data collected by the Drinking Water Division of the State Water Resources Control Board?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;Eileen White, EBMUD Director of WasteWater&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Water Data Collaborative ||
+--|---|--
+Anthony Suen|
+Violet |
+10 students|Weekly meeting&lt;/p&gt;</content><category term="Water"></category><category term="Cal EPA"></category></entry><entry><title>Dan Kammen at College of Marin</title><link href="https://johngage.github.io/water/COM%20post.html" rel="alternate"></link><published>2018-09-15T12:00:00-07:00</published><updated>2018-09-15T12:00:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-15:/water/COM post.html</id><summary type="html">&lt;p&gt;Next steps&lt;/p&gt;</summary><content type="html">&lt;h2 id="california-environment-data-challenge"&gt;California Environment Data Challenge&lt;/h2&gt;
 &lt;p&gt;Saw Felicia Marcus, Matt Rodriguez&lt;/p&gt;</content><category term="Cal EPA"></category><category term="Paris COP"></category></entry><entry><title>Tables-test</title><link href="https://johngage.github.io/water/Trying%20reStructuredText.html" rel="alternate"></link><published>2018-09-15T12:00:00-07:00</published><updated>2018-09-15T12:00:00-07:00</updated><author><name>John Gage</name></author><id>tag:johngage.github.io,2018-09-15:/water/Trying reStructuredText.html</id><summary type="html">&lt;p class="first last"&gt;My reStructuredText post.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;California Water Data Challenge&lt;/p&gt;
 &lt;p&gt;California Water Data Challenge&lt;/p&gt;
@@ -3544,6 +4260,11 @@ block quote&lt;/blockquote&gt;
 &lt;tr&gt;
 &lt;td&gt;1&lt;/td&gt;
 &lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
