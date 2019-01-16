@@ -2395,10 +2395,10 @@ Math should then be displayed in displayed mode.
 
  
  
-&lt;div id="a2a60c9e-cb99-46d4-81af-b9355e665c72"&gt;&lt;/div&gt;
+&lt;div id="184af258-2c2a-49c8-af52-882b4b63385b"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_widget_view "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#a2a60c9e-cb99-46d4-81af-b9355e665c72');
+var element = $('#184af258-2c2a-49c8-af52-882b4b63385b');
 &lt;/script&gt;
 &lt;script type="application/vnd.jupyter.widget-view+json"&gt;
 {"model_id": "2f317a436f2c4a23b7b8eeaa435c02e9", "version_major": 2, "version_minor": 0}
