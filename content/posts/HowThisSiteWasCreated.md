@@ -50,7 +50,7 @@ from pelican.utils import (DateFormatter, copy, mkdir_p, order_content,
                            python_2_unicode_compatible)
 ```
 
-add
+add (on line 27)
 
 
 ```

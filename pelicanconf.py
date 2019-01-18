@@ -2,12 +2,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-
+LOAD_CONTENT_CACHE = False
 AUTHOR = 'John Gage'
 SITENAME = 'Water, Power, Network'
 SITESUBTITLE = 'City Critical Infrastructure'
 #SITEURL = ''
-SITEURL = 'http://johngage.github.io/water'
+SITEURL = 'https://johngage.github.io/water'
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
@@ -19,8 +19,8 @@ ARTICLE_PATHS = ['posts']  #could be posts
 STATIC_PATHS = ['images',
                 'data',
                 'publications',
-                'extra'
-                'code',
+                'extra',
+                'notebooks',
                 ]
 PLUGIN_PATHS = ['pelican-plugins' ]
 EXTRA_PATH_METADATA = {
@@ -61,26 +61,30 @@ DIRECT_TEMPLATES = ('index','tags', 'categories', 'authors', 'archives', 'search
 USE_FOLDER_AS_CATEGORY = False
 
 DEFAULT_CATEGORY = 'misc'
+# Banner
+#BANNER = '/path/to/banner.png'
+#BANNER_SUBTITLE = 'This is my subtitle'
+#BANNER_ALL_PAGES =  True
+
 #Top menus
 DISPLAY_CATEGORIES_ON_MENU = False
-
 DISPLAY_PAGES_ON_MENU = True
 #Note all urls are relative to output folder, not content
 MENUITEMS = [
              #('About', '/pages/about'),
-             ('Posts', '/posts/2018'),
+             ('2018 Posts', '/posts/2018'),
+             ('2019 Posts', '/posts/2019'),
              #('Tags', '/tags'),
-             ('Categories', '/categories.html')
+             ('JNotebook', '/tag/jupyter.html'),
+             ('JNB', '/notebooks')
              ]
+DISPLAY_ARCHIVE_ON_MENU = True
 
 #Sidebar Elements
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 RECENT_POST_COUNT = 4
-
 DISPLAY_CATEGORIES_ON_SIDEBAR = True
-
 DISPLAY_SERIES_ON_SIDEBAR = True
-
 SIDEBAR_IMAGES_HEADER = 'My Images'
 SIDEBAR_IMAGES = ["/images/sunlight.png" ]
 
@@ -89,18 +93,14 @@ DISPLAY_CATEGORY_IN_BREADCRUMBS = True
 SERIES_TEXT = 'Article %(index)s of the %(name)s series'
 #sidebar options
    # Tag Cloud Options
-DISPLAY_SERIES_ON_SIDEBAR = True
 DISPLAY_TAGS_INLINE = True
 TAG_CLOUD_MAX_ITEMS = 10
    # Recent Posts in Sidebas
-DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
-RECENT_POST_COUNT = 3
    # Series infor on sidebar
 SHOW_SERIES = True
 DISPLAY_ARTICLE_INFO_ON_INDEX = True
 
 ARCHIVES_SAVE_AS = 'archives.html'
-DISPLAY_ARCHIVE_ON_MENU = True
 YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'
 
@@ -150,7 +150,7 @@ MULTI_NEIGHBORS = 3
 PLUGINS = [
     'better_codeblock_line_numbering',
     #'ipynb.liquid',
-    #'i18n_subsites',
+    'i18n_subsites',
     'liquid_tags.img', 'liquid_tags.video', 'liquid_tags.youtube',
     'liquid_tags.notebook',
     'liquid_tags.vimeo',

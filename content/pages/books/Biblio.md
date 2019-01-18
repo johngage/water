@@ -1,4 +1,4 @@
-Title: Water Biblio
+Title: Water Books
 Slug: books
 Date: 2018-09-15 12:00
 Category: Reading

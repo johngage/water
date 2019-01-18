@@ -1,0 +1,8 @@
+---
+layout: "post"
+title: "JNB tests"
+date: 2019-01-18 12:46
+tags: jupyter
+---
+
+{% notebook lab05Song1.ipynb %}

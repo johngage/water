@@ -17,7 +17,7 @@ Category: Water, Data Science
 * SOC 130AC: social inequality:
 Tract data
 
-Legalst-123: Data, Predicciton and Law
+Legalst-123: Data, Prediction and Law
 
 election data into pandas
 * ESPM-163AC: Environmetal Justice

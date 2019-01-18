@@ -1,5 +1,6 @@
 Title: UC Berkeley Data Science 8.1x Lab 5
 Date: 2018-11-3 12:40
+Update: 2019-1-18
 Status: published
 Category: World
 Tags: jupyter

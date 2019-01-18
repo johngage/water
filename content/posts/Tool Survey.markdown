@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Tool Survey"
-date: "2019-01-10 08:39"
+date: 2019-01-10 08:39
 ---
 ### Tool Survey
 

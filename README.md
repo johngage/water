@@ -44,3 +44,6 @@ $ git submodule update --init --recursive ``
 $ git submodule add https://github.com/getpelican/pelican-plugins.git
 $ git submodule init
 $ git submodule update --init --recursive``
+
+(staticsite) $ ghp-import output
+(staticsite) $ git push origin gh-pages
