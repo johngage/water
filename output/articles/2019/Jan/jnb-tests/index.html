@@ -1,0 +1,5710 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>"JNB tests" - Water, Power, Network</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<style type="text/css">
+
+/*some stuff for output/input prompts*/
+div.cell{border:1px solid transparent;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;display:flex;flex-direction:column;align-items:stretch}div.cell.selected{border-radius:4px;border:thin #ababab solid}
+div.cell.edit_mode{border-radius:4px;border:thin #008000 solid}
+div.cell{width:100%;padding:5px 5px 5px 0;margin:0;outline:none}
+div.prompt{min-width:11ex;padding:.4em;margin:0;font-family:monospace;text-align:right;line-height:1.21429em}
+@media (max-width:480px){div.prompt{text-align:left}}div.inner_cell{display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;display:flex;flex-direction:column;align-items:stretch;-webkit-box-flex:1;-moz-box-flex:1;box-flex:1;flex:1}
+div.input_area{border:1px solid #cfcfcf;border-radius:4px;background:#f7f7f7;line-height:1.21429em}
+div.prompt:empty{padding-top:0;padding-bottom:0}
+div.input{page-break-inside:avoid;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:horizontal;-moz-box-align:stretch;display:box;box-orient:horizontal;box-align:stretch;}
+div.inner_cell{width:90%;}
+div.input_area{border:1px solid #cfcfcf;border-radius:4px;background:#f7f7f7;}
+div.input_prompt{color:navy;border-top:1px solid transparent;}
+div.output_wrapper{margin-top:5px;position:relative;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;width:100%;}
+div.output_scroll{height:24em;width:100%;overflow:auto;border-radius:4px;-webkit-box-shadow:inset 0 2px 8px rgba(0, 0, 0, 0.8);-moz-box-shadow:inset 0 2px 8px rgba(0, 0, 0, 0.8);box-shadow:inset 0 2px 8px rgba(0, 0, 0, 0.8);}
+div.output_collapsed{margin:0px;padding:0px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;width:100%;}
+div.out_prompt_overlay{height:100%;padding:0px 0.4em;position:absolute;border-radius:4px;}
+div.out_prompt_overlay:hover{-webkit-box-shadow:inset 0 0 1px #000000;-moz-box-shadow:inset 0 0 1px #000000;box-shadow:inset 0 0 1px #000000;background:rgba(240, 240, 240, 0.5);}
+div.output_prompt{color:darkred;}
+
+a.anchor-link:link{text-decoration:none;padding:0px 20px;visibility:hidden;}
+h1:hover .anchor-link,h2:hover .anchor-link,h3:hover .anchor-link,h4:hover .anchor-link,h5:hover .anchor-link,h6:hover .anchor-link{visibility:visible;}
+/* end stuff for output/input prompts*/
+
+
+.highlight-ipynb .hll { background-color: #ffffcc }
+.highlight-ipynb  { background: #f8f8f8; }
+.highlight-ipynb .c { color: #408080; font-style: italic } /* Comment */
+.highlight-ipynb .err { border: 1px solid #FF0000 } /* Error */
+.highlight-ipynb .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight-ipynb .o { color: #666666 } /* Operator */
+.highlight-ipynb .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight-ipynb .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight-ipynb .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight-ipynb .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight-ipynb .gd { color: #A00000 } /* Generic.Deleted */
+.highlight-ipynb .ge { font-style: italic } /* Generic.Emph */
+.highlight-ipynb .gr { color: #FF0000 } /* Generic.Error */
+.highlight-ipynb .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight-ipynb .gi { color: #00A000 } /* Generic.Inserted */
+.highlight-ipynb .go { color: #888888 } /* Generic.Output */
+.highlight-ipynb .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight-ipynb .gs { font-weight: bold } /* Generic.Strong */
+.highlight-ipynb .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight-ipynb .gt { color: #0044DD } /* Generic.Traceback */
+.highlight-ipynb .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight-ipynb .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight-ipynb .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight-ipynb .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight-ipynb .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight-ipynb .kt { color: #B00040 } /* Keyword.Type */
+.highlight-ipynb .m { color: #666666 } /* Literal.Number */
+.highlight-ipynb .s { color: #BA2121 } /* Literal.String */
+.highlight-ipynb .na { color: #7D9029 } /* Name.Attribute */
+.highlight-ipynb .nb { color: #008000 } /* Name.Builtin */
+.highlight-ipynb .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight-ipynb .no { color: #880000 } /* Name.Constant */
+.highlight-ipynb .nd { color: #AA22FF } /* Name.Decorator */
+.highlight-ipynb .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight-ipynb .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight-ipynb .nf { color: #0000FF } /* Name.Function */
+.highlight-ipynb .nl { color: #A0A000 } /* Name.Label */
+.highlight-ipynb .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight-ipynb .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight-ipynb .nv { color: #19177C } /* Name.Variable */
+.highlight-ipynb .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight-ipynb .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight-ipynb .mf { color: #666666 } /* Literal.Number.Float */
+.highlight-ipynb .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight-ipynb .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight-ipynb .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight-ipynb .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight-ipynb .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight-ipynb .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight-ipynb .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight-ipynb .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight-ipynb .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight-ipynb .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight-ipynb .sx { color: #008000 } /* Literal.String.Other */
+.highlight-ipynb .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight-ipynb .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight-ipynb .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight-ipynb .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight-ipynb .vc { color: #19177C } /* Name.Variable.Class */
+.highlight-ipynb .vg { color: #19177C } /* Name.Variable.Global */
+.highlight-ipynb .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight-ipynb .il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
+
+<style type="text/css">
+/* Overrides of notebook CSS for static HTML export */
+div.entry-content {
+  overflow: visible;
+  padding: 8px;
+}
+.input_area {
+  padding: 0.2em;
+}
+
+a.heading-anchor {
+ white-space: normal;
+}
+
+.rendered_html
+code {
+ font-size: .8em;
+}
+
+pre.ipynb {
+  color: black;
+  background: #f7f7f7;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0px;
+  font-size: 13px;
+}
+
+/* remove the prompt div from text cells */
+div.text_cell .prompt {
+    display: none;
+}
+
+/* remove horizontal padding from text cells, */
+/* so it aligns with outer body text */
+div.text_cell_render {
+    padding: 0.5em 0em;
+}
+
+img.anim_icon{padding:0; border:0; vertical-align:middle; -webkit-box-shadow:none; -box-shadow:none}
+
+div.collapseheader {
+    width=100%;
+    padding: 2px;
+    cursor: pointer;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+    <link href="https://johngage.github.io/water/images/sunlight.png" rel="icon">
+
+<link rel="canonical" href="https://johngage.github.io/water/articles/2019/Jan/jnb-tests/">
+
+        <meta name="author" content="John Gage" />
+        <meta name="keywords" content="jupyter" />
+        <meta name="description" content="Lab 5: Song Classification, Part 2¶Welcome to Lab 5! We&#39;ll pick off where we left off and continue to build a song classifer using k-nearest neighbors. Please complete lab 4 before starting lab 5. Lab 4 is part 1 of the investigation. Lab 5 is part 2 of the …" />
+
+        <meta property="og:site_name" content="Water, Power, Network" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="&#34;JNB tests&#34;"/>
+        <meta property="og:url" content="https://johngage.github.io/water/articles/2019/Jan/jnb-tests/"/>
+        <meta property="og:description" content="Lab 5: Song Classification, Part 2¶Welcome to Lab 5! We&#39;ll pick off where we left off and continue to build a song classifer using k-nearest neighbors. Please complete lab 4 before starting lab 5. Lab 4 is part 1 of the investigation. Lab 5 is part 2 of the …"/>
+        <meta property="article:published_time" content="2019-01-18" />
+            <meta property="article:section" content="misc" />
+            <meta property="article:tag" content="jupyter" />
+            <meta property="article:author" content="John Gage" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://johngage.github.io/water/theme/css/bootstrap.flatly.min.css" type="text/css"/>
+    <link href="https://johngage.github.io/water/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://johngage.github.io/water/theme/css/pygments/native.css" rel="stylesheet">
+    <link href="https://johngage.github.io/water/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://johngage.github.io/water/theme/css/style.css" type="text/css"/>
+        <link href="https://johngage.github.io/water/static/css/custom.css" rel="stylesheet">
+
+
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="https://johngage.github.io/water/" class="navbar-brand">
+Water, Power, Network            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/posts/2018">2018 Posts</a></li>
+                    <li><a href="/posts/2019">2019 Posts</a></li>
+                    <li><a href="/tag/jupyter.html">JNotebook</a></li>
+                    <li><a href="/notebooks">JNB</a></li>
+                         <li><a href="https://johngage.github.io/water/pages/About/">
+                             About
+                          </a></li>
+                         <li><a href="https://johngage.github.io/water/pages/books/">
+                             Water Books
+                          </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+              <li><a href="https://johngage.github.io/water/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            <ol class="breadcrumb">
+                <li><a href="https://johngage.github.io/water" title="Water, Power, Network"><i class="fa fa-home fa-lg"></i></a></li>
+                <li><a href="https://johngage.github.io/water/category/misc.html" title="misc">misc</a></li>
+                <li class="active">"JNB tests"</li>
+            </ol>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="https://johngage.github.io/water/articles/2019/Jan/jnb-tests/"
+                       rel="bookmark"
+                       title="Permalink to "JNB tests"">
+                        "JNB tests"
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2019-01-18T12:46:00-08:00"> Fri 18 January 2019</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://johngage.github.io/water/tag/jupyter.html">jupyter</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Lab-5:-Song-Classification,-Part-2">Lab 5: Song Classification, Part 2<a class="anchor-link" href="#Lab-5:-Song-Classification,-Part-2">&#182;</a></h1><p>Welcome to Lab 5! We'll pick off where we left off and continue to build a song classifer using k-nearest neighbors.</p>
+<p>Please complete lab 4 before starting lab 5.</p>
+<p>Lab 4 is part 1 of the investigation. Lab 5 is part 2 of the investigation.</p>
+<p>You will build a classifier that guesses whether a song is hip-hop or country, using only the number of times that each word appears in a song's lyrics.  By the end of the project, you should know how to:</p>
+<ol>
+<li>Clean and organize a dataset used to test a machine learning model</li>
+<li>Build a k-nearest neighbors classifier</li>
+<li>Test a classifier on data</li>
+</ol>
+<p><strong>Advice.</strong> Develop your answers incrementally. To perform a complicated table manipulation, break it up into steps, perform each step on a different line, give a new name to each result, and check that each intermediate result is what you expect. You can add any additional names or functions you want to the provided cells.</p>
+<p>To get started, load <code>datascience</code>, <code>numpy</code>, <code>plots</code>, and <code>okgrade</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="c1"># Run this cell to set up the notebook, but please don&#39;t change it.</span></span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span></span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">math</span></span>
+<span class="code-line"><span class="kn">from</span> <span class="nn">datascience</span> <span class="k">import</span> <span class="o">*</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1"># These lines set up the plotting functionality and formatting.</span></span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">matplotlib</span></span>
+<span class="code-line"><span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;Agg&#39;</span><span class="p">,</span> <span class="n">warn</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></span>
+<span class="code-line"><span class="o">%</span><span class="k">matplotlib</span> inline</span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plots</span></span>
+<span class="code-line"><span class="n">plots</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;fivethirtyeight&#39;</span><span class="p">)</span></span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">warnings</span></span>
+<span class="code-line"><span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="ne">UserWarning</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1"># These lines load the tests.</span></span>
+<span class="code-line"><span class="kn">from</span> <span class="nn">okgrade</span> <span class="k">import</span> <span class="n">grade</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Overview:-Recap">Overview: Recap<a class="anchor-link" href="#Overview:-Recap">&#182;</a></h2><p>In lab 4, we completed the following tasks:</p>
+<ol>
+<li>In section 1, we explored the dataset and split the dataset into training data and test data.</li>
+<li>In section 2, we ran through a guided example of the k-Nearest Neightbors (k-NN) classification algorithm.</li>
+</ol>
+<p><strong>If you do not remember lab 4, we highly recommend you go back and review it now. It will help you for this lab. </strong></p>
+<p>In lab 5, we are going to complete the following tasks:</p>
+<ol>
+<li>Identify some features.</li>
+<li>Define a classifier function using your features and the training set.</li>
+<li>Evaluate its performance (the proportion of correct classifications) on the test set.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Run the cell below to set up the lab.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">lyrics</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;lyrics.csv&#39;</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">training_proportion</span> <span class="o">=</span> <span class="mi">11</span><span class="o">/</span><span class="mi">16</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">num_songs</span> <span class="o">=</span> <span class="n">lyrics</span><span class="o">.</span><span class="n">num_rows</span></span>
+<span class="code-line"><span class="n">num_train</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num_songs</span> <span class="o">*</span> <span class="n">training_proportion</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">num_valid</span> <span class="o">=</span> <span class="n">num_songs</span> <span class="o">-</span> <span class="n">num_train</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">train_lyrics</span> <span class="o">=</span> <span class="n">lyrics</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">num_train</span><span class="p">))</span></span>
+<span class="code-line"><span class="n">test_lyrics</span> <span class="o">=</span> <span class="n">lyrics</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">num_train</span><span class="p">,</span> <span class="n">num_songs</span><span class="p">))</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">def</span> <span class="nf">most_common</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">table</span><span class="p">):</span></span>
+<span class="code-line">    <span class="k">return</span> <span class="n">table</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="n">label</span><span class="p">)</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">descending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="n">label</span><span class="p">)</span><span class="o">.</span><span class="n">item</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.-Features">1. Features<a class="anchor-link" href="#1.-Features">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, we're going to extend our classifier from lab 4 to consider more than two features at a time.</p>
+<p>Euclidean distance still makes sense with more than two features. For <code>n</code> different features, we compute the difference between corresponding feature values for two songs, square each of the <code>n</code>  differences, sum up the resulting numbers, and take the square root of the sum.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong> Question 1.1 </strong> <br/>
+Write a function to compute the Euclidean distance between two <strong>arrays</strong> of features of <em>arbitrary</em> (but equal) length.  Use it to compute the distance between the first song in the training set and the first song in the test set, <em>using all of the features</em>.  (Remember that the title, artist, and genre of the songs are not features.)</p>
+<p><strong>Note:</strong> To convert row objects to arrays, use <code>np.array</code>. For example, if <code>t</code> was a table, <code>np.array(t.row(0))</code> converts row 0 of <code>t</code> into an array.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">feature_names</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">train_lyrics</span><span class="o">.</span><span class="n">column_labels</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">train_lyrics</span><span class="o">.</span><span class="n">column_labels</span><span class="p">)])</span></span>
+<span class="code-line"><span class="n">feature_names</span><span class="p">,</span><span class="c1">#type(features)</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[44]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre><span class="code-line">(array([&#39;i&#39;, &#39;the&#39;, &#39;you&#39;, ..., &#39;pe&#39;, &#39;gee&#39;, &#39;colleg&#39;], dtype=&#39;&lt;U13&#39;),)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">features0</span><span class="o">=</span><span class="n">train_lyrics</span><span class="o">.</span><span class="n">row</span><span class="p">(</span><span class="mi">0</span><span class="p">)[</span><span class="mi">3</span><span class="p">:]</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">features1</span><span class="p">,</span> <span class="n">features2</span><span class="p">):</span></span>
+<span class="code-line">    <span class="sd">&quot;&quot;&quot;The Euclidean distance between two arrays of feature values.&quot;&quot;&quot;</span></span>
+<span class="code-line">    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">sum</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">features1</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">features2</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">distance_first_to_first</span> <span class="o">=</span> <span class="n">distance</span><span class="p">(</span><span class="n">train_lyrics</span><span class="o">.</span><span class="n">row</span><span class="p">(</span><span class="mi">0</span><span class="p">)[</span><span class="mi">3</span><span class="p">:],</span><span class="n">test_lyrics</span><span class="o">.</span><span class="n">row</span><span class="p">(</span><span class="mi">0</span><span class="p">)[</span><span class="mi">3</span><span class="p">:])</span></span>
+<span class="code-line"><span class="n">distance_first_to_first</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[46]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre><span class="code-line">0.14822770081404466</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">grade</span><span class="p">(</span><span class="s2">&quot;tests/q1_1.py&quot;</span><span class="p">)</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[47]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<pre><span class="code-line">tests/q1_1.py: All tests passed!</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.-Creating-your-own-feature-set">1.1. Creating your own feature set<a class="anchor-link" href="#1.1.-Creating-your-own-feature-set">&#182;</a></h3><p>Unfortunately, using all of the features has some downsides.  One clear downside is <em>computational</em> -- computing Euclidean distances just takes a long time when we have lots of features.  You might have noticed that in the last question!</p>
+<p>So we're going to select just 20.  We'd like to choose features that are very <em>discriminative</em>. That is, features which lead us to correctly classify as much of the test set as possible.  This process of choosing features that will make a classifier work well is sometimes called <em>feature selection</em>, or more broadly <em>feature engineering</em>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong> Question 1.1.1 </strong> <br/>
+Look through the list of features (the labels of the <code>lyrics</code> table after the first three).  Choose 20 common words that you think might let you distinguish between country and hip-hop songs. Make sure to choose words that are frequent enough that every song contains at least one of them. Don't just choose the 20 most frequent, though... you can do much better.</p>
+<p>You might want to come back to this question later to improve your list, once you've seen how to evaluate your classifier.  The first time you answer this question, spend some time looking through the features, but not more than 15 minutes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">most_common</span><span class="p">(</span><span class="s1">&#39;Artist&#39;</span><span class="p">,</span><span class="n">train_lyrics</span><span class="p">)</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[48]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre><span class="code-line">&#39;Brad Paisley&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">feat</span><span class="o">=</span><span class="n">Table</span><span class="p">()</span><span class="o">.</span><span class="n">with_column</span><span class="p">(</span><span class="s1">&#39;Features&#39;</span><span class="p">,</span><span class="n">feature_names</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">feat</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table border="1" class="dataframe">
+    <thead>
+        <tr>
+            <th>Features</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>durch     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>u         </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>brick     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>girlfriend</td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>komm      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>revolut   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>borrow    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tenemo    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>someon    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>beau      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>glide     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mis       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>chain     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>they      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>lost      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>partner   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>suprem    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>vera      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>blew      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>habla     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>yeux      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hold      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>truth     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>paus      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>stick     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mc        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>brush     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>definit   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>explor    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>major     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>worri     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bubbl     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>così      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>suppos    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>memoria   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>beggin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>work      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>georg     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>geh       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bounc     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>comb      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>stiff     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ello      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>peur      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hai       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>parc      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>small     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mate      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>doubl     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>control   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tener     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>miedo     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>taught    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>along     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cd        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>stall     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>por       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fountain  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>paul      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>canto     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ment      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>headlight </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>forgiven  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>dub       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>seventh   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mist      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>attack    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>romant    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>lip       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gent      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>south     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>zeit      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ribbon    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>crucifi   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>anchor    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>riot      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>of        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>vuelva    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>graviti   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>babylon   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>soll      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>south     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>brake     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>control   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fall      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>defeat    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>am        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>escuchar  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>attract   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>needl     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>deja      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>monster   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mirar     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>paradis   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>structur  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>jest      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>although  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>piel      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>itch      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>creo      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sol       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bug       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>die       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fine      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>been      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cannot    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cover     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>lento     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wish      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>muss      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>joy       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mom       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>monkey    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tiempo    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>jamaica   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>beso      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>further   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>liber     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>much      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bark      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>din       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>i’v       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>found     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>querer    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gut       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cigarett  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mio       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>vient     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>stream    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>forma     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>prima     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>und       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>understood</td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hin       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mentira   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>paid      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>organ     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>autr      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>viel      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>volta     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>shelf     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pant      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>être      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>with      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>modo      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>kommer    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gasolin   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>advic     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>band      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gain      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>amanec    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>warn      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gent      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>20        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>shade     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>symbol    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>aujourdhui</td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>etwa      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tellin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>abandon   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>devour    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>favourit  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fazer     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>via       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>posso     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>5         </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>colour    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>faint     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>eas       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>famili    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>squar     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>jsui      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>aquello   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>digo      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>now       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>devast    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>farther   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>letra     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>prison    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>killin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>until     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hopeless  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>nois      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>shield    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>piec      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cuando    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cruz      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>more      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>dr        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>quizá     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sha       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>parc      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>daylight  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>robin     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>plagu     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>photo     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gritar    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>honor     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>lifetim   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sta       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>truli     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>recogn    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>flaw      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>romanc    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>between   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mala      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fiction   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tank      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>terribl   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>about     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>perder    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>commit    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>smoke     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>kun       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>rewind    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mysteri   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bom       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bli       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>lust      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>vez       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pardon    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wolv      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hollywood </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>opportun  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>walkin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>humbl     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>kneel     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ist       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>everlast  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>poni      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>virus     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>convinc   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>masquerad </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>alibi     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tempt     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>memori    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>grain     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ficar     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>heartach  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>heart     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>letzt     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cuz       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>case      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>thrown    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>slippin   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>zoo       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sell      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>curl      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>deliv     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>overflow  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>boat      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>alma      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>scheme    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cheat     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ahí       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gear      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>nyt       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bist      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>honest    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>net       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>plein     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>shop      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>perdida   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>voglio    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>last      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hustl     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cat       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>quedo     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>soll      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>freund    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ficar     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>author    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>einem     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>perman    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cowboy    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>arriba    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>kaikki    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>depui     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>background</td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bone      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>drown     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>rule      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>lai       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>primera   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>type      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hope      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>view      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>juic      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ingen     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>idl       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>daß       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sest      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mom       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>guarda    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pode      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>extrem    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>jede      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sing      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fascin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>lento     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>beef      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wär       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>paus      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>your      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>dio       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>themselv  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>endless   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>trash     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>flesh     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>can       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>frame     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mad       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>neither   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>expos     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>intens    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>thirst    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>melhor    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hammer    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gleich    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>vision    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>progress  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>yeux      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sacrific  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>neighbor  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>50        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>più       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>routin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>paus      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>saddl     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>is        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ze        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bajo      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>willi     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gain      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wieder    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bis       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>zurück    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>stell     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>co        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>dêtre     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>flesh     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wenn      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>qué       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wreck     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sword     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>rap       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>giorni    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>taint     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>niemand   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>convinc   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>reveng    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>heroin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ninguém   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>dag       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>flaw      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>risk      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>rout      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>eterno    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cada      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>player    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tragic    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bid       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>absurd    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>danc      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>spite     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>por       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>some      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>negro     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>women     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>afternoon </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>almighti  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gun       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>dautr     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>plea      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mourn     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fever     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>alegr     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ao        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cherri    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ohn       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>masquerad </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>vien      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wing      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>materi    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>secur     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>burst     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>highest   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>spell     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cuanto    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>dime      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pound     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>empti     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sparkl    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>glow      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>glove     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>esser     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>howl      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>off       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>combat    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>kingdom   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>troi      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bright    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mellow    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ty        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>goodnight </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pit       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>loco      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>shall     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>des       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sail      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>restless  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>morn      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pocket    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>dot       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>modo      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>vaya      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>chose     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>harmoni   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>llora     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hun       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bet       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>desol     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>vein      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>aid       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ir        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>faz       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>web       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>concentr  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>it        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pavement  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sabor     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bull      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>print     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>orang     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cada      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>few       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>youth     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mist      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tough     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>phase     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>rumor     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>chemin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>vuelta    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>deck      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>silhouett </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wo        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>virgin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ruin      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>lookin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pit       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>spi       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>littl     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>home      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>uptown    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gana      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>del       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>urg       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>insid     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>perfect   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>saturday  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>scar      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>kiss      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>morn      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>doigt     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>organ     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>civil     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>camino    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>either    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tut       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>peu       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sugar     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>da        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ter       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>shiver    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>church    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>anna      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>lang      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bliss     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mit       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>dit       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ooh       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tai       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>anyth     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>drip      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>collar    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>roll      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>conclus   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>there     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>herself   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>stern     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>shes      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>chemic    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>romanc    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ciudad    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>jest      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>juli      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>jet       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>e         </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>dag       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bullshit  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>céu       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>curl      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>selbst    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wow       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mind      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ogni      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gentlemen </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>garden    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>perder    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sta       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>long      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mexico    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>adesso    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>capit     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>world     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cycl      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>lo        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sangr     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>spread    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wah       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>no        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>melt      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mira      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cell      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>spite     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gave      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>desir     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>for       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fairi     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ever      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ku        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ugli      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fino      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sabor     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cowboy    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sat       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>coração   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fest      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>later     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>begun     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pistol    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ash       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>flaw      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>those     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>chest     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>deceit    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>thru      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>vous      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>princ     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>order     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>reel      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>rob       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ana       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>beer      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>apolog    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tuesday   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>na        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fuse      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>taken     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>están     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>half      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>maiden    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>host      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wore      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>q         </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sugar     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fulfil    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>g         </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>oon       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fou       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sudden    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>thing     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>merri     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hatr      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fou       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>callin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>farm      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>über      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>slap      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>comput    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>histoir   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>boot      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>depoi     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>march     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>jen       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bang      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>below     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>carri     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ash       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tutti     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>decis     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>shred     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tall      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>arriv     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sunris    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sorri     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pushin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>invad     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>louder    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>command   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>key       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>with      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>date      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ed        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>until     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>miei      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bas       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>remors    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>des       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pig       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>neue      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bello     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ecstasi   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>void      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hospit    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pain      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>made      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>volt      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>jean      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>eagl      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>robe      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>maiden    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pierdo    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tua       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>nein      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>niin      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>form      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mil       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>preciso   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>match     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>whirl     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>self      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>duel      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>brain     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>señor     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>nunca     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mann      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>waitin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>besid     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>saber     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pot       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>coffe     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>film      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>road      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>who       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>basta     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>blanco    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pin       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sail      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>siehst    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>junk      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>yellow    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>person    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>runaway   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>claus     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>distancia </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>beam      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>empieza   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fun       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sehn      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>du        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>vece      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>enjoy     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>signal    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>total     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>denk      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bobbi     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>siento    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>amongst   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cherri    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>from      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>vert      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>finest    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ela       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>riot      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>must      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pelo      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>templ     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>madrugada </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>domani    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>corp      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>jumpin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>someday   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>collaps   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>maid      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>form      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>move      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>forev     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>chill     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>photograph</td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>complet   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>larg      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>rain      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>and       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>stereo    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>priest    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>decay     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pearl     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bound     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>medicin   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>explos    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>toca      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>union     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hoje      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>jag       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>propheci  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>coraz     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bean      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fiesta    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>curs      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>perd      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>threat    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>lace      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>broke     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>nossa     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sum       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tennesse  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>us        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>faut      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ahi       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>achiev    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>defens    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>dêtre     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>squeez    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wird      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>or        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>spiritu   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>soleil    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pen       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>men       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>evri      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>shinin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>continu   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>glitter   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>morgen    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>dure      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>puzzl     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>freak     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>grave     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>disconnect</td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>world     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>igual     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fui       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fli       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sólo      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gusta     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>confin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>safeti    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>conquer   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>accid     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>oooh      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>voglio    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>thin      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>grant     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>senza     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>green     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>von       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>000       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>terribl   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>destin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>imag      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>stack     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>calor     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>jo        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>husband   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hypnot    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>revers    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>concern   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>around    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bitter    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ow        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>floor     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hay       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>model     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>jede      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>flesh     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>dead      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sever     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>awaken    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>concentr  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pistol    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ku        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>suffoc    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>p         </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>thrown    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ela       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>forward   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>martyr    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cama      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>stress    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pant      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>club      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>expect    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>scream    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>it´       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tooth     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>liar      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>faster    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>unit      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>lord      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>decay     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tellin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>meant     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>salli     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>join      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>earli     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>rebel     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ve        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>soi       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>beef      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mama      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>drag      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>nuestra   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>betti     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>not       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>market    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>treat     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>oye       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sea       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>dirt      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cloth     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>otro      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>de        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>funk      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>magia     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>month     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>honey     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>across    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>uniform   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>durch     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>minut     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>awhil     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>immer     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>forbidden </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>consequ   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sow       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>miracl    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>         </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>consum    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ceux      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ficar     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>routin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>einem     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>card      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>jerk      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>soil      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>start     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>find      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>without   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>market    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>vers      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>chair     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ach       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pleas     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>et        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>expect    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>anda      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>kickin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>momento   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sens      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sooth     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>set       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>avenu     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>rule      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>freeway   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>blond     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>sal       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>stronger  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>despertar </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>forg      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>echo      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>retreat   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mondo     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>intox     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>author    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mill      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>croi      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bonni     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cosmic    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>weed      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>blah      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>scent     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>famili    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>focus     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>faith     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ze        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tutto     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gritar    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pale      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fore      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>heut      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>propheci  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>brooklyn  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wear      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>2x        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tree      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>leau      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>younger   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>exact     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>highway   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>the       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cruz      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>herself   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>oli       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>summertim </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ooooh     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>redempt   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>caer      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mourn     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mich      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>peur      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>woo       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>curv      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ella      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>repeat    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>slumber   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ano       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>dom       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>misma     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>background</td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wind      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>das       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>anyway    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>meno      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>salir     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wake      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>jealous   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>truck     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>harvest   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mamma     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>und       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>revolv    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>doubt     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>weiter    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>shakin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wa        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>vivir     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>skeleton  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tem       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>strap     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bright    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>dedic     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cash      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>bailar    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>tryin     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>buena     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>door      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>wander    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>llena     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cow       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ole       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>star      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>judg      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>swallow   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fi        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>complic   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>middl     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>past      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>jumpin    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>música    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>fácil     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>cuerpo    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>genocid   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>solv      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>boca      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>weapon    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>vera      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mayb      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>almighti  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ultim     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>thug      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gran      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>ihr       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>perhap    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>lucif     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>himmel    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>regret    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>argu      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>coup      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>find      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>où        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>age       </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>40        </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>appreci   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hasta     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>rider     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>1         </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>soir      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>compani   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>pueblo    </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hermano   </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>hold      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>intox     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>modo      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>lick      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>translat  </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>mucha     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>veux      </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>vento     </td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>gypsi     </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="c1"># Set my_20_features to an array of 20 features (strings that are column labels)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">my_20_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;cocain&#39;</span><span class="p">,</span><span class="s1">&#39;sad&#39;</span><span class="p">,</span><span class="s1">&#39;feel&#39;</span><span class="p">,</span> <span class="s1">&#39;life&#39;</span><span class="p">,</span> <span class="s1">&#39;blood&#39;</span><span class="p">,</span> <span class="s1">&#39;fool&#39;</span><span class="p">,</span> <span class="s1">&#39;truck&#39;</span><span class="p">,</span> <span class="s1">&#39;jesus&#39;</span><span class="p">,</span> <span class="s1">&#39;brother&#39;</span><span class="p">,</span><span class="s1">&#39;askin&#39;</span> <span class="p">,</span> <span class="s1">&#39;cheat&#39;</span><span class="p">,</span><span class="s1">&#39;heartbreak&#39;</span><span class="p">,</span> <span class="s1">&#39;soul&#39;</span><span class="p">,</span> <span class="s1">&#39;heartach&#39;</span><span class="p">,</span> <span class="s1">&#39;hiphop&#39;</span><span class="p">,</span> <span class="s1">&#39;angel&#39;</span><span class="p">,</span> <span class="s1">&#39;drug&#39;</span><span class="p">,</span> <span class="s1">&#39;thread&#39;</span><span class="p">,</span> <span class="s1">&#39;cake&#39;</span><span class="p">,</span> <span class="s1">&#39;mornin&#39;</span><span class="p">]</span></span>
+<span class="code-line"><span class="nb">len</span><span class="p">(</span><span class="n">my_20_features</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">train_20</span> <span class="o">=</span> <span class="n">train_lyrics</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">my_20_features</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">test_20</span> <span class="o">=</span> <span class="n">test_lyrics</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">my_20_features</span><span class="p">)</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This test makes sure that you have chosen words such that at least one appears in each song. If you can't find words that satisfy this test just through intuition, try writing code to print out the titles of songs that do not contain any words from your list, then look at the words they do contain.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">grade</span><span class="p">(</span><span class="s2">&quot;tests/q1_1_1.py&quot;</span><span class="p">)</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[51]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<pre><span class="code-line">tests/q1_1_1.py: All tests passed!</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Next, let's classify the first song from our test set using these features.  You can examine the song by running the cells below. Do you think it will be classified correctly?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Song:&quot;</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">test_lyrics</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;Title&#39;</span><span class="p">,</span> <span class="s1">&#39;Artist&#39;</span><span class="p">,</span> <span class="s1">&#39;Genre&#39;</span><span class="p">,</span> <span class="s1">&#39;feel&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></span>
+<span class="code-line"><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Features:&quot;</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">test_20</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="code-line">Song:</span>
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table border="1" class="dataframe">
+    <thead>
+        <tr>
+            <th>Title</th> <th>Artist</th> <th>Genre</th> <th>feel</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>That Kind of Love</td> <td>Alison Krauss</td> <td>Country</td> <td>0.005291</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="code-line">Features:</span>
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table border="1" class="dataframe">
+    <thead>
+        <tr>
+            <th>cocain</th> <th>sad</th> <th>feel</th> <th>life</th> <th>blood</th> <th>fool</th> <th>truck</th> <th>jesus</th> <th>brother</th> <th>askin</th> <th>cheat</th> <th>heartbreak</th> <th>soul</th> <th>heartach</th> <th>hiphop</th> <th>angel</th> <th>drug</th> <th>thread</th> <th>cake</th> <th>mornin</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0     </td> <td>0   </td> <td>0.005291</td> <td>0.005291</td> <td>0    </td> <td>0.005291</td> <td>0    </td> <td>0    </td> <td>0      </td> <td>0    </td> <td>0    </td> <td>0         </td> <td>0.010582</td> <td>0.005291</td> <td>0     </td> <td>0    </td> <td>0   </td> <td>0     </td> <td>0   </td> <td>0     </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As before, we want to look for the songs in the training set that are most alike our test song.  We will calculate the Euclidean distances from the test song (using the 20 selected features) to all songs in the training set.  You could do this with a <code>for</code> loop, but to make it computationally faster, we have provided a function, <code>fast_distances</code>, to do this for you.  Read its documentation to make sure you understand what it does.  (You don't need to read the code in its body unless you want to.)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="c1"># Just run this cell to define fast_distances.</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">def</span> <span class="nf">fast_distances</span><span class="p">(</span><span class="n">test_row</span><span class="p">,</span> <span class="n">train_rows</span><span class="p">):</span></span>
+<span class="code-line">    <span class="sd">&quot;&quot;&quot;An array of the distances between test_row and each row in train_rows.</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="sd">    Takes 2 arguments:</span></span>
+<span class="code-line"><span class="sd">      test_row: A row of a table containing features of one</span></span>
+<span class="code-line"><span class="sd">        test song (e.g., test_20.row(0)).</span></span>
+<span class="code-line"><span class="sd">      train_rows: A table of features (for example, the whole</span></span>
+<span class="code-line"><span class="sd">        table train_20).&quot;&quot;&quot;</span></span>
+<span class="code-line">    <span class="k">assert</span> <span class="n">train_rows</span><span class="o">.</span><span class="n">num_columns</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">,</span> <span class="s2">&quot;Make sure you&#39;re not using all the features of the lyrics table.&quot;</span></span>
+<span class="code-line">    <span class="n">counts_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asmatrix</span><span class="p">(</span><span class="n">train_rows</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span></span>
+<span class="code-line">    <span class="n">diff</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">test_row</span><span class="p">),</span> <span class="p">[</span><span class="n">counts_matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">])</span> <span class="o">-</span> <span class="n">counts_matrix</span></span>
+<span class="code-line">    <span class="n">distances</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">diff</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="mi">1</span><span class="p">))))</span></span>
+<span class="code-line">    <span class="k">return</span> <span class="n">distances</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong> Question 1.1.2 </strong> <br/>
+Use the <code>fast_distances</code> function provided above to compute the distance from the first song in the test set to all the songs in the training set, <strong>using your set of 20 features</strong>.  Make a new table called <code>genre_and_distances</code> with one row for each song in the training set and two columns:</p>
+<ul>
+<li>The <code>"Genre"</code> of the training song</li>
+<li>The <code>"Distance"</code> from the first song in the test set </li>
+</ul>
+<p>Ensure that <code>genre_and_distances</code> is <strong>sorted in increasing order by distance to the first test song</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="c1"># The staff solution took 4 lines of code.</span></span>
+<span class="code-line"><span class="n">genres</span> <span class="o">=</span> <span class="n">train_lyrics</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s2">&quot;Genre&quot;</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">distances</span> <span class="o">=</span> <span class="n">fast_distances</span><span class="p">(</span><span class="n">test_lyrics</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">my_20_features</span><span class="p">)</span><span class="o">.</span><span class="n">row</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">train_lyrics</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">my_20_features</span><span class="p">))</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">genre_and_distances</span> <span class="o">=</span> <span class="n">Table</span><span class="p">()</span><span class="o">.</span><span class="n">with_columns</span><span class="p">(</span><span class="s2">&quot;Genre&quot;</span><span class="p">,</span> <span class="n">genres</span><span class="p">,</span> <span class="s2">&quot;Distance&quot;</span><span class="p">,</span> <span class="n">distances</span><span class="p">)</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s2">&quot;Distance&quot;</span><span class="p">)</span></span>
+<span class="code-line"><span class="c1">#dist= fast_distances(test_lyrics.select(my_20_features).row(0), train_lyrics.select(my_20_features))</span></span>
+<span class="code-line"><span class="c1">#genre_and_distances = Table().with_column(&#39;Genre&#39;, genres, &#39;Distance&#39;,distances)</span></span>
+<span class="code-line"><span class="c1">#genre_and_distances.sort(&#39;Distance&#39;, descending=False)</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">grade</span><span class="p">(</span><span class="s2">&quot;tests/q1_1_2.py&quot;</span><span class="p">)</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[66]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<pre><span class="code-line">tests/q1_1_2.py: All tests passed!</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong> Question 1.1.3 </strong> <br/>
+Now compute the 5-nearest neighbors classification of the first song in the test set.  That is, decide on its genre by finding the most common genre among its 5 nearest neighbors, according to the distances you've calculated.  Then check whether your classifier chose the right genre.  (Depending on the features you chose, your classifier might not get this song right, and that's okay.)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">closestk</span><span class="p">(</span><span class="n">table</span><span class="p">,</span> <span class="n">example</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span></span>
+<span class="code-line">    <span class="k">return</span> <span class="n">distances1</span><span class="p">(</span><span class="n">table</span><span class="p">,</span><span class="n">example</span><span class="p">)</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s1">&#39;Distance&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">k</span><span class="p">))</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">def</span> <span class="nf">majority_genre</span><span class="p">(</span><span class="n">neighbors</span><span class="p">):</span></span>
+<span class="code-line">    <span class="sd">&quot;&quot;&quot;Return the class that&#39;s most common among all these neighbors.&quot;&quot;&quot;</span></span>
+<span class="code-line">    <span class="k">return</span> <span class="n">neighbors</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;Genre&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">descending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s1">&#39;Genre&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">item</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">neighbors</span> <span class="o">=</span> <span class="n">genre_and_distances</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span></span>
+<span class="code-line"><span class="nb">print</span><span class="p">(</span><span class="n">neighbors</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1"># Set my_assigned_genre to the most common genre among these.</span></span>
+<span class="code-line"><span class="n">my_assigned_genre</span> <span class="o">=</span> <span class="n">majority_genre</span><span class="p">(</span><span class="n">neighbors</span><span class="p">)</span></span>
+<span class="code-line"><span class="nb">print</span><span class="p">(</span><span class="n">my_assigned_genre</span><span class="p">)</span></span>
+<span class="code-line"><span class="nb">print</span><span class="p">(</span><span class="n">test_lyrics</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s1">&#39;Genre&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">item</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span></span>
+<span class="code-line"><span class="c1"># Set my_assigned_genre_was_correct to True if my_assigned_genre</span></span>
+<span class="code-line"><span class="c1"># matches the actual genre of the first song in the test set.</span></span>
+<span class="code-line"><span class="n">my_assigned_genre_was_correct</span> <span class="o">=</span> <span class="n">my_assigned_genre</span> <span class="o">==</span> <span class="n">test_lyrics</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s1">&#39;Genre&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">item</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The assigned genre, </span><span class="si">{}</span><span class="s2">, was</span><span class="si">{}</span><span class="s2">correct.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">my_assigned_genre</span><span class="p">,</span> <span class="s2">&quot; &quot;</span> <span class="k">if</span> <span class="n">my_assigned_genre_was_correct</span> <span class="k">else</span> <span class="s2">&quot; not &quot;</span><span class="p">))</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="code-line">Genre   | Distance</span>
+<span class="code-line">Hip-hop | 0.00753402</span>
+<span class="code-line">Hip-hop | 0.00879976</span>
+<span class="code-line">Country | 0.0093184</span>
+<span class="code-line">Country | 0.00975644</span>
+<span class="code-line">Hip-hop | 0.00976657</span>
+<span class="code-line">Hip-hop</span>
+<span class="code-line">Country</span>
+<span class="code-line">The assigned genre, Hip-hop, was not correct.</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">grade</span><span class="p">(</span><span class="s2">&quot;tests/q1_1_3.py&quot;</span><span class="p">)</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[79]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<pre><span class="code-line">tests/q1_1_3.py: All tests passed!</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.2.-A-classifier-function">1.2. A classifier function<a class="anchor-link" href="#1.2.-A-classifier-function">&#182;</a></h3><p>Now we can write a single function that encapsulates the whole process of classification.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong> Question 1.2.1 </strong> <br/>
+Write a function called <code>classify</code>.  It should take the following four arguments:</p>
+<ul>
+<li>A row of features for a song to classify (e.g., <code>test_20.row(0)</code>).</li>
+<li>A table with a column for each feature (e.g., <code>train_20</code>).</li>
+<li>An array of classes that has as many items as the previous table has rows, and in the same order.</li>
+<li><code>k</code>, the number of neighbors to use in classification.</li>
+</ul>
+<p>It should return the class a <code>k</code>-nearest neighbor classifier picks for the given row of features (the string <code>'Country'</code> or the string <code>'Hip-hop'</code>).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">majority_genre</span><span class="p">(</span><span class="n">neighbors</span><span class="p">):</span></span>
+<span class="code-line">    <span class="sd">&quot;&quot;&quot;Return the class that&#39;s most common among all these neighbors.&quot;&quot;&quot;</span></span>
+<span class="code-line">    <span class="k">return</span> <span class="n">neighbors</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;Genre&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">descending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s1">&#39;Genre&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">item</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">def</span> <span class="nf">classify</span><span class="p">(</span><span class="n">test_row</span><span class="p">,</span> <span class="n">train_rows</span><span class="p">,</span> <span class="n">train_classes</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span></span>
+<span class="code-line">    <span class="sd">&quot;&quot;&quot;Return the most common class among k nearest neigbors to test_row.&quot;&quot;&quot;</span></span>
+<span class="code-line">    <span class="n">distances</span> <span class="o">=</span> <span class="n">fast_distances</span><span class="p">(</span><span class="n">test_row</span><span class="p">,</span> <span class="n">train_rows</span><span class="p">)</span></span>
+<span class="code-line">    <span class="n">genre_and_distances</span> <span class="o">=</span> <span class="n">Table</span><span class="p">()</span><span class="o">.</span><span class="n">with_columns</span><span class="p">(</span><span class="s2">&quot;Genre&quot;</span><span class="p">,</span> <span class="n">genres</span><span class="p">,</span> <span class="s2">&quot;Distance&quot;</span><span class="p">,</span> <span class="n">distances</span><span class="p">)</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s2">&quot;Distance&quot;</span><span class="p">)</span></span>
+<span class="code-line">    <span class="n">neighbors</span> <span class="o">=</span> <span class="n">genre_and_distances</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">k</span><span class="p">))</span></span>
+<span class="code-line">    <span class="k">return</span> <span class="n">majority_genre</span><span class="p">(</span><span class="n">neighbors</span><span class="p">)</span></span>
+<span class="code-line">    </span>
+<span class="code-line"><span class="n">classify</span><span class="p">(</span><span class="n">test_20</span><span class="o">.</span><span class="n">row</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">train_20</span><span class="p">,</span><span class="n">train_lyrics</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s2">&quot;Genre&quot;</span><span class="p">),</span> <span class="mi">5</span> <span class="p">)</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[80]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre><span class="code-line">&#39;Hip-hop&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">grade</span><span class="p">(</span><span class="s2">&quot;tests/q1_2_1.py&quot;</span><span class="p">)</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[81]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<pre><span class="code-line">tests/q1_2_1.py: All tests passed!</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong> Question 1.2.2 </strong> <br/>
+Assign <code>grandpa_genre</code> to the genre predicted by your classifier for the song "Grandpa Got Runned Over By A John Deere" in the test set, using <strong>9 neighbors</strong> and using your 20 features.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="c1"># The staff solution first defined a row object called grandpa_features.</span></span>
+<span class="code-line"><span class="n">grandpa_features</span> <span class="o">=</span> <span class="n">my_20_features</span></span>
+<span class="code-line"><span class="n">grandpa_genre</span> <span class="o">=</span> <span class="n">classify</span><span class="p">(</span><span class="n">test_lyrics</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="s1">&#39;Title&#39;</span><span class="p">,</span> <span class="s2">&quot;Grandpa Got Runned Over By A John Deere&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">grandpa_features</span><span class="p">)</span><span class="o">.</span><span class="n">row</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">train_20</span><span class="p">,</span><span class="n">train_lyrics</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s1">&#39;Genre&#39;</span><span class="p">),</span> <span class="mi">9</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">grandpa_genre</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[83]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre><span class="code-line">&#39;Country&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">grade</span><span class="p">(</span><span class="s2">&quot;tests/q1_2_2.py&quot;</span><span class="p">)</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[84]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<pre><span class="code-line">tests/q1_2_2.py: All tests passed!</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Finally, when we evaluate our classifier, it will be useful to have a classification function that is specialized to use a fixed training set and a fixed value of <code>k</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong> Question 1.2.3 </strong> <br/>
+Create a classification function that takes as its argument a row containing your 20 features and classifies that row using the 5-nearest neighbors algorithm with <code>train_20</code> as its training set.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">majority_genre</span><span class="p">(</span><span class="n">neighbors</span><span class="p">):</span></span>
+<span class="code-line">    <span class="sd">&quot;&quot;&quot;Return the class that&#39;s most common among all these neighbors.&quot;&quot;&quot;</span></span>
+<span class="code-line">    <span class="k">return</span> <span class="n">neighbors</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;Genre&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">descending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s1">&#39;Genre&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">item</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">def</span> <span class="nf">classify_one_argument</span><span class="p">(</span><span class="n">row</span><span class="p">):</span></span>
+<span class="code-line">    <span class="sd">&quot;&quot;&quot;Return the most common class among k nearest neigbors to test_row.&quot;&quot;&quot;</span></span>
+<span class="code-line">    <span class="n">distances</span> <span class="o">=</span> <span class="n">fast_distances</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">train_20</span><span class="p">)</span></span>
+<span class="code-line">    <span class="n">genre_and_distances</span> <span class="o">=</span> <span class="n">Table</span><span class="p">()</span><span class="o">.</span><span class="n">with_columns</span><span class="p">(</span><span class="s2">&quot;Genre&quot;</span><span class="p">,</span> <span class="n">genres</span><span class="p">,</span> <span class="s2">&quot;Distance&quot;</span><span class="p">,</span> <span class="n">distances</span><span class="p">)</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s2">&quot;Distance&quot;</span><span class="p">)</span></span>
+<span class="code-line">    <span class="n">neighbors</span> <span class="o">=</span> <span class="n">genre_and_distances</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span></span>
+<span class="code-line">    <span class="k">return</span> <span class="n">majority_genre</span><span class="p">(</span><span class="n">neighbors</span><span class="p">)</span></span>
+<span class="code-line"><span class="c1"># When you&#39;re done, this should produce &#39;Hip-hop&#39; or &#39;Country&#39;.</span></span>
+<span class="code-line"><span class="n">classify_one_argument</span><span class="p">(</span><span class="n">test_20</span><span class="o">.</span><span class="n">row</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[85]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre><span class="code-line">&#39;Hip-hop&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">grade</span><span class="p">(</span><span class="s2">&quot;tests/q1_2_3.py&quot;</span><span class="p">)</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[86]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<pre><span class="code-line">tests/q1_2_3.py: All tests passed!</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.3.-Evaluating-your-classifier">1.3. Evaluating your classifier<a class="anchor-link" href="#1.3.-Evaluating-your-classifier">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now that it's easy to use the classifier, let's see how accurate it is on the whole test set.</p>
+<p><strong>Question 1.3.1.</strong> Use <code>classify_one_argument</code> and <code>apply</code> to classify every song in the test set.  Name these guesses <code>test_guesses</code>.  <strong>Then</strong>, compute the proportion of correct classifications.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[101]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">count_zero</span><span class="p">(</span><span class="n">array</span><span class="p">):</span></span>
+<span class="code-line">    <span class="sd">&quot;&quot;&quot;Counts the number of 0&#39;s in an array&quot;&quot;&quot;</span></span>
+<span class="code-line">    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">count_nonzero</span><span class="p">(</span><span class="n">array</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">def</span> <span class="nf">count_equal</span><span class="p">(</span><span class="n">array1</span><span class="p">,</span> <span class="n">array2</span><span class="p">):</span></span>
+<span class="code-line">    <span class="sd">&quot;&quot;&quot;Takes two numerical arrays of equal length</span></span>
+<span class="code-line"><span class="sd">    and counts the indices where the two are equal&quot;&quot;&quot;</span></span>
+<span class="code-line">    <span class="k">return</span> <span class="n">count_zero</span><span class="p">(</span><span class="n">array1</span> <span class="o">-</span> <span class="n">array2</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">def</span> <span class="nf">evaluate_accuracy</span><span class="p">(</span><span class="n">training</span><span class="p">,</span> <span class="n">test</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span></span>
+<span class="code-line">    <span class="n">test_attributes</span> <span class="o">=</span> <span class="n">test</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Class&#39;</span><span class="p">)</span></span>
+<span class="code-line">    <span class="k">def</span> <span class="nf">classify_testrow</span><span class="p">(</span><span class="n">row</span><span class="p">):</span></span>
+<span class="code-line">        <span class="k">return</span> <span class="n">classify</span><span class="p">(</span><span class="n">training</span><span class="p">,</span> <span class="n">row</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span></span>
+<span class="code-line">    <span class="n">c</span> <span class="o">=</span> <span class="n">test_attributes</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">classify_testrow</span><span class="p">)</span></span>
+<span class="code-line">    <span class="k">return</span> <span class="n">count_equal</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">test</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s1">&#39;Class&#39;</span><span class="p">))</span> <span class="o">/</span> <span class="n">test</span><span class="o">.</span><span class="n">num_rows</span></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">test_guesses</span> <span class="o">=</span> <span class="n">test_20</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">classify_one_argument</span><span class="p">)</span></span>
+<span class="code-line"><span class="c1">#print(test_guesses)</span></span>
+<span class="code-line"><span class="n">a</span> <span class="o">=</span> <span class="n">test_guesses</span> <span class="o">==</span> <span class="n">test_lyrics</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s1">&#39;Genre&#39;</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">num_correct</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">a</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">proportion_correct</span> <span class="o">=</span> <span class="n">num_correct</span><span class="o">/</span><span class="p">(</span><span class="n">train_lyrics</span><span class="o">.</span><span class="n">num_rows</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">proportion_correct</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[101]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre><span class="code-line">0.2933220625528318</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[102]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">grade</span><span class="p">(</span><span class="s2">&quot;tests/q1_3_1.py&quot;</span><span class="p">)</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[102]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<pre><span class="code-line">tests/q1_3_1.py: All tests passed!</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>At this point, you've gone through one cycle of classifier design.  Let's summarize the steps:</p>
+<ol>
+<li>From available data, select test and training sets.</li>
+<li>Choose an algorithm you're going to use for classification.</li>
+<li>Identify some features.</li>
+<li>Define a classifier function using your features and the training set.</li>
+<li>Evaluate its performance (the proportion of correct classifications) on the test set.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Submission">Submission<a class="anchor-link" href="#Submission">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Congratulations! You're finished with lab 5 and Data 8.3x! You've created your own song classifer using k-nearest neighbors.</p>
+<p><strong>If you want to continue, you can read about classification online and try to build an even more accurate classifier.</strong></p>
+<p>In order to successfully submit your assignment, follow these steps...</p>
+<ul>
+<li><strong>IMPORTANT</strong> Before you do anything, <strong>Save and Checkpoint</strong> from the <code>File</code> menu. Please do this first before running the cell below,</li>
+<li><strong>run all the tests and verify that they all pass</strong> (the next cell has a shortcut for that), </li>
+<li><strong>Review the notebook one last time, we will be grading the final state of your notebook</strong> If you make any changes, please <strong>Save and Checkpoint</strong> again.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[103]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="c1"># For your convenience, you can run this cell to run all the tests at once!</span></span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">glob</span></span>
+<span class="code-line"><span class="kn">from</span> <span class="nn">okgrade.notebook</span> <span class="k">import</span> <span class="n">grade_notebook</span></span>
+<span class="code-line"><span class="k">if</span> <span class="ow">not</span> <span class="nb">globals</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;__OKGRADE__&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span></span>
+<span class="code-line">    <span class="n">display</span><span class="p">(</span><span class="n">grade_notebook</span><span class="p">(</span><span class="s1">&#39;lab05.ipynb&#39;</span><span class="p">,</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;tests/q*.py&#39;</span><span class="p">))))</span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<pre><span class="code-line">Grade is: 100%</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span> </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+ 
+
+</p>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Related Posts-></h4>
+    <ul>
+        <li><a href="https://johngage.github.io/water/articles/2018/Nov/Lab5/">UC Berkeley Data Science 8.1x Lab 5</a></li>
+        <li><a href="https://johngage.github.io/water/articles/2018/Nov/battery-post/">Battery Technology: Solid State Electrolyte</a></li>
+    </ul>
+</section>
+    <nav class="older">
+        <h4>Older articles</h4>
+        <ul>
+                <li>
+                    <a href="https://johngage.github.io/water/articles/2019/Jan/next-steps-with-usace/">
+                        "Next steps with USACE"
+                    </a>
+                </li>
+                <li>
+                    <a href="https://johngage.github.io/water/articles/2019/Jan/outline-of-ktc-curriculum-for-computing-and-data-science/">
+                        "Outline of KTC curriculum for computing and data science"
+                    </a>
+                </li>
+                <li>
+                    <a href="https://johngage.github.io/water/articles/2019/Jan/tool-survey/">
+                        "Tool Survey"
+                    </a>
+                </li>
+        </ul>
+    </nav>
+    <nav class="newer">
+        <h4>Newer articles</h4>
+        <ul>
+                <li>
+                    <a href="https://johngage.github.io/water/articles/2019/Jan/deep-learning/">
+                        Deep Learning
+                    </a>
+                </li>
+        </ul>
+    </nav>
+<ul>
+     <li>
+         <a href="https://johngage.github.io/water/articles/2019/Jan/next-steps-with-usace/">
+             "Next steps with USACE"
+         </a>
+     </li>
+     <li>
+         <a href="https://johngage.github.io/water/articles/2019/Jan/deep-learning/">
+             Deep Learning
+         </a>
+     </li>
+</ul>
+<ul>
+     <li>
+         <a href="https://johngage.github.io/water/articles/2019/Jan/next-steps-with-usace/">
+             "Next steps with USACE"
+         </a>
+     </li>
+ </ul>        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<div id="aboutme">
+    <p>
+      <strong>About John Gage</strong><br/>
+        I work on water programs at the Kibera Town Centre in Nairobi, Kenya. I am on the Berkeley 2050 Commission for Berkeley, California. I work on integrating data science and Jupyter notebooks in urban water research.
+    </p>
+</div><!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Recent Posts -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+  <ul class="list-group" id="recentposts">
+    <li class="list-group-item"><a href="https://johngage.github.io/water/articles/2019/Jan/deep-learning/">Deep Learning</a></li>
+    <li class="list-group-item"><a href="https://johngage.github.io/water/articles/2019/Jan/jnb-tests/">"JNB tests"</a></li>
+    <li class="list-group-item"><a href="https://johngage.github.io/water/articles/2019/Jan/next-steps-with-usace/">"Next steps with USACE"</a></li>
+    <li class="list-group-item"><a href="https://johngage.github.io/water/articles/2019/Jan/outline-of-ktc-curriculum-for-computing-and-data-science/">"Outline of KTC curriculum for computing and data science"</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Recent Posts -->
+
+<!-- Sidebar/Categories -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Categories</span></h4>
+  <ul class="list-group" id="categories">
+    <li class="list-group-item">
+      <a href="https://johngage.github.io/water/category/blogs.html"><i class="fa fa-folder-open fa-lg"></i>Blogs</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://johngage.github.io/water/category/cities.html"><i class="fa fa-folder-open fa-lg"></i>Cities</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://johngage.github.io/water/category/climate.html"><i class="fa fa-folder-open fa-lg"></i>Climate</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://johngage.github.io/water/category/energy.html"><i class="fa fa-folder-open fa-lg"></i>Energy</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://johngage.github.io/water/category/misc.html"><i class="fa fa-folder-open fa-lg"></i>misc</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://johngage.github.io/water/category/nuclear.html"><i class="fa fa-folder-open fa-lg"></i>Nuclear</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://johngage.github.io/water/category/oceans.html"><i class="fa fa-folder-open fa-lg"></i>Oceans</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://johngage.github.io/water/category/power.html"><i class="fa fa-folder-open fa-lg"></i>Power</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://johngage.github.io/water/category/tahoe.html"><i class="fa fa-folder-open fa-lg"></i>Tahoe</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://johngage.github.io/water/category/tools.html"><i class="fa fa-folder-open fa-lg"></i>Tools</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://johngage.github.io/water/category/voting.html"><i class="fa fa-folder-open fa-lg"></i>Voting</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://johngage.github.io/water/category/water.html"><i class="fa fa-folder-open fa-lg"></i>Water</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://johngage.github.io/water/category/water-data-science.html"><i class="fa fa-folder-open fa-lg"></i>Water, Data Science</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://johngage.github.io/water/category/world.html"><i class="fa fa-folder-open fa-lg"></i>World</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Categories -->
+    
+
+<!-- Sidebar/Tag Cloud -->
+<li class="list-group-item">
+  <a href="https://johngage.github.io/water/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+  <ul class="list-group list-inline tagcloud" id="tags">
+    <li class="list-group-item tag-4">
+      <a href="https://johngage.github.io/water/tag/awesome.html">awesome</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://johngage.github.io/water/tag/cal-epa.html">Cal EPA</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://johngage.github.io/water/tag/critical-infrastructure.html">Critical Infrastructure</a>
+    </li>
+    <li class="list-group-item tag-0">
+      <a href="https://johngage.github.io/water/tag/data-science.html">Data Science</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://johngage.github.io/water/tag/how-to.html">How-to</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://johngage.github.io/water/tag/jupyter.html">jupyter</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://johngage.github.io/water/tag/table.html">Table</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://johngage.github.io/water/tag/thats.html">thats</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://johngage.github.io/water/tag/voting.html">Voting</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://johngage.github.io/water/tag/water.html">Water</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Tag Cloud -->
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="http://berkeley.edu"><i class="fa fa-berkeley-square fa-lg"></i> Berkeley</a></li>
+    <li class="list-group-item"><a href="http://berkeley.edu"><i class="fa fa-berkeley-institute-of-data-sciences-square fa-lg"></i> Berkeley Institute of Data Sciences</a></li>
+    <li class="list-group-item"><a href="http://timeanddate.com"><i class="fa fa-time-square fa-lg"></i> Time</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Links -->
+<li class="list-group-item">
+  <h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+  <ul class="list-group" id="links">
+    <li class="list-group-item">
+      <a href="http://getpelican.com/" target="_blank">Pelican</a>
+    </li>
+    <li class="list-group-item">
+      <a href="http://python.org/" target="_blank">Python.org</a>
+    </li>
+    <li class="list-group-item">
+      <a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://www.learnenough.com/dev-environment-tutorial#sec-native_os_setup" target="_blank">Learn Enough to be dangerous</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://www.fullstackpython.com/" target="_blank">Full Stack Python</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://pythonforundergradengineers.com/how-i-built-this-site-1.html" target="_blank">How I Built This Site</a>
+    </li>
+    <li class="list-group-item">
+      <a href="http://kiberawater.com" target="_blank">Kibera Water</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Links -->
+
+<!-- Sidebar/Images -->
+<li class="list-group-item">
+  <h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">My Images</span></h4>
+  <ul class="list-group" id="links">
+    <img width="100%" class="img-thumbnail" src="/images/sunlight.png"/>
+  </ul>
+</li>
+<!-- End Sidebar/Images -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2019 John Gage
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="https://johngage.github.io/water/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://johngage.github.io/water/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="https://johngage.github.io/water/theme/js/respond.min.js"></script>
+
+    <script src="https://johngage.github.io/water/static/js/custom.js"></script>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $("div.collapseheader").click(function () {
+    $header = $(this).children("span").first();
+    $codearea = $(this).children(".input_area");
+    console.log($(this).children());
+    $codearea.slideToggle(500, function () {
+        $header.text(function () {
+            return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+        });
+    });
+});
+});
+</script>
+</body>
+</html>

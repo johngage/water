@@ -12,10 +12,19 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 #print ("Made it here 2")
 # If your site is available via HTTPS, make sure SITEURL begins with https://
+RELATIVE_URLS = False
 SITEURL = 'https://johngage.github.io/water'
-RELATIVE_URLS = True
 
 #print ("Made it here 3")
+MENUITEMS = [
+             #('About', '/pages/about'),
+             ('2018 Posts', 'https://johngage.github.io/water/posts/2018'),
+             ('2019 Posts', 'https://johngage.github.io/water/posts/2019'),
+             ('Tags', 'https://johngage.github.io/water/tags.html'),
+             ('MTags', 'tags.html'),
+             ('JNotebook', 'https://johngage.github.io/water/tag/jupyter.html'),
+             ('JNB', 'https://johngage.github.io/water/notebooks'),
+             ]
 
 #FEED_ALL_ATOM = 'feeds/all.atom.xml'
 #CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
@@ -35,7 +44,7 @@ RSS_FEED_SUMMARY_ONLY = True
 #print ("Made it here 4")
 
 DELETE_OUTPUT_DIRECTORY = True
-print ("Made it here 5")
+#print ("Made it here 5")
 
 
 # Following items are often useful when publishing

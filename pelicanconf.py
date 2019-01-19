@@ -10,7 +10,7 @@ SITESUBTITLE = 'City Critical Infrastructure'
 SITEURL = 'https://johngage.github.io/water'
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+#RELATIVE_URLS = True
 
 # PATH settings
 PATH = 'content'
@@ -135,7 +135,8 @@ LINKS = (
         ('Jinja2', 'http://jinja.pocoo.org/'),
         ('Learn Enough to be dangerous', 'https://www.learnenough.com/dev-environment-tutorial#sec-native_os_setup'),
         ('Full Stack Python', 'https://www.fullstackpython.com/'),
-        ('How I Built This Site','https://pythonforundergradengineers.com/how-i-built-this-site-1.html')
+        ('How I Built This Site','https://pythonforundergradengineers.com/how-i-built-this-site-1.html'),
+        ('Kibera Water', 'http://kiberawater.com')
         )
 
 # Social widget
@@ -149,8 +150,7 @@ MULTI_NEIGHBORS = 3
 #PLUGINS = ['i18n_subsites', ]
 PLUGINS = [
     'better_codeblock_line_numbering',
-    #'ipynb.liquid',
-    'i18n_subsites',
+    #'i18n_subsites',
     'liquid_tags.img', 'liquid_tags.video', 'liquid_tags.youtube',
     'liquid_tags.notebook',
     'liquid_tags.vimeo',
@@ -170,14 +170,13 @@ PLUGINS = [
 
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
-# Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+
 
 # URL settings
-#ARTICLE_URL = 'articles/{date:%Y}/{date:%b}/{date:%d}/{slug}/'
-#ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
-#PAGE_URL = 'pages/{slug}/'
-#PAGE_SAVE_AS = 'pages/{slug}/index.html'
+ARTICLE_URL = 'articles/{date:%Y}/{date:%b}/{slug}/'
+ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%b}/{slug}/index.html'
+PAGE_URL = 'pages/{slug}/'
+PAGE_SAVE_AS = 'pages/{slug}/index.html'
 ABOUT_ME = 'I work on water programs at the Kibera Town Centre in Nairobi, Kenya. ' \
            'I am on the Berkeley 2050 Commission for Berkeley, California. ' \
            'I work on integrating data science and Jupyter notebooks in urban water research.'
