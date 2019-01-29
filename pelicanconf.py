@@ -3,17 +3,20 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 LOAD_CONTENT_CACHE = False
+DELETE_OUTPUT_DIRECTORY = True
+
 AUTHOR = 'John Gage'
 SITENAME = 'Water, Power, Network'
 SITESUBTITLE = 'City Critical Infrastructure'
 #SITEURL = ''
-SITEURL = 'https://johngage.github.io/water'
+#SITEURL = 'https://johngage.github.io/water'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
 # PATH settings
 PATH = 'content'
+OUTPUT_PATH = 'output/'
 PAGE_PATHS    = ['pages']
 ARTICLE_PATHS = ['posts']  #could be posts
 STATIC_PATHS = ['images',
@@ -46,7 +49,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-#EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
+EXTRA_HEADER = open('_nb_header.html').read()
 #this reads in the huge file of css definitions: where did this come from?
 #in the liquid plugin.notebook.py file
 FAVICON = 'images/sunlight.png'
@@ -70,14 +73,18 @@ DEFAULT_CATEGORY = 'misc'
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = True
 #Note all urls are relative to output folder, not content
-MENUITEMS = [
+MENUITEMS = [ #relative to output root directory
              #('About', '/pages/about'),
-             ('2018 Posts', '/posts/2018'),
-             ('2019 Posts', '/posts/2019'),
-             #('Tags', '/tags'),
+             ('2018', '/posts/2018'),
+             ('2019', '/posts/2019'),
+             ('Tags', '/tags.html'),
              ('JNotebook', '/tag/jupyter.html'),
-             ('JNB', '/notebooks')
+             #('JNB', '/notebooks')
              ]
+MENUITEMS_2 = (
+                ('Hello', 'posts'),
+                ('GDocs', 'http://www.google.com'),
+)
 DISPLAY_ARCHIVE_ON_MENU = True
 
 #Sidebar Elements
@@ -104,7 +111,7 @@ ARCHIVES_SAVE_AS = 'archives.html'
 YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'
 
-
+TYPOGRIFY = True
 IGNORE_FILES = ['.#*', '.ipynb_checkpoints']
 
 I18N_TEMPLATES_LANG = 'en'
