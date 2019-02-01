@@ -26568,7 +26568,7 @@ Water, Power, Network            </a>
 <h2 id="using-a-modification-of-his-pelicanconfpy-files-some-problems-with-final-rendering-and-with-publishconfpy">Using a modification of his pelicanconf.py files.  Some problems with final rendering, and with&nbsp;publishconf.py</h2>
 </li>
 </ul>
-<h3 id="november-13-2018">November 13,&nbsp;2018</h3>
+<h3 id="november-13-2018-critical">November 13, 2018: <span class="caps">CRITICAL</span>:</h3>
 <p>The author of Pelican, Alexis Metaireau, and the current maintainer of the pelican github site, Justin Meyer and 35 others, just released Pelican&nbsp;4.0.</p>
 <p><em>My site could not build new html pages, and gave the&nbsp;error:</em></p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="n">ERROR</span><span class="p">:</span> <span class="n">Cannot</span> <span class="n">load</span> <span class="n">plugin</span> <span class="sb">`i18n_subsites`</span></span>
@@ -26582,6 +26582,7 @@ Water, Power, Network            </a>
 </pre></div>
 
 
+<p>Hack to fix this: insert two lines in generators.py, a program in the pelican site-package, under python3.6; now, under&nbsp;python3.7</p>
 <p>I added two lines to the basic Python for Pelican in  <em>/Users/johngage/anaconda3/lib/python3.6/site-packages/pelican/generators.py</em></p>
 <p>On line 28, just&nbsp;after</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="kn">from</span> <span class="nn">pelican.utils</span> <span class="kn">import</span> <span class="p">(</span><span class="n">DateFormatter</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">mkdir_p</span><span class="p">,</span> <span class="n">order_content</span><span class="p">,</span></span>
@@ -26612,11 +26613,73 @@ Water, Power, Network            </a>
 
 <p>add:</p>
 <div class="highlight"><pre><span class="code-line"><span></span>#insert fix for gettext error,using Baky&#39;s Blog code Nov 2018</span>
-<span class="code-line">self.env.install_gettext_translations( gettext )</span>
+<span class="code-line">#self.env.install_gettext_translations( gettext )</span>
 </pre></div>
 
 
 <p>This seemed to get rid of the <em>gettext undefined</em> error, and the site&nbsp;rendered.</p>
+<p>Friday, Feb 1, 2019
+Commands for virtual&nbsp;environments:</p>
+<div class="highlight"><pre><span class="code-line"><span></span>conda install -n myenv pip</span>
+<span class="code-line">source activate myenv</span>
+<span class="code-line">pip &lt;pip_subcommand&gt;</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span class="code-line"><span></span>conda list  #lists all packages and versions</span>
+<span class="code-line">conda info --envs</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span class="code-line"><span></span>conda list --explicit &gt; spec-file.txt</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span class="code-line"><span></span>conda create --name myenv --file spec-file.txt</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span class="code-line"><span></span>conda create --name myenv</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span class="code-line"><span></span>source activate myenv</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span class="code-line"><span></span>source activate (base, b1, bsite, virtsite)</span>
+</pre></div>
+
+
+<p>Using virtual environments with this modification&#8212;b1 and bsite&#8212;
+big blog site renders, but still has error about loading i18n&nbsp;module.</p>
+<p>Using these <span class="caps">VE</span>, setting up new Pelican&nbsp;instance:</p>
+<p><code>CRITICAL: AttributeError: 'Environment' object has no attribute 'install_gettext_translations'</code>
+  - Error from prior inserted line in&nbsp;generators.py</p>
+<p>New experiment: try changing pelicanconf.py, removing all refs to&nbsp;i18n&#8230;..</p>
+<p>2016 github error entries refer to jinja, and gettext, and plugins.  Others get exactly the same errors: cannot load plugin i18n; get gettext&nbsp;error;</p>
+<p>reloaded all plugins, turned on i18n, jinja2;
+- First Critical: <span class="caps">CRITICAL</span>: AttributeError: module &#8216;multi_neighbors&#8217; has no attribute &#8216;register&#8217;
+  - comment out multi-neighbor&nbsp;plugin</p>
+<p>Run again:
+  - many errors, but <strong>it ran</strong>
+    - no complaint about i18n_sites not loading;
+    - no &#8216;gettext&#8217; error
+    -
+  - <span class="caps">ERROR</span>: Cannot load plugin <code>pelican-ipynb.markup</code>
+  | ModuleNotFoundError: No module named &#8216;pelican-ipynb.markup&#8217;
+  <code>ERROR: Could not process posts/2019-01-18-jnb-tests.markdown
+  | TypeError: store() got an unexpected keyword argument 'safe'
+ERROR: Could not process posts/2019-01-23-table-of-classes.markdown
+  | TypeError: store() got an unexpected keyword argument 'safe'
+ERROR: Could not process posts/2019-01-21-berkeley-classes-spring-2019-data-science-and-the-real-world.markdown
+  | TypeError: store() got an unexpected keyword argument 'safe'
+ERROR: Could not process posts/Battery.md
+  | TypeError: store() got an unexpected keyword argument 'safe'
+ERROR: Could not process posts/UCB DS8.1x.md
+  | TypeError: store() got an unexpected keyword argument 'safe'</code></p>
+<p>Have seen this &#8216;safe&#8217; error before.  Use <code>shift-command-f' in Atom to find all instances of</code>safe=True<code>.
+    - found in liquid tags plugin; removed</code>safe=True<code>from notebook.py,</code><em><em>fixed it </em></em>`; now all the notebooks are processed by&nbsp;Pelican.</p>
             </div>
             <!-- /.entry-content -->
 <section class="well" id="related-posts">
@@ -26626,46 +26689,6 @@ Water, Power, Network            </a>
            <li><a href="/articles/2018/Nov/littletable-done-in-html/">littletable Done in <span class="caps">HTML</span></a></li>
        </ul>
 </section>
-    <nav class="older">
-        <h4>Older articles</h4>
-        <ul>
-                <li>
-                    <a href="/articles/2018/Nov/Lab5/">
-                        <span class="caps">UC</span> Berkeley Data Science 8.1x Lab&nbsp;5
-                    </a>
-                </li>
-                <li>
-                    <a href="/articles/2018/Nov/battery-post/">
-                        Battery Technology: Solid State&nbsp;Electrolyte
-                    </a>
-                </li>
-                <li>
-                    <a href="/articles/2018/Nov/test/">
-                        Test
-                    </a>
-                </li>
-        </ul>
-    </nav>
-    <nav class="newer">
-        <h4>Newer articles</h4>
-        <ul>
-                <li>
-                    <a href="/articles/2018/Nov/littletable-done-in-html/">
-                        littletable Done in <span class="caps">HTML</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/articles/2018/Nov/my-super-post/">
-                        A rst&nbsp;document
-                    </a>
-                </li>
-                <li>
-                    <a href="/articles/2018/Nov/Voting/">
-                        Elections&#8212;United States:&nbsp;2018
-                    </a>
-                </li>
-        </ul>
-    </nav>
 <ul>
      <li>
          <a href="/articles/2018/Nov/Lab5/">
@@ -26703,10 +26726,10 @@ Water, Power, Network            </a>
 <li class="list-group-item">
   <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
   <ul class="list-group" id="recentposts">
-    <li class="list-group-item"><a href="/articles/2019/Jan/deep-learning/">Deep&nbsp;Learning</a></li>
-    <li class="list-group-item"><a href="/articles/2019/Jan/jnb-tests/"><span class="dquo">&#8220;</span><span class="caps">JNB</span>&nbsp;tests&#8221;</a></li>
-    <li class="list-group-item"><a href="/articles/2019/Jan/next-steps-with-usace/"><span class="dquo">&#8220;</span>Next steps with <span class="caps">USACE</span>&#8221;</a></li>
-    <li class="list-group-item"><a href="/articles/2019/Jan/outline-of-ktc-curriculum-for-computing-and-data-science/"><span class="dquo">&#8220;</span>Outline of <span class="caps">KTC</span> curriculum for computing and data&nbsp;science&#8221;</a></li>
+    <li class="list-group-item"><a href="/articles/2019/Jan/Build Site/"><span class="dquo">&#8220;</span>How to get started publishing static&nbsp;websites&#8221;</a></li>
+    <li class="list-group-item"><a href="/articles/2019/Jan/how-to-get-started-publishing-static-websites/"><span class="dquo">&#8220;</span>How to get started publishing static&nbsp;websites&#8221;</a></li>
+    <li class="list-group-item"><a href="/articles/2019/Jan/frank-fukuyama/"><span class="dquo">&#8220;</span>Frank&nbsp;Fukuyama&#8221;</a></li>
+    <li class="list-group-item"><a href="/articles/2019/Jan/table-of-classes/"><span class="dquo">&#8220;</span>Table of&nbsp;classes&#8221;</a></li>
   </ul>
 </li>
 <!-- End Sidebar/Recent Posts -->

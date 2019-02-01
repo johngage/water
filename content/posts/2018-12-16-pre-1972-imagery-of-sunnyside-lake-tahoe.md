@@ -17,8 +17,8 @@ To build an accurate picture of the piers and buoys in Lake Tahoe over the past 
 - A list of source materials and their repositories, including:
 
 
- Source Data  |   |
---|---|--
+Source Data  |   | |
+--|---|--|
 US Geological Survey  |   |
 US Forestry Service  |   |
 USArmy COE   |   |
@@ -41,6 +41,6 @@ University of California, Riverside|   |
 Stanford University  |   |
 University of Nevada, Reno|   |
 Commercial repositories  |   |
-Radman Aerial Services|   |   |
+Radman Aerial Services|   |
 
  -

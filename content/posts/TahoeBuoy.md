@@ -23,7 +23,7 @@ See the [hyphen](#hyph)
 
 What does this do? [#hyph]
 
-[a link to Batteries relative to the current file]({filename}../posts/Battery.md)
+[a link to Batteries relative to the current file]({filename}/posts/Battery.md)
 
 [Where to go][]
 

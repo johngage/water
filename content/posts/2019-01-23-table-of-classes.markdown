@@ -3,5 +3,6 @@ layout: "post"
 title: "Table of classes"
 date: 2019-01-23 12:12
 ---
+How to make this appear?
 
-{% /noteboods/Table format exchange.ipynb %}
+{% notebook  Table-format-exchange.ipynb %}

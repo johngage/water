@@ -127,13 +127,13 @@ MARKDOWN = {
         'pymdownx.smartsymbols': {},
     },
     'output_format': 'html5',
-}
+} #end MARKDOWN
 # mapping: language_code -> settings_overrides_dict
-I18N_SUBSITES = {
-'fr': {
-'SITENAME': 'blog français',
-}
-}
+#I18N_SUBSITES = {
+#'fr': {
+#'SITENAME': 'blog français',
+#}
+#}  #1FEB
 
 # Blogroll
 LINKS = (
@@ -157,12 +157,12 @@ MULTI_NEIGHBORS = 3
 #PLUGINS = ['i18n_subsites', ]
 PLUGINS = [
     'better_codeblock_line_numbering',
-    #'i18n_subsites',
+    'i18n_subsites',
     'liquid_tags.img', 'liquid_tags.video', 'liquid_tags.youtube',
     'liquid_tags.notebook',
     'liquid_tags.vimeo',
     'liquid_tags.include_code',
-    'multi_neighbors',
+    #'multi_neighbors',
     'neighbors',
     'pelican-ipynb.markup',
     #'pelican_javascript',
@@ -172,7 +172,8 @@ PLUGINS = [
     'tag_cloud',
     'tipue_search',
     #'bootswatch_markdown_css',
-    #'ipynb.markup',
+    'ipynb.markup',
+    'ipynb.liquid',
     ]
 
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
