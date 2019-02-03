@@ -26696,7 +26696,10 @@ ERROR: Could not process posts/UCB DS8.1x.md
 <p>Saturday</p>
 <ol>
 <li>went into Pelican-plugin directory, created ipynb directore, downloaded all pelican-ipynb&nbsp;files;</li>
-<li>ml had all thke tma old errors, including Criticl gettext error; cannot find&nbsp;i18n_sites; </li>
+<li>ml had all the same old errors, including  gettext error; cannot find&nbsp;i18n_sites;</li>
+<li>Amazing; I&#8217;m in base virtual environment; looked at Draft problem in i18n_sites; I think I changed the .py to add a &#8216;try&#8217;; but kept a include for Draft; commented that out, and it&nbsp;loaded.</li>
+<li>Fixed the liquid way of referring to ipynb notebooks; also, this happened after I filled the plugin directory  with a directly downloaded version of pelican-ipynb named ipynb, as the documentation&nbsp;says.</li>
+<li>Want to see if it shows up in git. Yes, shows as changed. Note that so did i18n, making me wonder if the submodule stuff allows the newest version on github to be updated. Will run update. After I&nbsp;commit.</li>
 </ol>
             </div>
             <!-- /.entry-content -->
