@@ -21,4 +21,4 @@ Here is the link to the version stored on UCBerkeley hub:
 ------
 This is the inclusion of the actual Jupyter notebook; pelican converts it to pure HTML, using a long CSS file, and stores the HTML in the "notebook" subdirectory of "content".
 
-{% notebook lab05WorldComplete.ipynb %}
+{% notebook notebooks/lab05WorldComplete.ipynb %}

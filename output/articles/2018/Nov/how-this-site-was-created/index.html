@@ -26559,15 +26559,21 @@ Water, Power, Network            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <h2 id="this-site-was-patterned-on-the-site-created-by-peter-kazarinoff-professor-of-engineering-at-portland-community-college">This site was patterned on the site created by Peter Kazarinoff, Professor of Engineering at Portland Community&nbsp;College</h2>
+                <h4 id="this-site-was-patterned-on-the-site-created-by-peter-kazarinoff-professor-of-engineering-at-portland-community-college">This site was patterned on the site created by Peter Kazarinoff, Professor of Engineering at Portland Community&nbsp;College</h4>
 <ul>
 <li>He describes the tools, the editors, and the templates needed for a static web site. His site&nbsp;is</li>
 <li>He has intriguing tools for conversion of Jupyter notebooks into&nbsp;LaTex.</li>
 <li>Using his list of Pelican&nbsp;plugins.</li>
-<li>
-<h2 id="using-a-modification-of-his-pelicanconfpy-files-some-problems-with-final-rendering-and-with-publishconfpy">Using a modification of his pelicanconf.py files.  Some problems with final rendering, and with&nbsp;publishconf.py</h2>
-</li>
+<li>Using a modification of his pelicanconf.py files.  Some problems with final rendering, and with&nbsp;publishconf.py</li>
 </ul>
+<h5 id="mysteries-of-cloning-github-repositories-of-themes-and-plugins">Mysteries of cloning github repositories of themes and&nbsp;plugins</h5>
+<p>Kazarinoff describes the sequence of git calls to bring all the themes and plugins into a directory, but seems to make an&nbsp;error.</p>
+<div class="highlight"><pre><span class="code-line"><span></span>$ git submodule add https://github.com/getpelican/pelican-themes.git</span>
+<span class="code-line">$ git submodule init</span>
+<span class="code-line">$ git submodule update --init --recursive</span>
+</pre></div>
+
+
 <h3 id="november-13-2018-critical">November 13, 2018: <span class="caps">CRITICAL</span>:</h3>
 <p>The author of Pelican, Alexis Metaireau, and the current maintainer of the pelican github site, Justin Meyer and 35 others, just released Pelican&nbsp;4.0.</p>
 <p><em>My site could not build new html pages, and gave the&nbsp;error:</em></p>
@@ -26618,8 +26624,15 @@ Water, Power, Network            </a>
 
 
 <p>This seemed to get rid of the <em>gettext undefined</em> error, and the site&nbsp;rendered.</p>
-<p>Friday, Feb 1, 2019
-Commands for virtual&nbsp;environments:</p>
+<p>Friday, Feb 1,&nbsp;2019</p>
+<h4 id="fix-for-gettext-problem-seem-to-be-load-new-plugin-versions-need-to-understand-submodule-way-with-git">Fix for gettext problem seem to be load new plugin versions.  Need to understand submodule way with&nbsp;git.</h4>
+<p>Worked when cloned all plugins in new directory.  Then could install i18n_sites; added Jinja2&nbsp;environment.</p>
+<p>To install plugin for&nbsp;pelican-ipynb:</p>
+<div class="highlight"><pre><span class="code-line"><span></span>git submodule add -f git://github.com/danielfrg/pelican-ipynb.git ./pelican-plugins/ipynb</span>
+</pre></div>
+
+
+<p>Commands for virtual&nbsp;environments:</p>
 <div class="highlight"><pre><span class="code-line"><span></span>conda install -n myenv pip</span>
 <span class="code-line">source activate myenv</span>
 <span class="code-line">pip &lt;pip_subcommand&gt;</span>
@@ -26680,6 +26693,11 @@ ERROR: Could not process posts/UCB DS8.1x.md
   | TypeError: store() got an unexpected keyword argument 'safe'</code></p>
 <p>Have seen this &#8216;safe&#8217; error before.  Use <code>shift-command-f' in Atom to find all instances of</code>safe=True<code>.
     - found in liquid tags plugin; removed</code>safe=True<code>from notebook.py,</code><em><em>fixed it </em></em>`; now all the notebooks are processed by&nbsp;Pelican.</p>
+<p>Saturday</p>
+<ol>
+<li>went into Pelican-plugin directory, created ipynb directore, downloaded all pelican-ipynb&nbsp;files;</li>
+<li>ml had all thke tma old errors, including Criticl gettext error; cannot find&nbsp;i18n_sites; </li>
+</ol>
             </div>
             <!-- /.entry-content -->
 <section class="well" id="related-posts">
@@ -26716,7 +26734,7 @@ ERROR: Could not process posts/UCB DS8.1x.md
 <div id="aboutme">
     <p>
       <strong>About John Gage</strong><br/>
-        I work on water programs at the Kibera Town Centre in Nairobi, Kenya. I am on the Berkeley 2050 Commission for Berkeley, California. I work on integrating data science and Jupyter notebooks in urban water research.
+        I work on water programs at Kibera Town Centre in Nairobi, Kenya. I am on the Berkeley 2050 Commission for Berkeley, California. I work on integrating data science and Jupyter notebooks in urban water research.
     </p>
 </div><!-- Sidebar -->
 <section class="well well-sm">

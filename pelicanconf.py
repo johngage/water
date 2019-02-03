@@ -1,6 +1,7 @@
-#Current pelicanconf.py 2019
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
+#Current pelicanconf.py 2019
+
 from __future__ import unicode_literals
 LOAD_CONTENT_CACHE = False
 DELETE_OUTPUT_DIRECTORY = True
@@ -185,6 +186,6 @@ ARTICLE_URL = 'articles/{date:%Y}/{date:%b}/{slug}/'
 ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%b}/{slug}/index.html'
 PAGE_URL = 'pages/{slug}/'
 PAGE_SAVE_AS = 'pages/{slug}/index.html'
-ABOUT_ME = 'I work on water programs at the Kibera Town Centre in Nairobi, Kenya. ' \
+ABOUT_ME = 'I work on water programs at Kibera Town Centre in Nairobi, Kenya. ' \
            'I am on the Berkeley 2050 Commission for Berkeley, California. ' \
            'I work on integrating data science and Jupyter notebooks in urban water research.'

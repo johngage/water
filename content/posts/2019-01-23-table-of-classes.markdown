@@ -5,4 +5,4 @@ date: 2019-01-23 12:12
 ---
 How to make this appear?
 
-{% notebook  Table-format-exchange.ipynb %}
+{% notebook  notebooks/Table-format-exchange.ipynb %}

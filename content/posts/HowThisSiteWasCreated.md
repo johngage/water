@@ -107,7 +107,7 @@ Worked when cloned all plugins in new directory.  Then could install i18n_sites;
 
 To install plugin for pelican-ipynb:
 ```
-git submodule add git://github.com/danielfrg/pelican-ipynb.git pelican-plugins/ipynb
+git submodule add -f git://github.com/danielfrg/pelican-ipynb.git ./pelican-plugins/ipynb
 ```
 
 
@@ -181,3 +181,11 @@ ERROR: Could not process posts/UCB DS8.1x.md
 
   Have seen this 'safe' error before.  Use `shift-command-f' in Atom to find all instances of `safe=True`.
     - found in liquid tags plugin; removed `safe=True` from notebook.py, `_*fixed it *_`; now all the notebooks are processed by Pelican.
+
+Saturday
+
+1. went into Pelican-plugin directory, created ipynb directore, downloaded all pelican-ipynb files;
+2. ml had all the same old errors, including  gettext error; cannot find i18n_sites;
+  - Amazing; I'm in base virtual environment; looked at Draft problem in i18n_sites; I think I changed the .py to add a 'try'; but kept a include for Draft; commented that out, and it loaded.
+  - Fixed the liquid way of referring to ipynb notebooks; also, this happened after I filled the plugin directory  with a directly downloaded version of pelican-ipynb named ipynb, as the documentation says.
+  - Want to see if it shows up in git. Yes, shows as changed. Note that so did i18n, making me wonder if the submodule stuff allows the newest version on github to be updated. Will run update. After I commit.

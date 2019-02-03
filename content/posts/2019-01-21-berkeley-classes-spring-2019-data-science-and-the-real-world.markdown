@@ -17,4 +17,4 @@ slug: 'Great Classes at Berkeley'
 | Stat 140 | Anindita Adhikari | Tu Th 5-6:30 | Valley LifeSci 2050 |
 |  Stat C100 |John DeNero   |Tu Th 630 - 800   |Wheeler 150   |
 
-{% notebook Writing-2019.ipynb %}
+{% notebook notebooks/Writing-2019.ipynb %}

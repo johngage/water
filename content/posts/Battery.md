@@ -14,4 +14,4 @@ Summary: This is the first post of a series of posts on energy. It will show a j
 
 The implementing company is [Ionic Materials](https://ionicmaterials.com/)
 
-{% notebook   Batteries.ipynb %}
+{% notebook   notebooks/Batteries.ipynb %}
