@@ -9,6 +9,7 @@
 
 
 
+
 <style type="text/css">
 
 /*some stuff for output/input prompts*/
@@ -197,8 +198,6 @@ init_mathjax();
 
 
 
-
-
 </head>
 <body>
 
@@ -216,10 +215,12 @@ Water, Power, Network            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                    <li><a href="/posts/2018">2018 Posts</a></li>
-                    <li><a href="/posts/2019">2019 Posts</a></li>
-                    <li><a href="/tag/jupyter.html">JNotebook</a></li>
-                    <li><a href="/notebooks">JNB</a></li>
+                    <li><a href="https://johngage.github.io/water/posts/2018">2018 Posts</a></li>
+                    <li><a href="https://johngage.github.io/water/posts/2019">2019 Posts</a></li>
+                    <li><a href="https://johngage.github.io/water/tags.html">Tags</a></li>
+                    <li><a href="tags.html">MTags</a></li>
+                    <li><a href="https://johngage.github.io/water/tag/jupyter.html">JNotebook</a></li>
+                    <li><a href="https://johngage.github.io/water/notebooks">JNB</a></li>
                          <li><a href="https://johngage.github.io/water/pages/About/">
                              About
                           </a></li>
@@ -269,13 +270,35 @@ Water, Power, Network            </a>
 	<a href="https://johngage.github.io/water/tag/jupyter.html">jupyter</a>
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Lab-5:-Song-Classification,-Part-2">Lab 5: Song Classification, Part 2<a class="anchor-link" href="#Lab-5:-Song-Classification,-Part-2">&#182;</a></h1><p>Welcome to Lab 5! We'll pick off where we left off and continue to build a song classifer using k-nearest neighbors.</p>
-<p>Please complete lab 4 before starting lab 5.</p>
-<p>Lab 4 is part 1 of the investigation. Lab 5 is part 2 of the …</p></div></div></div></p>
+                <div class="summary"><style type="text/css">/*!
+*
+* IPython notebook
+*
+*/
+/* CSS font colors for translated ANSI escape sequences */
+/* The color values are a mix of
+   http://www.xcolors.net/dl/baskerville-ivorylight and
+   http://www.xcolors.net/dl/euphrasia */
+.ansi-black-fg {
+  color: #3E424D;
+}
+.ansi-black-bg {
+  background-color: #3E424D;
+}
+.ansi-black-intense-fg {
+  color: #282C36;
+}
+.ansi-black-intense-bg {
+  background-color: #282C36;
+}
+.ansi-red-fg {
+  color: #E75C58;
+}
+.ansi-red-bg {
+  background-color: #E75C58;
+}
+.ansi-red-intense-fg {
+  color …</style>
                     <a class="btn btn-default btn-xs" href="https://johngage.github.io/water/articles/2019/Jan/jnb-tests/">more ...</a>
                 </div>
             </article>
@@ -337,11 +360,22 @@ Water, Power, Network            </a>
 <div id="aboutme">
     <p>
       <strong>About John Gage</strong><br/>
-        I work on water programs at the Kibera Town Centre in Nairobi, Kenya. I am on the Berkeley 2050 Commission for Berkeley, California. I work on integrating data science and Jupyter notebooks in urban water research.
+        I work on water programs at Kibera Town Centre in Nairobi, Kenya. I am on the Berkeley 2050 Commission for Berkeley, California. I work on integrating data science and Jupyter notebooks in urban water research.
     </p>
 </div><!-- Sidebar -->
 <section class="well well-sm">
   <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="http://berkeley.edu"><i class="fa fa-berkeley-square fa-lg"></i> Berkeley</a></li>
+    <li class="list-group-item"><a href="http://berkeley.edu"><i class="fa fa-berkeley-institute-of-data-sciences-square fa-lg"></i> Berkeley Institute of Data Sciences</a></li>
+    <li class="list-group-item"><a href="http://timeanddate.com"><i class="fa fa-time-square fa-lg"></i> Time</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
 
 <!-- Sidebar/Recent Posts -->
 <li class="list-group-item">
@@ -403,7 +437,6 @@ Water, Power, Network            </a>
   </ul>
 </li>
 <!-- End Sidebar/Categories -->
-    
 
 <!-- Sidebar/Tag Cloud -->
 <li class="list-group-item">
@@ -442,17 +475,6 @@ Water, Power, Network            </a>
   </ul>
 </li>
 <!-- End Sidebar/Tag Cloud -->
-
-<!-- Sidebar/Social -->
-<li class="list-group-item">
-  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
-  <ul class="list-group" id="social">
-    <li class="list-group-item"><a href="http://berkeley.edu"><i class="fa fa-berkeley-square fa-lg"></i> Berkeley</a></li>
-    <li class="list-group-item"><a href="http://berkeley.edu"><i class="fa fa-berkeley-institute-of-data-sciences-square fa-lg"></i> Berkeley Institute of Data Sciences</a></li>
-    <li class="list-group-item"><a href="http://timeanddate.com"><i class="fa fa-time-square fa-lg"></i> Time</a></li>
-  </ul>
-</li>
-<!-- End Sidebar/Social -->
 
 <!-- Sidebar/Links -->
 <li class="list-group-item">

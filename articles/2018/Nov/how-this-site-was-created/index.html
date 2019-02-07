@@ -9,6 +9,7 @@
 
 
 
+
 <style type="text/css">
 
 /*some stuff for output/input prompts*/
@@ -202,8 +203,6 @@ init_mathjax();
 
 
 
-
-
 </head>
 <body>
 
@@ -221,10 +220,12 @@ Water, Power, Network            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                    <li><a href="/posts/2018">2018 Posts</a></li>
-                    <li><a href="/posts/2019">2019 Posts</a></li>
-                    <li><a href="/tag/jupyter.html">JNotebook</a></li>
-                    <li><a href="/notebooks">JNB</a></li>
+                    <li><a href="https://johngage.github.io/water/posts/2018">2018 Posts</a></li>
+                    <li><a href="https://johngage.github.io/water/posts/2019">2019 Posts</a></li>
+                    <li><a href="https://johngage.github.io/water/tags.html">Tags</a></li>
+                    <li><a href="tags.html">MTags</a></li>
+                    <li><a href="https://johngage.github.io/water/tag/jupyter.html">JNotebook</a></li>
+                    <li><a href="https://johngage.github.io/water/notebooks">JNB</a></li>
                          <li><a href="https://johngage.github.io/water/pages/About/">
                              About
                           </a></li>
@@ -288,16 +289,22 @@ Water, Power, Network            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <h2 id="this-site-was-patterned-on-the-site-created-by-peter-kazarinoff-professor-of-engineering-at-portland-community-college">This site was patterned on the site created by Peter Kazarinoff, Professor of Engineering at Portland Community College</h2>
+                <h4 id="this-site-was-patterned-on-the-site-created-by-peter-kazarinoff-professor-of-engineering-at-portland-community-college">This site was patterned on the site created by Peter Kazarinoff, Professor of Engineering at Portland Community College</h4>
 <ul>
 <li>He describes the tools, the editors, and the templates needed for a static web site. His site is</li>
 <li>He has intriguing tools for conversion of Jupyter notebooks into LaTex.</li>
 <li>Using his list of Pelican plugins.</li>
-<li>
-<h2 id="using-a-modification-of-his-pelicanconfpy-files-some-problems-with-final-rendering-and-with-publishconfpy">Using a modification of his pelicanconf.py files.  Some problems with final rendering, and with publishconf.py</h2>
-</li>
+<li>Using a modification of his pelicanconf.py files.  Some problems with final rendering, and with publishconf.py</li>
 </ul>
-<h3 id="november-13-2018">November 13, 2018</h3>
+<h5 id="mysteries-of-cloning-github-repositories-of-themes-and-plugins">Mysteries of cloning github repositories of themes and plugins</h5>
+<p>Kazarinoff describes the sequence of git calls to bring all the themes and plugins into a directory, but seems to make an error.</p>
+<div class="highlight"><pre><span class="code-line"><span></span>$ git submodule add https://github.com/getpelican/pelican-themes.git</span>
+<span class="code-line">$ git submodule init</span>
+<span class="code-line">$ git submodule update --init --recursive</span>
+</pre></div>
+
+
+<h3 id="november-13-2018-critical">November 13, 2018: CRITICAL:</h3>
 <p>The author of Pelican, Alexis Metaireau, and the current maintainer of the pelican github site, Justin Meyer and 35 others, just released Pelican 4.0.</p>
 <p><em>My site could not build new html pages, and gave the error:</em></p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="n">ERROR</span><span class="p">:</span> <span class="n">Cannot</span> <span class="n">load</span> <span class="n">plugin</span> <span class="sb">`i18n_subsites`</span></span>
@@ -311,6 +318,7 @@ Water, Power, Network            </a>
 </pre></div>
 
 
+<p>Hack to fix this: insert two lines in generators.py, a program in the pelican site-package, under python3.6; now, under python3.7</p>
 <p>I added two lines to the basic Python for Pelican in  <em>/Users/johngage/anaconda3/lib/python3.6/site-packages/pelican/generators.py</em></p>
 <p>On line 28, just after</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="kn">from</span> <span class="nn">pelican.utils</span> <span class="kn">import</span> <span class="p">(</span><span class="n">DateFormatter</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">mkdir_p</span><span class="p">,</span> <span class="n">order_content</span><span class="p">,</span></span>
@@ -341,11 +349,125 @@ Water, Power, Network            </a>
 
 <p>add:</p>
 <div class="highlight"><pre><span class="code-line"><span></span>#insert fix for gettext error,using Baky&#39;s Blog code Nov 2018</span>
-<span class="code-line">self.env.install_gettext_translations( gettext )</span>
+<span class="code-line">#self.env.install_gettext_translations( gettext )</span>
 </pre></div>
 
 
 <p>This seemed to get rid of the <em>gettext undefined</em> error, and the site rendered.</p>
+<p>Friday, Feb 1, 2019</p>
+<h4 id="fix-for-gettext-problem-seem-to-be-load-new-plugin-versions-need-to-understand-submodule-way-with-git">Fix for gettext problem seem to be load new plugin versions.  Need to understand submodule way with git.</h4>
+<p>Worked when cloned all plugins in new directory.  Then could install i18n_sites; added Jinja2 environment.</p>
+<p>To install plugin for pelican-ipynb:</p>
+<div class="highlight"><pre><span class="code-line"><span></span>git submodule add -f git://github.com/danielfrg/pelican-ipynb.git ./pelican-plugins/ipynb</span>
+</pre></div>
+
+
+<p>Commands for virtual environments:</p>
+<div class="highlight"><pre><span class="code-line"><span></span>conda install -n myenv pip</span>
+<span class="code-line">source activate myenv</span>
+<span class="code-line">pip &lt;pip_subcommand&gt;</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span class="code-line"><span></span>conda list  #lists all packages and versions</span>
+<span class="code-line">conda info --envs</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span class="code-line"><span></span>conda list --explicit &gt; spec-file.txt</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span class="code-line"><span></span>conda create --name myenv --file spec-file.txt</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span class="code-line"><span></span>conda create --name myenv</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span class="code-line"><span></span>source activate myenv</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span class="code-line"><span></span>source activate (base, b1, bsite, virtsite)</span>
+</pre></div>
+
+
+<p>Using virtual environments with this modification--b1 and bsite--
+big blog site renders, but still has error about loading i18n module.</p>
+<p>Using these VE, setting up new Pelican instance:</p>
+<p><code>CRITICAL: AttributeError: 'Environment' object has no attribute 'install_gettext_translations'</code>
+  - Error from prior inserted line in generators.py</p>
+<p>New experiment: try changing pelicanconf.py, removing all refs to i18n.....</p>
+<p>2016 github error entries refer to jinja, and gettext, and plugins.  Others get exactly the same errors: cannot load plugin i18n; get gettext error;</p>
+<p>reloaded all plugins, turned on i18n, jinja2;
+- First Critical: CRITICAL: AttributeError: module 'multi_neighbors' has no attribute 'register'
+  - comment out multi-neighbor plugin</p>
+<p>Run again:
+  - many errors, but <strong>it ran</strong>
+    - no complaint about i18n_sites not loading;
+    - no 'gettext' error
+    -
+  - ERROR: Cannot load plugin <code>pelican-ipynb.markup</code>
+  | ModuleNotFoundError: No module named 'pelican-ipynb.markup'
+  <code>ERROR: Could not process posts/2019-01-18-jnb-tests.markdown
+  | TypeError: store() got an unexpected keyword argument 'safe'
+ERROR: Could not process posts/2019-01-23-table-of-classes.markdown
+  | TypeError: store() got an unexpected keyword argument 'safe'
+ERROR: Could not process posts/2019-01-21-berkeley-classes-spring-2019-data-science-and-the-real-world.markdown
+  | TypeError: store() got an unexpected keyword argument 'safe'
+ERROR: Could not process posts/Battery.md
+  | TypeError: store() got an unexpected keyword argument 'safe'
+ERROR: Could not process posts/UCB DS8.1x.md
+  | TypeError: store() got an unexpected keyword argument 'safe'</code></p>
+<p>Have seen this 'safe' error before.  Use <code>shift-command-f' in Atom to find all instances of</code>safe=True<code>.
+    - found in liquid tags plugin; removed</code>safe=True<code>from notebook.py,</code><em><em>fixed it </em></em>`; now all the notebooks are processed by Pelican.</p>
+<p>Saturday</p>
+<ol>
+<li>
+<p>went into Pelican-plugin directory, created ipynb directore, downloaded all pelican-ipynb files;</p>
+</li>
+<li>
+<p>ml had all the same old errors, including  gettext error; cannot find i18n_sites;</p>
+</li>
+<li>
+<p>Amazing; I'm in base virtual environment; looked at Draft problem in i18n_sites; I think I changed the .py to add a 'try'; but kept a include for Draft; commented that out, and it loaded.</p>
+</li>
+<li>
+<p>Fixed the liquid way of referring to ipynb notebooks; also, this happened after I filled the plugin directory  with a directly downloaded version of pelican-ipynb named ipynb, as the documentation says.</p>
+</li>
+<li>
+<p>Want to see if it shows up in git. Yes, shows as changed. Note that so did i18n, making me wonder if the submodule stuff allows the newest version on github to be updated. Will run update. After I commit.  Pycache was changed somehow; doesnt show plugins changed.  showing no content.</p>
+</li>
+<li>
+<p>Committed. Didn't change directories.  Will try with terminal command.</p>
+</li>
+<li>
+<p>Found out how to merge. Had conflict, opened Atom, found Head section, master branch section, fixed, saved;</p>
+</li>
+<li>
+<p>Change into directory where submodule is; run $ git fetch; it found 35 things; tried $ git merge origin/master; said would overwrite local changes (which I made); then $git stage -A; 21 files changed, 2454 insertions(+), 8 deletions(-);</p>
+</li>
+<li>
+<p>$git merge origin/master; can't, have conflicts; used Atom to fix; saved; $git commit;
+  -after cd into subdirectories, and updating,many plugins updated,many themes updated; something changed with ipnyb plugin; now don't need long file path, just uses notebook; when fix path, now back to 'safe' error. Maybe brought back code that uses save tag.</p>
+</li>
+</ol>
+<p>-changed pelicanconf.py to use plugins pelican-ipynb, not ipynb; safe errors went away; needed to add path notebook to jupyter notebooks;</p>
+<h4 id="thursday-feb-7-relocating-the-theme-and-plugin-directories">Thursday Feb 7: relocating the theme and plugin directories</h4>
+<ul>
+<li>Move big directory into ~/Repos; use only the theme needed</li>
+<li>Figure out how to put in the submodules so the updates will take place; either automatically on a pull, or with an occasional manual update.</li>
+<li>Created new directory in Repos: Pelcan.  Entered directory
+<code>git submodule add https://github.com/getpelican/pelican-themes.git
+$ git submodule init
+$ git submodule update --init --recursive</code></li>
+<li>did the same for pelican-plugins</li>
+<li>Question: where to execute the next update; or is it needed?</li>
+<li>Modify pelicanconf.py to point to new themes and plugin directories</li>
+<li>'safe' error again; comes from liquid tags plugin in file notebook.py; liquid_tags include_code.py; ipynb liquid module is the problem; removing safe=True here fixed the safe problem.</li>
+</ul>
             </div>
             <!-- /.entry-content -->
 <section class="well" id="related-posts">
@@ -355,65 +477,7 @@ Water, Power, Network            </a>
            <li><a href="https://johngage.github.io/water/articles/2018/Nov/littletable-done-in-html/">littletable Done in HTML</a></li>
        </ul>
 </section>
-    <nav class="older">
-        <h4>Older articles</h4>
-        <ul>
-                <li>
-                    <a href="https://johngage.github.io/water/articles/2018/Nov/Lab5/">
-                        UC Berkeley Data Science 8.1x Lab 5
-                    </a>
-                </li>
-                <li>
-                    <a href="https://johngage.github.io/water/articles/2018/Nov/battery-post/">
-                        Battery Technology: Solid State Electrolyte
-                    </a>
-                </li>
-                <li>
-                    <a href="https://johngage.github.io/water/articles/2018/Nov/test/">
-                        Test
-                    </a>
-                </li>
-        </ul>
-    </nav>
-    <nav class="newer">
-        <h4>Newer articles</h4>
-        <ul>
-                <li>
-                    <a href="https://johngage.github.io/water/articles/2018/Nov/littletable-done-in-html/">
-                        littletable Done in HTML
-                    </a>
-                </li>
-                <li>
-                    <a href="https://johngage.github.io/water/articles/2018/Nov/my-super-post/">
-                        A rst document
-                    </a>
-                </li>
-                <li>
-                    <a href="https://johngage.github.io/water/articles/2018/Nov/Voting/">
-                        Elections--United States: 2018
-                    </a>
-                </li>
-        </ul>
-    </nav>
-<ul>
-     <li>
-         <a href="https://johngage.github.io/water/articles/2018/Nov/Lab5/">
-             UC Berkeley Data Science 8.1x Lab 5
-         </a>
-     </li>
-     <li>
-         <a href="https://johngage.github.io/water/articles/2018/Nov/littletable-done-in-html/">
-             littletable Done in HTML
-         </a>
-     </li>
-</ul>
-<ul>
-     <li>
-         <a href="https://johngage.github.io/water/articles/2018/Nov/littletable-done-in-html/">
-             littletable Done in HTML
-         </a>
-     </li>
- </ul>        </article>
+        </article>
     </section>
 
         </div>
@@ -422,20 +486,31 @@ Water, Power, Network            </a>
 <div id="aboutme">
     <p>
       <strong>About John Gage</strong><br/>
-        I work on water programs at the Kibera Town Centre in Nairobi, Kenya. I am on the Berkeley 2050 Commission for Berkeley, California. I work on integrating data science and Jupyter notebooks in urban water research.
+        I work on water programs at Kibera Town Centre in Nairobi, Kenya. I am on the Berkeley 2050 Commission for Berkeley, California. I work on integrating data science and Jupyter notebooks in urban water research.
     </p>
 </div><!-- Sidebar -->
 <section class="well well-sm">
   <ul class="list-group list-group-flush">
 
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="http://berkeley.edu"><i class="fa fa-berkeley-square fa-lg"></i> Berkeley</a></li>
+    <li class="list-group-item"><a href="http://berkeley.edu"><i class="fa fa-berkeley-institute-of-data-sciences-square fa-lg"></i> Berkeley Institute of Data Sciences</a></li>
+    <li class="list-group-item"><a href="http://timeanddate.com"><i class="fa fa-time-square fa-lg"></i> Time</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
 <!-- Sidebar/Recent Posts -->
 <li class="list-group-item">
   <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
   <ul class="list-group" id="recentposts">
-    <li class="list-group-item"><a href="https://johngage.github.io/water/articles/2019/Jan/deep-learning/">Deep Learning</a></li>
-    <li class="list-group-item"><a href="https://johngage.github.io/water/articles/2019/Jan/jnb-tests/">"JNB tests"</a></li>
-    <li class="list-group-item"><a href="https://johngage.github.io/water/articles/2019/Jan/next-steps-with-usace/">"Next steps with USACE"</a></li>
-    <li class="list-group-item"><a href="https://johngage.github.io/water/articles/2019/Jan/outline-of-ktc-curriculum-for-computing-and-data-science/">"Outline of KTC curriculum for computing and data science"</a></li>
+    <li class="list-group-item"><a href="https://johngage.github.io/water/articles/2019/Jan/Build Site/">"How to get started publishing static websites"</a></li>
+    <li class="list-group-item"><a href="https://johngage.github.io/water/articles/2019/Jan/how-to-get-started-publishing-static-websites/">"How to get started publishing static websites"</a></li>
+    <li class="list-group-item"><a href="https://johngage.github.io/water/articles/2019/Jan/frank-fukuyama/">"Frank Fukuyama"</a></li>
+    <li class="list-group-item"><a href="https://johngage.github.io/water/articles/2019/Jan/table-of-classes/">"Table of classes"</a></li>
   </ul>
 </li>
 <!-- End Sidebar/Recent Posts -->
@@ -489,7 +564,6 @@ Water, Power, Network            </a>
   </ul>
 </li>
 <!-- End Sidebar/Categories -->
-    
 
 <!-- Sidebar/Tag Cloud -->
 <li class="list-group-item">
@@ -528,17 +602,6 @@ Water, Power, Network            </a>
   </ul>
 </li>
 <!-- End Sidebar/Tag Cloud -->
-
-<!-- Sidebar/Social -->
-<li class="list-group-item">
-  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
-  <ul class="list-group" id="social">
-    <li class="list-group-item"><a href="http://berkeley.edu"><i class="fa fa-berkeley-square fa-lg"></i> Berkeley</a></li>
-    <li class="list-group-item"><a href="http://berkeley.edu"><i class="fa fa-berkeley-institute-of-data-sciences-square fa-lg"></i> Berkeley Institute of Data Sciences</a></li>
-    <li class="list-group-item"><a href="http://timeanddate.com"><i class="fa fa-time-square fa-lg"></i> Time</a></li>
-  </ul>
-</li>
-<!-- End Sidebar/Social -->
 
 <!-- Sidebar/Series -->
 <li class="list-group-item">
