@@ -1,6 +1,6 @@
 Title: How This Site Was Created
 Date: 2018-11-12 17:00
-Modified: 2018-12-29
+Modified: 2019-2-2
 Category: Tools
 Tags: Guide
 Author: John Gage
@@ -185,7 +185,38 @@ ERROR: Could not process posts/UCB DS8.1x.md
 Saturday
 
 1. went into Pelican-plugin directory, created ipynb directore, downloaded all pelican-ipynb files;
+
+
 2. ml had all the same old errors, including  gettext error; cannot find i18n_sites;
+
+
   - Amazing; I'm in base virtual environment; looked at Draft problem in i18n_sites; I think I changed the .py to add a 'try'; but kept a include for Draft; commented that out, and it loaded.
   - Fixed the liquid way of referring to ipynb notebooks; also, this happened after I filled the plugin directory  with a directly downloaded version of pelican-ipynb named ipynb, as the documentation says.
-  - Want to see if it shows up in git. Yes, shows as changed. Note that so did i18n, making me wonder if the submodule stuff allows the newest version on github to be updated. Will run update. After I commit.
+
+
+  - Want to see if it shows up in git. Yes, shows as changed. Note that so did i18n, making me wonder if the submodule stuff allows the newest version on github to be updated. Will run update. After I commit.  Pycache was changed somehow; doesnt show plugins changed.  showing no content.
+  - Committed. Didn't change directories.  Will try with terminal command.
+
+
+  - Found out how to merge. Had conflict, opened Atom, found Head section, master branch section, fixed, saved;
+  - Change into directory where submodule is; run $ git fetch; it found 35 things; tried $ git merge origin/master; said would overwrite local changes (which I made); then $git stage -A; 21 files changed, 2454 insertions(+), 8 deletions(-);
+
+
+  - $git merge origin/master; can't, have conflicts; used Atom to fix; saved; $git commit;
+  -after cd into subdirectories, and updating,many plugins updated,many themes updated; something changed with ipnyb plugin; now don't need long file path, just uses notebook; when fix path, now back to 'safe' error. Maybe brought back code that uses save tag.
+
+
+  -changed pelicanconf.py to use plugins pelican-ipynb, not ipynb; safe errors went away; needed to add path notebook to jupyter notebooks;
+
+#### Thursday Feb 7: relocating the theme and plugin directories
+- Move big directory into ~/Repos; use only the theme needed
+  - Figure out how to put in the submodules so the updates will take place; either automatically on a pull, or with an occasional manual update.
+  - Created new directory in Repos: Pelcan.  Entered directory
+```git submodule add https://github.com/getpelican/pelican-themes.git
+$ git submodule init
+$ git submodule update --init --recursive
+```
+- did the same for pelican-plugins
+- Question: where to execute the next update; or is it needed?
+- Modify pelicanconf.py to point to new themes and plugin directories
+  - 'safe' error again; comes from liquid tags plugin in file notebook.py; liquid_tags include_code.py; ipynb liquid module is the problem; removing safe=True here fixed the safe problem.

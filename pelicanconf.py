@@ -26,7 +26,7 @@ STATIC_PATHS = ['images',
                 'extra',
                 'notebooks',
                 ]
-PLUGIN_PATHS = ['pelican-plugins' ]
+PLUGIN_PATHS = ['/Users/johngage/Repos/Pelican/pelican-plugins' ]
 EXTRA_PATH_METADATA = {
     'extra/custom.css': {'path': 'static/css/custom.css'},
     'extra/jupyter.css': {'path': 'static/css/jupyter.css'},
@@ -40,7 +40,7 @@ DEFAULT_DATE = 'fs'
 
 #THEME settings
 
-THEME = 'pelican-themes/pelican-bootstrap3'
+THEME = '/Users/johngage/Repos/Pelican/pelican-themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'flatly'
 
 # Feed generation is usually not desired when developing
@@ -166,6 +166,7 @@ PLUGINS = [
     #'multi_neighbors',
     'neighbors',
     'pelican-ipynb.markup',
+    'pelican-ipynb.liquid',
     #'pelican_javascript',
     'related_posts',
     'render_math',
@@ -173,8 +174,8 @@ PLUGINS = [
     'tag_cloud',
     'tipue_search',
     #'bootswatch_markdown_css',
-    'ipynb.markup',
-    'ipynb.liquid',
+    #'ipynb.markup',
+    #'ipynb.liquid',
     ]
 
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
