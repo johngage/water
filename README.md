@@ -39,15 +39,18 @@ E.g.,
 - Adding two submodules allows the most up-to-date versions to be called.
 - $ pwd
 
-``$ git submodule add https://github.com/getpelican/pelican-themes.git
+``` $ git submodule add https://github.com/getpelican/pelican-themes.git
 $ git submodule init
-$ git submodule update --init --recursive ``
+$ git submodule update --init --recursive ```
 
-``$ pwd
+``` 
+$ pwd
 
 $ git submodule add https://github.com/getpelican/pelican-plugins.git
 $ git submodule init
-$ git submodule update --init --recursive``
+$ git submodule update --init --recursive . 
 
 (staticsite) $ ghp-import output
 (staticsite) $ git push origin gh-pages
+```
+
