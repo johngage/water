@@ -1,7 +1,11 @@
-# water
-Modified: 2019.Jan.16
+## water
+Modified: 2019.Feb.10
 Pushed from water
 Three branches: master, develop, gh-pages
+
+This is a learning site, reflecting steps I've taken to combine Jupyter notebooks, sensor data streams from the Kibera Town Centre (a 80-cubic-meter-per-day water project in Kibera, Nairobi, Kenya), and data science analysis at UC Berkeley.
+
+I've drawn from Peter Kazarinoff, professor of engineering in Portland, Oregon, as he built a static web site for his new Python textbook.  He wrote the textbook completely in Jupyter notebooks, and posted a seven-part series detailing how he built the web site using Pelican, a Pelican theme, and a collection of Pelican plug-ins to modify the appearance and functionality of the resultant web site.  The site has survived several updates in Python, a major upgrade of Pelican to 4.02, and multiple updates of numerous plugins, with only a few conflicts and mysterious errors.  Want to clarify the procedure for updating submodules....does it happen on a pull? or do I need to go to each directory where I cloned a repository, and update?
 
 https://github.com/johngage
 
